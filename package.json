@@ -1,34 +1,24 @@
 {
-  "name": "fresh-and-clean",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "@headlessui/vue": "^1.7.23",
+    "@splidejs/splide": "^4.1.4",
+    "motion": "^10.18.0",
+    "nuxt": "^3.12.4",
+    "swiper": "^11.1.14",
+    "vue": "latest"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.3",
-    "postcss": "^8.4.17"
-  },
-  "description": "helmet fresh and clean",
-  "main": "nuxt.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Teejay-d3v/FreshandCleanHelmet.git"
-  },
-  "author": "teejay-d3v",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Teejay-d3v/FreshandCleanHelmet/issues"
-  },
-  "homepage": "https://github.com/Teejay-d3v/FreshandCleanHelmet#readme"
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@types/swiper": "^5.4.3"
+  }
 }
