@@ -4,8 +4,7 @@ export default defineNuxtConfig({
 
   css: [
     '~/assets/css/main.css',
-    '@/assets/css/tailwind.css',
-    '@splidejs/splide/dist/css/splide.min.css',
+    '@splidejs/splide/dist/css/splide.min.css'
   ],
 
   app: {
