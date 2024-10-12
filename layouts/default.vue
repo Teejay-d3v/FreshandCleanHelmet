@@ -2,10 +2,7 @@
   <div>
     <section class="relative w-full h-screen overflow-hidden custom-bg-video">
       <!-- Video Background -->
-      <video class="absolute top-0 left-0 w-full h-[90%] object-cover" autoplay muted loop playsinline>
-        <source src="/static/videos/header.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
 
         <!-- Overlay content on top of the video -->
         <div class="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center text-left text-white p-10">
