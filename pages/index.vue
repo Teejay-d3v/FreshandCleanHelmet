@@ -1,9 +1,12 @@
 <template>
   <div>
+    <!-- <ProductBenefits /> -->
+
+    <ProductAbout />  
     <ProductHero />
     <ProductFeatures />
-    <ProductAbout />  
-    <ProductReviews />
+ 
+    <!-- <ProductReviews /> -->
 
     <ContactUs />
   </div>
