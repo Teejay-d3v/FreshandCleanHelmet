@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="py-24 bg-gray-300">
     <section id="contact-section" class="text-gray-700 body-font relative bg-gray-300 ">
       <div class="container px-6 py-12 mx-auto flex flex-wrap md:flex-nowrap ">
+        
         <!-- Map Section -->
         <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden shadow-lg sm:mr-10 p-6 flex items-end justify-start relative bg-white">
           <iframe
@@ -17,21 +18,21 @@
           <div class="bg-white relative flex flex-wrap p-6 rounded-lg shadow-md z-10">
             <div class="lg:w-1/2 px-4">
               <h2 class="text-indigo-600 font-semibold text-xs mb-1">ADDRESS</h2>
-              <p class="text-sm">123 Main Street, Your City, Country</p>
+              <p class="text-sm">Agoho St. Ph2 Central, Camella Springville, Molino 3, Bacoor, Cavite.</p>
             </div>
             <div class="lg:w-1/2 px-4 mt-4 lg:mt-0">
               <h2 class="text-indigo-600 font-semibold text-xs mb-1">CONTACT INFO</h2>
-              <p class="text-sm">example@email.com</p>
-              <p class="text-sm mt-2">+123-456-7890</p>
+              <p class="text-sm">partnerships@helmetprosolutions.com</p>
+              <p class="text-sm mt-2">+639627533915</p>
             </div>
           </div>
         </div>
 
         <!-- Feedback Form Section -->
         <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full mt-8 md:mt-0 rounded-lg shadow-lg p-6 bg-gradient-to-b from-blue-300 to-teal-300">
-          <h1 ref="title" class="text-5xl font-bold mb-6 text-center">Contact Us</h1>
-          <h2 class="text-2xl text-gray-900 font-semibold mb-4">We'd Love to Hear From You</h2>
-          <p class="text-gray-600 mb-6">Feel free to send us your feedback or inquiries using the form below.</p>
+          <h1 id="product2"  class="text-5xl font-bold mb-4 text-center text-indigo-600">Partner with Us</h1>
+          <h5 class=" text-gray-900 font-semibold mb-4 ">Interested in learning more or need a quotation for our Business Partner Package</h5>
+          <p class="text-gray-600 mb-6"> Fill out the form below, and let's start growing your business with HelmetPro.</p>
           <form @submit.prevent="sendEmail" class="space-y-4">
             <div class="relative">
               <label for="name" class="leading-7 text-sm text-gray-600">Name</label>

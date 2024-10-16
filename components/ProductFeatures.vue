@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="productfeatures-section" class="relative overflow-hidden py-24 bg-slate-00">
+    <section id="productfeatures-section" style="background: linear-gradient(135deg, #e0e0e0, #f0f0f0);" class="relative overflow-hidden py-24  bg-slate-00">
       <div class="h-1/2">
         <!-- Slider Images -->
         <div
