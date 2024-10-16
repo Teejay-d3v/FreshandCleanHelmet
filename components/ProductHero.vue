@@ -49,7 +49,7 @@
 
             <!-- Pricing Section -->
             <div class="flex items-center justify-between bg-indigo-100 p-6 rounded-lg mt-4 shadow-inner">
-              <span class="title-font font-semibold text-4xl text-indigo-700">$3580.00</span>
+              <span class="title-font font-semibold text-4xl text-indigo-700">{{ formattedPrice }}</span>
               <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all duration-300 text-lg font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Order Now
               </button>
@@ -66,6 +66,12 @@
 import { onMounted, ref } from 'vue';
 import Splide from '@splidejs/splide';
 import ModalComponent from '../components/payments.vue';
+const price = ref(3580.00); // Original price
+
+const formattedPrice = computed(() => {
+  // Format the price to include commas
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price.value);
+});
 const isModalOpen = ref(false);
 
 const openModal = () => {

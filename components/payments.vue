@@ -35,7 +35,7 @@
           <h4 class="font-medium text-xl">Product Details</h4>
           <div class="flex justify-between items-center mt-2">
             <span class="text-gray-700">Helmet Fresh and Clean</span>
-            <span class="font-semibold text-green-500">$29.99</span>
+            <span class="font-semibold text-green-500">{{ formattedPrice }}</span>
           </div>
         </div>
 
@@ -50,9 +50,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, defineProps, defineEmits } from 'vue';
+import { ref, watch, defineProps, defineEmits, computed } from 'vue';
 import { loadScript } from '@paypal/paypal-js';
 
+const price = ref(3580.00); // Original price
+
+const formattedPrice = computed(() => {
+  // Format the price to include commas
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price.value);
+});
 // Define props
 const props = defineProps({
   isVisible: Boolean,
