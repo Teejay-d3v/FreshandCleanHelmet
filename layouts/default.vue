@@ -39,11 +39,7 @@
         <p class="text-lg font-semibold mb-2">
           &copy; {{ new Date().getFullYear() }} Helmet Clean and Fresh. All rights reserved.
         </p>
-        <div class="flex gap-6 text-sm">
-          <NuxtLink to="/privacy" class="hover:text-teal-200 transition duration-200">Privacy Policy</NuxtLink>
-          <NuxtLink to="/terms" class="hover:text-teal-200 transition duration-200">Terms of Service</NuxtLink>
-          <NuxtLink to="/contact" class="hover:text-teal-200 transition duration-200">Contact Us</NuxtLink>
-        </div>
+      
       </div>
     </footer>
   </div>
