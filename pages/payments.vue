@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-indigo-50">
     <div id="paypal-button-container"></div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-gradient-to-b from-blue-300 to-teal-300 text-gray-700 body-font overflow-hidden py-10">
+    <section class="bg-gradient-to-b from-blue-400 to-teal-600 text-gray-700 body-font overflow-hidden py-10">
       <div class="container mx-auto px-5">
         <div class="lg:w-4/5 mx-auto flex flex-wrap bg-white rounded-2xl shadow-lg overflow-hidden">
           <!-- Main Slider Section -->
@@ -50,13 +50,14 @@
             <!-- Pricing Section -->
             <div class="flex items-center justify-between bg-indigo-100 p-6 rounded-lg mt-4 shadow-inner">
               <span class="title-font font-semibold text-4xl text-indigo-700">$3580.00</span>
-              <button class="text-white bg-indigo-600 border-0 py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all duration-300 text-lg font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all duration-300 text-lg font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Order Now
               </button>
             </div>
           </div>
         </div>
       </div>
+      <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
     </section>
   </div>
 </template>
@@ -64,6 +65,16 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import Splide from '@splidejs/splide';
+import ModalComponent from '../components/payments.vue';
+const isModalOpen = ref(false);
+
+const openModal = () => {
+  isModalOpen.value = true;
+};
+
+const closeModal = () => {
+  isModalOpen.value = false;
+};
 
 const images = [
   '/images/machine1.png',
