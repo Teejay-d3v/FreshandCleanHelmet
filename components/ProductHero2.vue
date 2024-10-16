@@ -1,11 +1,13 @@
 <template>
   <section class="bg-gray-300">
-    <div class="min-h-screen flex flex-col items-center justify-center ">
+    <div class="min-h-screen flex flex-col items-center justify-center p-6">
       <h1 ref="title" class="text-5xl font-bold mb-6 text-center">Introducing Helmet Pro</h1>
       <p ref="paragraph" class="text-lg text-gray-700 mb-6 text-center max-w-2xl">
         Helmet Pro is an innovative vending machine designed specifically for cleaning helmets. This page provides a summary of its features and benefits, showcasing how it can enhance the safety and comfort of your riding experience.
       </p>
-      <div class="flex gap-4">
+
+      <!-- Desktop view -->
+      <div class=" lg:grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div
           ref="card"
           v-for="(image, index) in images"
@@ -15,6 +17,7 @@
           <img :src="image.src" :alt="image.alt" class="object-cover rounded-lg" />
         </div>
       </div>
+
     </div>
   </section>
 </template>
@@ -22,10 +25,10 @@
 <script setup>
 import { ref } from 'vue';
 import { useAnimations } from '@/composables/useAnimations';
+
 const { setupAnimations } = useAnimations();
-const card = ref([])
-const title = ref(null)
-const paragraph = ref(null)
+const title = ref(null);
+const paragraph = ref(null);
 
 // Array of image objects
 const images = ref([
@@ -37,21 +40,16 @@ const images = ref([
 // Setup animation for each image
 setupAnimations([
   {
-    element: card.value,
-    props: { x: ['100%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, stagger: 0.5, easing: 'ease-out' }
-  },
-  {
     element: title,
     props: { y: [-100, 0], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 }
+    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 },
   },
   {
     element: paragraph,
     props: { y: [100, 0], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 }
+    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 },
   },
-])
+]);
 </script>
 
 <style scoped>

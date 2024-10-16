@@ -3,7 +3,8 @@
     <section class="relative w-full bg-indigo-50 h-screen overflow-hidden custom-bg-video">
       <!-- Video Background -->
       <div class="custom-bg-image"></div>
-      <!-- <video class="absolute top-0 left-0 w-full h-[90%] object-cover" autoplay muted loop playsinline>
+      <!-- Uncomment to add video background
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline>
         <source src="/static/videos/header.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video> -->
@@ -12,11 +13,10 @@
     <!-- Navigation Bar -->
     <section>
       <nav
-        :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-300 to-teal-300 bg-opacity-40 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
-      >
-        <div class="container mx-auto px-10 flex justify-between items-center h-[89px]">
+        :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-300 to-teal-300 bg-opacity-40 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
+        <div class="container mx-auto flex justify-between items-center h-[89px] px-4 md:px-10">
           <NuxtLink to="/" class="text-2xl font-bold text-black">
-            <img src="/public/images/logo2.png" alt="Logo" class="h-32" />
+            <img src="/public/images/logo2.png" alt="Logo" class="h-16 md:h-32" />
           </NuxtLink>
           <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 text-lg font-semibold shadow-lg focus:outline-none">
             Order Now
@@ -34,12 +34,11 @@
       <!-- Bottom Content -->
       <div class="container mx-auto flex flex-col items-center text-center">
         <NuxtLink to="/" class="flex items-center mb-4">
-          <img src="/public/images/logo2.png" alt="Logo" class="h-32 transition-transform duration-300 hover:scale-110" />
+          <img src="/public/images/logo2.png" alt="Logo" class="h-16 md:h-32 transition-transform duration-300 hover:scale-110" />
         </NuxtLink>
         <p class="text-lg font-semibold mb-2">
           &copy; {{ new Date().getFullYear() }} Helmet Clean and Fresh. All rights reserved.
         </p>
-      
       </div>
     </footer>
   </div>
@@ -83,7 +82,7 @@ onUnmounted(() => {
 
 <style scoped>
 .custom-bg-image {
-  height: 1000px;  
+  height: 100%;  
   width: 100%;
   background-image: url('/public/images/set5.png');
   background-position: center; /* Center the image */
@@ -93,5 +92,11 @@ onUnmounted(() => {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .custom-bg-image {
+    height: 70vh; /* Make it smaller on smaller screens */
+  }
 }
 </style>
