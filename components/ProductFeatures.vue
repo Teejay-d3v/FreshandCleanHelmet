@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="relative overflow-hidden">
+    <section id="productfeatures-section" class="relative overflow-hidden py-24 bg-slate-00">
       <div class="h-1/2">
         <!-- Slider Images -->
         <div

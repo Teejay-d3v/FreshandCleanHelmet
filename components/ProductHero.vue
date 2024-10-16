@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-gradient-to-b from-blue-400 to-teal-600 text-gray-700 body-font overflow-hidden py-10">
+    <section id="product1-section" class="bg-gradient-to-b from-blue-400 to-teal-600 text-gray-700 body-font overflow-hidden py-24">
       <div class="container mx-auto px-5">
         <div class="lg:w-4/5 mx-auto flex flex-wrap bg-white rounded-2xl shadow-lg overflow-hidden">
           <!-- Main Slider Section -->

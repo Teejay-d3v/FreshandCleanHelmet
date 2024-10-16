@@ -1,10 +1,11 @@
 <template>
   <div>
-
-    <ProductAbout />  
-    <ProductHero />
-    <ProductFeatures />
-    <ProductHero2 />
+    <ProductAbout  />  
+    <ProductHero  />
+    <ProductFeatures  />
+    <ProductHero2  />
+    <ContactUs  />
+  
   </div>
 </template>
 
@@ -12,5 +13,6 @@
 import ProductHero from '@/components/ProductHero.vue';
 import ProductFeatures from '@/components/ProductFeatures.vue';
 import ProductAbout from '~/components/ProductAbout.vue';
+import ContactUs from '~/components/ContactUs.vue';
 import Payments from '~/components/payments.vue';
 </script>

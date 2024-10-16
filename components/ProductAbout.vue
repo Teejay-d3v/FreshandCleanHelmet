@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="bg-gray-300 py-24">
     <!-- Section One -->
-    <section class="bg-gray-300 py-5">
+    <section class="bg-gray-300">
       <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-gradient-to-b from-blue-300 to-teal-300">
         <div ref="image1" class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
           <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"

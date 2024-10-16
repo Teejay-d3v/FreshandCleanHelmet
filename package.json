@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.7.23",
     "@paypal/paypal-js": "^8.1.2",
     "@splidejs/splide": "^4.1.4",
+    "emailjs-com": "^3.2.0",
     "motion": "^10.18.0",
     "nuxt": "^3.12.4",
     "swiper": "^11.1.14",
