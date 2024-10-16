@@ -1,38 +1,39 @@
 <template>
   <div>
-    <section>
+    <section class="relative overflow-hidden">
       <div class="h-1/2">
-        <div class="relative overflow-hidden">
-          <!-- Slider Images -->
-          <div
-            class="slider flex transition-transform duration-500"
-            :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-          >
-            <img src="/images/1.png" alt="Helmet Fresh" class="w-full flex-shrink-0" />
-            <img src="/images/2.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
-            <img src="/images/3.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
-            <img src="/images/4.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
-            <img src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
-          </div>
-
-          <!-- Slider Controls -->
-          <button
-            @click="prevSlide"
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 flex items-center justify-center"
-          >
-            <span class="material-icons">chevron_left</span>
-          </button>
-          <button
-            @click="nextSlide"
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 flex items-center justify-center"
-          >
-            <span class="material-icons">chevron_right</span>
-          </button>
+        <!-- Slider Images -->
+        <div
+          class="slider flex transition-transform duration-500"
+          :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
+          @touchstart="startTouch"
+          @touchmove="moveTouch"
+          @touchend="endTouch"
+        >
+          <img src="/images/1.png" alt="Helmet Fresh" class="w-full flex-shrink-0" />
+          <img src="/images/2.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
+          <img src="/images/3.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
+          <img src="/images/4.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
+          <img src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
         </div>
+
+        <!-- Slider Controls -->
+        <button
+          @click="prevSlide"
+          aria-label="Previous slide"
+          class="absolute left-4 top-1/2  bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 hidden lg:block"
+        >
+          <span class="material-icons">chevron_left</span>
+        </button>
+        <button
+          @click="nextSlide"
+          aria-label="Next slide"
+          class="absolute right-4 top-1/2  bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 hidden lg:block"
+        >
+          <span class="material-icons">chevron_right</span>
+        </button>
       </div>
     </section>
-
-
   </div>
 </template>
 
@@ -43,10 +44,16 @@ const currentSlide = ref(0);
 const totalSlides = 5;
 let autoSlideInterval;
 
+// Touch event variables
+let startX = 0;
+let endX = 0;
+
+// Navigate to the previous slide
 const prevSlide = () => {
   currentSlide.value = (currentSlide.value - 1 + totalSlides) % totalSlides;
 };
 
+// Navigate to the next slide
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % totalSlides;
 };
@@ -67,6 +74,25 @@ onBeforeUnmount(() => {
 onMounted(() => {
   startAutoSlide();
 });
+
+// Touch event handlers
+const startTouch = (event) => {
+  startX = event.touches[0].clientX;
+};
+
+const moveTouch = (event) => {
+  endX = event.touches[0].clientX;
+};
+
+const endTouch = () => {
+  if (startX - endX > 50) {
+    // Swiped left
+    nextSlide();
+  } else if (endX - startX > 50) {
+    // Swiped right
+    prevSlide();
+  }
+};
 </script>
 
 <style scoped>
@@ -79,8 +105,22 @@ button {
   transition: all 0.3s ease;
 }
 
-/* Add additional styles for the buttons */
 button:hover {
   transform: scale(1.1);
+}
+
+/* Additional styles for better responsiveness */
+@media (max-width: 640px) {
+  button {
+    px: 3;
+    py: 1.5;
+  }
+}
+
+@media (min-width: 640px) {
+  button {
+    px: 4;
+    py: 2;
+  }
 }
 </style>
