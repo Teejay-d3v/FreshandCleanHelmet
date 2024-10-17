@@ -1,9 +1,10 @@
 <template>
   <div>
-    <section class="bg-gradient-to-r from-blue-100 to-teal-100">
-      <div class="text-center pt-10">
-        <h1 class="text-indigo-600">How it Works</h1>
-      </div>
+    <section class="bg-gradient-to-r from-blue-100 to-teal-100 py-20">
+      <div class="flex flex-col text-center w-full  mx-auto">
+          <h1 class="text-3xl font-bold text-indigo-600">Walkthrough</h1>
+          <p class="text-black text-center text-5xl">Watch this video to see how it works!</p>
+        </div>
       <div class="video-wrapper ">
         <div class="video-container ">
           <video

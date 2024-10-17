@@ -1,14 +1,12 @@
 <template>
   <div>
     <section class="text-gray-600 body-font bg-gradient-to-r from-blue-100 to-teal-100">
-      <div class="flex flex-col items-center py-12">
-        <div ref="title" class="bg-white pt-5 px-10 shadow-lg text-center  rounded-3xl ">
-          <h1 id="product2"  class="text-5xl font-bold mb-4 text-center text-indigo-600">Testimonials</h1>
-          <p ref="paragraph" class="text-3xl text-black mb-8 text-center max-w-3xl">
-            What our happy user says!         </p>
+      <div class="px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="text-3xl font-bold text-indigo-600">Testimonials</h1>
+          <p class="text-black text-5xl">What our happy user says!</p>
         </div>
-      </div>
-      <div class="px-5 pb-24 mx-auto">
+
         <!-- Splide Slider -->
         <div id="testimonial-slider" class="splide" aria-label="Testimonials">
           <div class="splide__track">

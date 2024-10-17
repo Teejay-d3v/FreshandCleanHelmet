@@ -1,10 +1,10 @@
 <template>
   <section  class="bg-gradient-to-r from-blue-100 to-teal-100 ">
     <div  class=" custom-bg-image min-h-screen flex flex-col items-center justify-center p-6 ">
-      <div ref="title" class="bg-white pt-5 px-10 shadow-lg text-center justify-center rounded-3xl">
-        <h1 id="product2"  class="text-5xl font-bold mb-4 text-center text-indigo-600">Introducing Helmet Pro</h1>
-        <p ref="paragraph" class="text-lg text-black mb-8 text-center max-w-3xl">
-          Helmet Pro is an innovative vending machine designed specifically for cleaning helmets. This page provides a summary of its features and benefits, showcasing how it can enhance the safety and comfort of your riding experience.
+      <div ref="title" class=" pt-5 px-10  text-center justify-center rounded-3xl">
+        <h1 id="product2"  class="text-3xl font-bold mb-4 text-center text-indigo-600">Introducing Helmet Pro</h1>
+        <p ref="paragraph" class="text-5xl text-black mb-8 text-center max-w-3xl">
+          Enjoy clean, fresh helmets for enhanced safety and comfort while riding.
         </p>
       </div>
       <!-- Desktop view -->
