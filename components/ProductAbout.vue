@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-300 py-24">
+  <div class="bg-gradient-to-r from-blue-100 to-teal-100 py-24">
     <!-- Section One -->
-    <section class="bg-gray-300">
-      <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-gradient-to-b from-blue-300 to-teal-300">
+    <section class="">
+      <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl">
         <div ref="image1" class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
           <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
             alt="Deep-Clean Technology" src="/public/images/product4.png">
@@ -20,8 +20,8 @@
     </section>
 
     <!-- Section Two -->
-    <section class="bg-gray-300 py-5">
-      <div class="container mx-auto flex flex-col md:flex-row-reverse items-center rounded-3xl bg-gradient-to-b from-blue-300 to-teal-300">
+    <section class="">
+      <div class="container mx-auto flex flex-col md:flex-row-reverse items-center rounded-3xl bg-white mb-20 shadow-2xl">
         <div ref="image2" class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
           <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
             alt="Turbo-Dry System" src="/public/images/product2.png">
@@ -39,8 +39,8 @@
     </section>
 
     <!-- Section Three -->
-    <section class="bg-gray-300 py-5">
-      <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-gradient-to-b from-blue-300 to-teal-300">
+    <section class="">
+      <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl">
         <div ref="image3" class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
           <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
             alt="Bacteria-Busting Power" src="/public/images/product3.png">
@@ -59,6 +59,7 @@
     
     <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
   </div>
+
 </template>
 
 <script setup>

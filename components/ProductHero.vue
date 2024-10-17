@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section id="product1-section" class="bg-gradient-to-b from-blue-400 to-teal-300 text-gray-700 py-24">
-      <div class="container mx-auto px-5">
+    <section id="product1-section" class="bg-gradient-to-r from-blue-100 to-teal-100 text-gray-700 py-20 shadow-2xl">
+      <div class=" mx-auto px-5">
         <div class="lg:w-4/5 mx-auto flex flex-wrap bg-white rounded-3xl shadow-2xl overflow-hidden">
           <!-- Main Slider Section -->
           <div class="lg:w-2/4 w-full flex flex-col items-center justify-center p-8 bg-gray-50">

@@ -1,10 +1,10 @@
 <template>
-  <div class="py-24 bg-gray-300">
-    <section id="contact-section" class="text-gray-700 body-font relative bg-gray-300 ">
-      <div class="container px-6 py-12 mx-auto flex flex-wrap md:flex-nowrap ">
-        
+
+    <section id="contact-section" class="text-gray-700 body-font relative bg-gradient-to-r from-blue-100 to-teal-100">
+      <div class="container px-6 py-12 mx-auto flex flex-wrap md:flex-nowrap">
+
         <!-- Map Section -->
-        <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden shadow-lg sm:mr-10 p-6 flex items-end justify-start relative bg-white">
+        <div class="lg:w-2/3 md:w-1/2 overflow-hidden shadow-lg sm:mr-10 p-6 flex rounded-3xl items-end justify-start relative bg-white">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24681.2575744279!2d120.98698490152704!3d14.388682621475626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1729077156466!5m2!1sen!2sph"
             width="100%"
@@ -15,7 +15,7 @@
             referrerpolicy="no-referrer-when-downgrade"
             class="absolute inset-0"
           ></iframe>
-          <div class="bg-white relative flex flex-wrap p-6 rounded-lg shadow-md z-10">
+          <div class="bg-white relative flex flex-wrap p-6 rounded-3xl shadow-md z-10">
             <div class="lg:w-1/2 px-4">
               <h2 class="text-indigo-600 font-semibold text-xs mb-1">ADDRESS</h2>
               <p class="text-sm">Agoho St. Ph2 Central, Camella Springville, Molino 3, Bacoor, Cavite.</p>
@@ -29,10 +29,10 @@
         </div>
 
         <!-- Feedback Form Section -->
-        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full mt-8 md:mt-0 rounded-lg shadow-lg p-6 bg-gradient-to-b from-blue-300 to-teal-300">
-          <h1 id="product2"  class="text-5xl font-bold mb-4 text-center text-indigo-600">Partner with Us</h1>
-          <h5 class=" text-gray-900 font-semibold mb-4 ">Interested in learning more or need a quotation for our Business Partner Package</h5>
-          <p class="text-gray-600 mb-6"> Fill out the form below, and let's start growing your business with HelmetPro.</p>
+        <div class="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full mt-8 md:mt-0 rounded-3xl shadow-lg p-6 bg-white">
+          <h1 id="product2" class="text-5xl font-bold mb-4 text-center text-indigo-600">Partner with Us</h1>
+          <h5 class="text-gray-900 font-semibold mb-4">Interested in learning more or need a quotation for our Business Partner Package?</h5>
+          <p class="text-gray-600 mb-6">Fill out the form below, and let's start growing your business with HelmetPro.</p>
           <form @submit.prevent="sendEmail" class="space-y-4">
             <div class="relative">
               <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
@@ -64,13 +64,13 @@
               ></textarea>
             </div>
             <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">
-              Send Feedback
+              Send Inquiry
             </button>
           </form>
         </div>
       </div>
     </section>
-  </div>
+
 </template>
 
 <script setup>
@@ -83,6 +83,11 @@ const formData = ref({
   message: '',
 });
 
+// EmailJS configuration
+const SERVICE_ID = 'service_rlub4bt';
+const TEMPLATE_ID = 'template_lsp03vi';
+const USER_ID = 'IH6ELxmbp_OqIIHco'; 
+
 const sendEmail = () => {
   const templateParams = {
     from_name: formData.value.name,
@@ -90,13 +95,17 @@ const sendEmail = () => {
     message: formData.value.message,
   };
 
-  emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
     .then(() => {
       alert('Your feedback has been sent successfully!');
-      formData.value = { name: '', email: '', message: '' };
-    }, (error) => {
+      // Clear the form fields after sending
+      formData.value.name = '';
+      formData.value.email = '';
+      formData.value.message = '';
+    })
+    .catch((error) => {
       console.error('Failed to send email:', error);
-      alert('There was an error sending your feedback. Please try again later.');
+      alert('There was an error sending your feedback: ' + JSON.stringify(error));
     });
 };
 </script>

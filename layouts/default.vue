@@ -30,7 +30,7 @@
 
       <!-- Navigation Bar -->
       <section>
-        <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-300 to-teal-300 bg-opacity-40 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
+        <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-200 to-teal-200 bg-opacity-40 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
           <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
             <NuxtLink to="/" class="text-2xl font-bold text-black">
               <img src="/images/logo2.png" alt="Logo" class="h-12 md:h-24" />
@@ -134,7 +134,13 @@ setupAnimations([
   .custom-bg-image {
     height: 100%;
     width: 100%;
-    background-image: url('/images/image1.png');
+    background: linear-gradient(
+      89.65deg,
+      rgba(120, 175, 253, 0.1) 11.52%,
+      #0B2B5A 146.14%
+    ),
+    url('/images/image1.png');
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
