@@ -1,7 +1,7 @@
 <template>
-  <section  class="bg-gray-300 ">
+  <section  class="bg-gradient-to-r from-blue-100 to-teal-100 ">
     <div  class=" custom-bg-image min-h-screen flex flex-col items-center justify-center p-6 ">
-      <div ref="title" class="bg-gradient-to-b from-blue-300 to-teal-300 bg-opacity-100 pt-5 px-10 shadow-lg text-center justify-center rounded-3xl">
+      <div ref="title" class="bg-white pt-5 px-10 shadow-lg text-center justify-center rounded-3xl">
         <h1 id="product2"  class="text-5xl font-bold mb-4 text-center text-indigo-600">Introducing Helmet Pro</h1>
         <p ref="paragraph" class="text-lg text-black mb-8 text-center max-w-3xl">
           Helmet Pro is an innovative vending machine designed specifically for cleaning helmets. This page provides a summary of its features and benefits, showcasing how it can enhance the safety and comfort of your riding experience.
@@ -61,17 +61,5 @@ setupAnimations([
 </script>
 
 <style scoped>
-  .custom-bg-image {
-    height: 100%;
-    width: 100%;
-    background-image: url('/images/image2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 1rem; /* Add padding for spacing on smaller screens */
-  }
+
 </style>
