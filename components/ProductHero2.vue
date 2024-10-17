@@ -4,7 +4,7 @@
       <div ref="title" class=" pt-5 px-10  text-center justify-center rounded-3xl">
         <h1 id="product2"  class="text-3xl font-bold mb-4 text-center text-indigo-600">Introducing Helmet Pro</h1>
         <p ref="paragraph" class="text-5xl text-black mb-8 text-center max-w-3xl">
-          Enjoy clean, fresh helmets for enhanced safety and comfort while riding.
+          Enjoy clean, fresh helmets for enhanced comfort while riding.
         </p>
       </div>
       <!-- Desktop view -->
