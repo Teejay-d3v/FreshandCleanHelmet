@@ -30,33 +30,49 @@
 
       <!-- Navigation Bar -->
       <section>
-        <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-200 to-teal-200 bg-opacity-40 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
-          <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
-            <NuxtLink to="/" class="text-2xl font-bold text-black">
-              <img src="/images/logo2.png" alt="Logo" class="h-12 md:h-24" />
-            </NuxtLink>
-            <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 text-sm md:text-lg font-semibold shadow-lg focus:outline-none">
-              Order Now
-            </button>
-          </div>
-        </nav>
-        <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
-      </section>
+    <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-300 to-teal-300 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
+      <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
+        <!-- Logo -->
+        <NuxtLink to="/" class="flex items-center">
+          <img src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" />
+
+        </NuxtLink>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+         
+        </div>
+
+        <!-- Button Group for Actions -->
+        <div class="flex space-x-4">
+          <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 text-sm md:text-lg font-semibold shadow-lg focus:outline-none">
+            Book Now
+          </button>
+
+        </div>
+      </div>
+    </nav>
+    <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
+  </section>
       
       <div>
         <slot />
       </div>
 
-      <footer class="bg-gradient-to-r from-blue-300 to-teal-300 bg-opacity-90 text-white py-8">
-        <div class="container mx-auto flex flex-col items-center text-center">
-          <NuxtLink to="/" class="flex items-center mb-4">
-            <img src="/images/logo2.png" alt="Logo" class="h-12 md:h-24 transition-transform duration-300 hover:scale-110" />
-          </NuxtLink>
-          <p class="text-sm md:text-lg font-semibold mb-2">
-            &copy; {{ new Date().getFullYear() }} Helmet Clean and Fresh. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <footer class="bg-gradient-to-r from-blue-200 to-teal-100 p-6 text-white">
+          <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+              <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-3" />
+            </div>
+            <div class="text-center text-md font-bold text-indigo-700">
+              <p class="mb-2 text-indigo-600">Email: <a href="mailto:example@example.com" class="underline">example@example.com</a></p>
+              <p>Contact: <span class=" text-indigo-600 ">+1 (234) 567-8901</span></p>
+            </div>
+          </div>
+          <div class="text-center font-bold mt-4 text-indigo-600 ">
+            <p>&copy; {{ new Date().getFullYear() }} Your Company Name. All rights reserved.</p>
+          </div>
+        </footer>
     </div>
 </template>
 
@@ -177,5 +193,15 @@ setupAnimations([
       width: 80vw; /* Resize image even further for mobile devices */
     }
   }
+  nav {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
   </style>

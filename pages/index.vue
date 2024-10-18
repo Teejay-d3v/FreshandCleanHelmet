@@ -1,8 +1,10 @@
 <template>
   <div>
+
     <ProductHero  />
     <ProductFeatures  />
     <Video  />
+    <BookNow />
     <ProductAbout  />  
 
 
@@ -10,8 +12,9 @@
 
     <ProductHero2  />
     <ProductReviews />
-    <ContactUs  />
-  
+    <!-- <ContactUs  /> -->
+
+    <InquiryForm />
   </div>
 </template>
 
@@ -19,7 +22,9 @@
 import ProductHero from '@/components/ProductHero.vue';
 import ProductFeatures from '@/components/ProductFeatures.vue';
 import ProductAbout from '~/components/ProductAbout.vue';
-import ContactUs from '~/components/ContactUs.vue';
 import ProductReviews from '~/components/ProductReviews.vue';
 import Video from '~/components/Video.vue';
+
+import BookNow from '~/components/BookNow.vue';
+import InquiryForm from '~/components/InquiryForm.vue';
 </script>
