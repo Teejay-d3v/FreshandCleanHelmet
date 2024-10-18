@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="product1-section" class="bg-gradient-to-r from-blue-100 to-teal-100 text-gray-700 py-20 shadow-2xl">
+    <section id="product1-section" class="bg-gradient-to-r from-blue-100 to-teal-100 text-gray-700 py-28 shadow-2xl">
       <div class="flex justify-center items-center px-5">
   <div class="lg:w-4/5 w-full flex flex-wrap bg-white rounded-3xl shadow-2xl overflow-hidden">
     <!-- Main Slider Section -->

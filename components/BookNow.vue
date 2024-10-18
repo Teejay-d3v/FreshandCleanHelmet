@@ -1,33 +1,47 @@
 <template>
   <div>
-    <section class="text-gray-200   bg-gray-700">
-      <div class="container px-5 py-10 mx-auto">
-        <div class="lg:w-4/5 mx-auto flex flex-wrap">
-          <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-            <h2 class="text-sm title-font text-gray-400 tracking-widest">BRAND NAME</h2>
-            <h2 class="text-5xl font-extrabold mb-4">Ready to Book?</h2>
-            <p class="text-lg mb-8">
-              Secure your spot now! Click the button below and fill out our Google Form.
+    <section
+      id="product1-section"
+      class="bg-gradient-to-r from-blue-100 to-teal-100 text-gray-700 py-10 shadow-lg rounded-lg"
+    >
+      <div class="container mx-auto flex justify-center items-center px-5">
+        <div class="lg:w-4/5 w-full flex flex-wrap bg-white rounded-3xl shadow-lg overflow-hidden">
+          <!-- Product Details Section -->
+          <div class="lg:w-2/4 w-full p-16 flex flex-col lg:mt-20 ">
+            <h2 class="text-sm title-font text-gray-400 tracking-widest mb-2">This is your chance to secure your spot</h2>
+            <h2 class="text-4xl font-extrabold mb-4 text-blue-700 ">Ready to Book?</h2>
+            <p class="text-lg mb-8 leading-relaxed py-2">
+              Ready to secure your spot? <span class="font-bold text-indigo-700">Book an Appointment</span> by clicking the button below and filling out our form!
             </p>
-            <a
+            <div class="">
+                <a
                 href="https://forms.gle/your-google-form-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-block px-10 py-4 bg-blue-600 text-white font-semibold  hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition-all duration-300 ease-in-out"
+                class="inline-block px-10 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
               >
                 Book Now
               </a>
+            </div>
           </div>
-          <img alt="ecommerce" class="lg:w-1/2 w-full  lg:h-auto h-64 object-cover object-center " src="/images/machine10.png">
+          
+          <!-- Main Slider Section -->
+          <div class="lg:w-2/4 w-full flex flex-col items-center shadow-md justify-center p-8 bg-gray-50">
+            <div class="w-full rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+              <img
+                src="/images/machine10.png"
+                alt="Helmet Clean and Fresh Machine"
+                class="w-full h-auto object-cover rounded-lg "
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    </div>
+  </div>
 </template>
 
 <script setup>
-// No JavaScript needed for this component as it is a simple redirection to a Google Form
 </script>
 
 <style scoped>
