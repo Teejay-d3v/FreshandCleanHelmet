@@ -1,13 +1,13 @@
 <template>
-  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 py-16">
-    <div class="container mx-auto flex flex-col items-center text-center">
+  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 py-28">
+    <div class=" mx-auto flex flex-col items-center text-center">
       <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Motorcycle Usage in the Philippines</h1>
       <p class="text-lg lg:text-xl text-gray-700 mb-8 px-4">
         As of 2024, there are approximately 
         <span ref="motorcycleCount1" class="font-bold text-indigo-600 text-5xl">0</span> 
         registered motorcycles in the Philippines.
       </p>
-      <p class="text-md lg:text-lg mb-4 px-4">
+      <p class="text-md lg:text-lg mb-4 px-96">
         Most of these riders are committed to safety, proudly donning helmets on every journey. Yet, many face the challenge of odor and hygiene.
         Our Vending Fresh and Clean Helmet service is not just a solution—it’s a revolution!
       </p>
@@ -15,13 +15,13 @@
         <img src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-auto rounded-2xl shadow-lg" />
         <div class="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white p-6">
-          <p class="text-md lg:text-lg text-center mb-6 px-60">
-            <span class="text-3xl lg:text-4xl font-bold">Imagine the impact on your business by offering riders a safe and convenient way to clean their helmets!</span> 
+          <p class="text-3xl lg:text-4xl font-bold  mb-2 px-96">
+            <span class="text-3xl lg:text-4xl font-bold pb-2">Imagine the impact on your business by offering riders a safe and convenient way to clean their helmets!</span> 
+          </p>
+          <p class="text-md lg:text-lg text-center mb-6 px-96">
            <br> Our innovative vending machines cater to a growing demand, ensuring that every helmet is sanitized, fresh, and ready for the next ride.
           </p>
-          <p class="text-md lg:text-lg text-center mb-6  px-60">
-            <span>Join the movement toward safer, cleaner riding experiences.</span> With our Helmet Cleaning Vending Machines, you are not only providing a valuable service but also positioning your business at the forefront of a safety revolution.
-          </p>
+          
           <button @click="openModal" class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
             Learn More About This Opportunity
           </button>

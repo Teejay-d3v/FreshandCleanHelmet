@@ -1,5 +1,14 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-300 to-teal-100 pt-32 pb-10">
+  
+  <div class="bg-gradient-to-r from-blue-300 to-teal-100  pb-10">
+    <section>
+      <div class="container mx-auto flex flex-col items-center text-center">
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Revolutionizing Helmet Hygiene with Advanced Technology</h1>
+        <span class="text-lg lg:text-xl text-gray-700 mb-8">
+            Our Fresh and Clean Helmet vending machines utilize cutting-edge technology to deliver a seamless and efficient helmet cleaning experience. Equipped with automated sanitization systems, they ensure that every helmet is thoroughly cleaned and deodorized in just minutes. By leveraging smart sensors and user-friendly interfaces, we provide riders with an innovative solution that not only enhances safety but also promotes a culture of cleanliness within the motorcycle community. Join us in transforming helmet hygiene and setting a new standard in the industry!
+          </span>
+      </div>
+    </section>
     <!-- Section One -->
     <section class="">
       <div class="container mx-auto h-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">

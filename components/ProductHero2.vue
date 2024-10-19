@@ -1,6 +1,13 @@
 <template>
   <section class="bg-gradient-to-r from-blue-300 to-teal-100">
+    <div class="mx-auto flex flex-col items-center text-center">
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Partnering for Success</h1>
+        <p class="text-lg lg:text-xl text-gray-700 mb-8 px-96">
+          Join us in creating innovative solutions for cleaner, safer helmets, while unlocking new opportunities for growth and collaboration in the motorcycle industry.
+        </p>
+    </div>
     <div class="mx-auto flex items-center justify-center min-h-screen relative overflow-hidden">
+
       <!-- Image -->
       <img src="/images/partnership.jpg" alt="Partnership" class="absolute inset-0 w-full h-full object-cover" />
       
