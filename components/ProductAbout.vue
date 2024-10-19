@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-100 to-teal-100 pt-32 pb-10">
+  <div class="bg-gradient-to-r from-blue-300 to-teal-100 pt-32 pb-10">
     <!-- Section One -->
     <section class="">
       <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl">
@@ -50,6 +50,7 @@
         </div>
       </div>
     </section>
+
     
     <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
   </div>

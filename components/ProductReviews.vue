@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="text-gray-600 body-font bg-gradient-to-r from-blue-100 to-teal-100">
+    <section class="text-gray-600 body-font bg-gradient-to-r from-blue-300 to-teal-100">
       <div class="px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="text-3xl font-bold text-indigo-600">Testimonials</h1>
-          <p class="text-black text-5xl">What our happy user says!</p>
+          <h1 class="text-5xl font-bold text-indigo-600">Testimonials</h1>
+          <p class="text-black text-3xl">What our happy user says!</p>
         </div>
 
         <!-- Splide Slider -->

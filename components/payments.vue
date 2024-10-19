@@ -37,6 +37,10 @@
             <span class="text-gray-700">Helmet Fresh and Clean</span>
             <span class="font-semibold text-green-500">{{ formattedPrice }}</span>
           </div>
+          <div class="flex justify-between items-center mt-2">
+            <span class="text-gray-700">Shipping fee</span>
+            <span class="font-semibold text-green-500">{{ formattedShiping }}</span>
+          </div>
         </div>
 
         <!-- PayPal Button Container -->
@@ -53,11 +57,16 @@
 import { ref, watch, defineProps, defineEmits, computed } from 'vue';
 import { loadScript } from '@paypal/paypal-js';
 
-const price = ref(3580.00); // Original price
+const price = ref(3580.00);
+const shippingfee = ref(1500.00);
 
 const formattedPrice = computed(() => {
   // Format the price to include commas
   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price.value);
+});
+const formattedShiping = computed(() => {
+  // Format the price to include commas
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(shippingfee.value);
 });
 // Define props
 const props = defineProps({

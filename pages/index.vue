@@ -4,16 +4,12 @@
     <ProductHero  />
     <ProductFeatures  />
     <Video  />
-    <BookNow />
     <ProductAbout  />  
-
-
-
-
+    <BookNow />
+    <WayToEarn />
     <ProductHero2  />
     <ProductReviews />
     <!-- <ContactUs  /> -->
-
     <InquiryForm />
   </div>
 </template>
@@ -24,7 +20,7 @@ import ProductFeatures from '@/components/ProductFeatures.vue';
 import ProductAbout from '~/components/ProductAbout.vue';
 import ProductReviews from '~/components/ProductReviews.vue';
 import Video from '~/components/Video.vue';
-
 import BookNow from '~/components/BookNow.vue';
 import InquiryForm from '~/components/InquiryForm.vue';
+import WayToEarn from '~/components/WayToEarn.vue';
 </script>
