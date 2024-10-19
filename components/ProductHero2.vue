@@ -7,7 +7,7 @@
       <!-- Color Overlay -->
       <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
-      <div class="relative flex flex-col items-center justify-center text-center gap-6 px-4 z-10">
+      <div class="relative flex flex-col items-center justify-center text-center gap-6 mt-96 px-4 z-10">
         <h1 class="text-3xl sm:text-4xl md:text-5xl mb-4 text-white rounded-2xl font-extrabold px-2">
           More Than Just Vending Machines — We’re Your Partner in Business Growth
         </h1>
