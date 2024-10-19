@@ -2,14 +2,16 @@
   <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 py-28">
     <div class=" mx-auto flex flex-col items-center text-center">
       <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Motorcycle Usage in the Philippines</h1>
-      <p class="text-lg lg:text-xl text-gray-700 mb-8 px-4">
+      <p class="text-lg lg:text-xl text-gray-700 mb-2 px-4">
         As of 2024, there are approximately 
-        <span ref="motorcycleCount1" class="font-bold text-indigo-600 text-5xl">0</span> 
-        registered motorcycles in the Philippines.
+
+        registered motorcycles in the Philippines. 
       </p>
-      <p class="text-md lg:text-lg mb-4 px-96">
+      <p ref="achievementCounter1" class="font-bold mb-2 text-indigo-600 text-5xl">
+        0
+      </p>
+      <p class="text-md lg:text-lg mb-10  ">
         Most of these riders are committed to safety, proudly donning helmets on every journey. Yet, many face the challenge of odor and hygiene.
-        Our Vending Fresh and Clean Helmet service is not just a solution—it’s a revolution!
       </p>
       <div class="relative w-full mb-8">
         <img src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-auto rounded-2xl shadow-lg" />
@@ -36,7 +38,7 @@ import { ref, onMounted } from 'vue';
 import { useAnimations } from '@/composables/useAnimations';
 
 const motorcycleCount1 = ref(null);
-const motorcycleCount = ref(8470000);
+const achievementCounter1 = ref(null)
 const sectionRef = ref(null);
 const { setupAnimations } = useAnimations();
 
@@ -55,18 +57,14 @@ const animateNumber = (element, end, duration = 1000) => {
   requestAnimationFrame(step);
 };
 
-// Trigger animation on component mount
-onMounted(() => {
-  animateNumber(motorcycleCount1.value, motorcycleCount.value, 2000);
-});
-
-setupAnimations([{
-  element: sectionRef,
-  customFn: () => {
-    // Call the animateNumber function here if you want it triggered by scrolling
-    // animateNumber(motorcycleCount1.value, motorcycleCount.value, 2000);
-  }
-}]);
+setupAnimations([
+  {
+    element: sectionRef,
+    customFn: () => {
+      animateNumber(achievementCounter1.value, 8470000, 2000)
+    }
+  },
+])
 </script>
 
 <style scoped>
