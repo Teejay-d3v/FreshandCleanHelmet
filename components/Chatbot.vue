@@ -15,11 +15,11 @@
           style="top: 0; left: 0;" 
         >
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform?usp=send_form"
             target="_blank"
             rel="noopener noreferrer"
           >
-           Learn More
+           Book Now
           </a>
         </button>
         <button
@@ -32,7 +32,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-           Inquiry
+           Inquire Now
           </a>
         </button>
         <button
@@ -41,7 +41,7 @@
           style="top: 0; left: 0;"  
         >
         <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdagJhiw1LHysZAHzuqV16C6vQPvLy9dHs0o3bUxza1HqvV_Q/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >

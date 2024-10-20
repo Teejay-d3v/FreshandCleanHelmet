@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gradient-to-r from-blue-300 to-teal-100">
-    <div class="lg:w-4/5 mx-auto pt-12">
+    <div class="lg:w-4/5 mx-auto py-12">
       <div class="  shadow-lg rounded-t-lg p-8  mx-auto">
         <h1 class="text-5xl font-bold text-center mb-6 text-indigo-600">How You Can Earn with Helmet Pro</h1>
         <p class="text-lg w-3/4 mx-auto text-gray-600  text-center ">

@@ -1,6 +1,6 @@
 <template>
   
-  <div class="bg-gradient-to-r from-blue-300 to-teal-100  pb-10">
+  <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-20">
     <section>
       <div class="container mx-auto flex flex-col items-center text-center">
         <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Revolutionizing Helmet Hygiene with Advanced Technology</h1>

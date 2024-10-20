@@ -1,5 +1,5 @@
 <template>
-  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 py-28">
+  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 pt-20">
     <div class=" mx-auto flex flex-col items-center text-center">
       <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Motorcycle Usage in the Philippines</h1>
       <p class="text-lg lg:text-xl text-gray-700 mb-2 px-4">

@@ -1,5 +1,6 @@
   <template>
     <div>
+      <Chatbot /> 
       <!-- Banner Section -->
       <section class="relative w-full bg-indigo-50 text-white md:h-screen overflow-hidden">
       <div class="custom-bg-image">
@@ -43,11 +44,28 @@
 
         <!-- Navigation Links -->
         <div class="hidden md:flex space-x-8">
-         
+
         </div>
 
         <!-- Button Group for Actions -->
         <div class="flex space-x-4">
+          <NuxtLink to="/" class="flex items-center">
+          Home
+
+        </NuxtLink>
+        <NuxtLink to="/about" class="flex items-center">
+          About
+        </NuxtLink>
+
+        <NuxtLink to="/Computation" class="flex items-center">
+          Computation
+        </NuxtLink>
+        <NuxtLink to="/faqs" class="flex items-center">
+          FAQ's
+        </NuxtLink>
+        <NuxtLink to="/contactUs" class="flex items-center">
+          Contact Us
+        </NuxtLink>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform"
             target="_blank"
@@ -62,7 +80,6 @@
         </div>
       </div>
     </nav>
-    <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
     </section>
       
       <div>
@@ -89,7 +106,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import ModalComponent from '../components/payments.vue';
 import { useAnimations } from '@/composables/useAnimations';
 import Chatbot from '@/components/Chatbot.vue';
 const { setupAnimations } = useAnimations();
@@ -121,16 +137,6 @@ setupAnimations([
   },
 ]);
 
-  // Define reactive state for modal visibility
-  const isModalOpen = ref(false);
-
-  const openModal = () => {
-    isModalOpen.value = true; // Set modal visibility to true
-  };
-
-  const closeModal = () => {
-    isModalOpen.value = false; // Set modal visibility to false
-  };
 
   const isHidden = ref(false);
   let lastScrollY = 0;
@@ -152,12 +158,7 @@ setupAnimations([
     window.removeEventListener('scroll', handleScroll);
   });
 
-  const scrollToSection = (sectionId) => {
-  const sectionElement = document.getElementById(sectionId);
-  if (sectionElement) {
-    sectionElement.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+
   </script>
 
   <style scoped>
