@@ -104,7 +104,7 @@
               <li class="splide__slide">
                 <div class="p-6 border-2 rounded-lg bg-white shadow-lg transform transition duration-500">
                   <div class="h-full text-center">
-                    <p class="leading-relaxed text-gray-700 italic">"Ang ganda ng partnership namin with HelmetPro. Maayos yung machine, at solid yung support nila mula sa simula—hands-on sa setup at laging andyan kapag may kailangan. Pinaka nagustuhan ko sa kanila ay may ‘Business Support Manager’ na naka-assign sa amin, lalo na sa mga tulad namin na walang masyadong experience sa negosyo, kaya malaking tulong ang guidance at assistance. Highly recommend sa mga naghahanap ng maaasahang business partner"</p>
+                    <p class="leading-relaxed text-gray-700 italic">"Maayos yung machine, at solid yung support nila mula sa simula—hands-on sa setup at laging andyan kapag may kailangan. Pinaka nagustuhan ko sa kanila ay may ‘Business Support Manager’ na naka-assign sa amin, lalo na sa mga tulad namin na walang masyadong experience sa negosyo, kaya malaking tulong ang guidance at assistance. Highly recommend sa mga naghahanap ng maaasahang business partner"</p>
                     <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
                     <div class="flex items-center justify-center">
                       <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="https://dummyimage.com/302x302">
