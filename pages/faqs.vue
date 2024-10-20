@@ -1,10 +1,10 @@
 <template>
-    <Facts />
-    <Facts2 />
+      <Faqs />
 </template>
 
 <script setup>
-import Facts from '../components/Facts.vue';
+
+
 definePageMeta({
   layout: 'custom-layout',
   name: 'FAQS',
