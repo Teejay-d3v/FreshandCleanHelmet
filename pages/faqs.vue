@@ -1,6 +1,6 @@
 <template>
     <Facts />
-    
+    <Facts2 />
 </template>
 
 <script setup>
