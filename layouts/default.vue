@@ -34,7 +34,7 @@
 
       <!-- Navigation Bar -->
       <section>
-    <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-300 to-teal-300 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
+    <nav :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-400 to-teal-400 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]">
       <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center">
@@ -44,28 +44,28 @@
 
         <!-- Navigation Links -->
         <div class="hidden md:flex space-x-8">
+          <NuxtLink to="/" class="text-white hover:text-gray-200 transition duration-300">
+          Home
 
+        </NuxtLink>
+        <NuxtLink to="/about" class="text-white hover:text-gray-200 transition duration-300">
+          About
+        </NuxtLink>
+
+        <NuxtLink to="/Computation" class="text-white hover:text-gray-200 transition duration-300">
+          Computation
+        </NuxtLink>
+        <NuxtLink to="/faqs" class="text-white hover:text-gray-200 transition duration-300">
+          FAQ's
+        </NuxtLink>
+        <NuxtLink to="/contactUs" class="text-white hover:text-gray-200 transition duration-300">
+          Contact Us
+        </NuxtLink>
         </div>
 
         <!-- Button Group for Actions -->
         <div class="flex space-x-4">
-          <NuxtLink to="/" class="flex items-center">
-          Home
 
-        </NuxtLink>
-        <NuxtLink to="/about" class="flex items-center">
-          About
-        </NuxtLink>
-
-        <NuxtLink to="/Computation" class="flex items-center">
-          Computation
-        </NuxtLink>
-        <NuxtLink to="/faqs" class="flex items-center">
-          FAQ's
-        </NuxtLink>
-        <NuxtLink to="/contactUs" class="flex items-center">
-          Contact Us
-        </NuxtLink>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform"
             target="_blank"
@@ -105,7 +105,8 @@
 
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch  } from 'vue';
+import { useRouter } from 'vue-router';
 import { useAnimations } from '@/composables/useAnimations';
 import Chatbot from '@/components/Chatbot.vue';
 const { setupAnimations } = useAnimations();
@@ -113,10 +114,25 @@ const title = ref(null);
 const paragraph = ref(null);
 const image = ref(null);
 const isChatbotVisible = ref(false);
+const router = useRouter();
 
 const toggleChatbot = () => {
   isChatbotVisible.value = !isChatbotVisible.value;
 };
+const refreshChatbot = () => {
+  isChatbotVisible.value = false; // Hide the chatbot
+  setTimeout(() => {
+    isChatbotVisible.value = true; // Refresh after a short delay
+  }, 0); // Instant refresh
+};
+
+watch(router.currentRoute, () => {
+  refreshChatbot();
+});
+
+onMounted(() => {
+  isChatbotVisible.value = true; // Show the chatbot on initial load
+});
 
 // Setup animation for each image
 setupAnimations([

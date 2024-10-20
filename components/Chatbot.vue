@@ -5,7 +5,7 @@
         @click="toggleButtons"
         class=" z-10"
       >
-        <img src="/images/chatlogo.png" class="h-[130px] chat-logo" :class="{ 'rotate': isRotating }">
+        <img src="/public/images/chatlogo.png" class="h-[130px] chat-logo" :class="{ 'rotate': isRotating }">
       </button>
 
       <div v-if="showButtons" class="absolute flex flex-col items-center">

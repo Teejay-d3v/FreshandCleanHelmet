@@ -4,7 +4,7 @@
       <div class="container px-5  mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
           <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Contact Us / Visit Us</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We’re here to help! Reach out via email, phone, or visit our office at Molino 3, Bacoor. We look forward to connecting with you!</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We’re here to help you every step of the way! Whether you have questions, feedback, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!</p>
         </div>
       </div>
     </section>
@@ -34,7 +34,7 @@
 <script setup>
 definePageMeta({
   layout: 'custom-layout',
-  name: 'Contact Us',
+  name: 'CONTACT-US',
 });
 </script>
 

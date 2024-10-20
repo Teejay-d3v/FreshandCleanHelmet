@@ -1,7 +1,7 @@
 <template>
   <div>
     <Computation />
-    <!-- <WayToEarn /> -->
+    <ProductHero2  />
   </div>
 </template>
 
