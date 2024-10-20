@@ -19,7 +19,7 @@
           </div>
 
           <a
-          href="https://forms.gle/your-google-form-link"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform?usp=send_form"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"

@@ -18,12 +18,15 @@
           <p class="lg:w-2/3 mx-auto mb-6 text-base md:text-lg lg:text-xl text-white/80 leading-relaxed drop-shadow-md">
             Helmet Pro provides a revolutionary vending machine experience for helmet cleaning, combining advanced technology with convenience for every rider.
           </p>
-          <button
-            @click="scrollToSection('product2')"
-            class="bg-indigo-600 text-white py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 text-lg font-semibold focus:outline-none"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
           >
-            Learn More
-          </button>
+
+           Learn More
+          </a>
         </div>
       </div>
     </section>
@@ -45,15 +48,22 @@
 
         <!-- Button Group for Actions -->
         <div class="flex space-x-4">
-          <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 text-sm md:text-lg font-semibold shadow-lg focus:outline-none">
-            Book Now
-          </button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
+          >
+
+          Book Now
+          </a>
+
 
         </div>
       </div>
     </nav>
     <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
-  </section>
+    </section>
       
       <div>
         <slot />
@@ -81,12 +91,16 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import ModalComponent from '../components/payments.vue';
 import { useAnimations } from '@/composables/useAnimations';
-
+import Chatbot from '@/components/Chatbot.vue';
 const { setupAnimations } = useAnimations();
 const title = ref(null);
 const paragraph = ref(null);
 const image = ref(null);
+const isChatbotVisible = ref(false);
 
+const toggleChatbot = () => {
+  isChatbotVisible.value = !isChatbotVisible.value;
+};
 
 // Setup animation for each image
 setupAnimations([
@@ -203,5 +217,13 @@ button {
 
 button:hover {
   transform: translateY(-2px);
+}
+
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays on top of other elements */
 }
   </style>

@@ -10,23 +10,42 @@
       <p ref="achievementCounter1" class="font-bold mb-2 text-indigo-600 text-5xl">
         0
       </p>
-      <p class="text-md lg:text-lg mb-10  ">
-        Most of these riders are committed to safety, proudly donning helmets on every journey. Yet, many face the challenge of odor and hygiene.
-      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+        <div class="px-10">
+          <h3 class="text-indigo-600 ">Safety Commitment</h3>
+          <p class="text-md lg:text-lg mb-10 ">
+            Most riders are dedicated to safety, proudly donning helmets on every journey. However, many face the challenge of maintaining helmet hygiene and combating unpleasant odors.
+          </p>
+        </div>
+        <div class="px-10"> 
+          <h3 class="text-indigo-600">The Challenge</h3>
+          <p class="text-md lg:text-lg mb-10">
+            Helmets can accumulate dirt, sweat, and odor over time, making it essential for riders to have a reliable cleaning solution. This is where HelmetPro comes in.
+          </p>
+        </div>
+      </div>
+
+     
       <div class="relative w-full mb-8">
         <img src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-auto rounded-2xl shadow-lg" />
         <div class="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white p-6">
-          <p class="text-3xl lg:text-4xl font-bold  mb-2 px-96">
-            <span class="text-3xl lg:text-4xl font-bold pb-2">Imagine the impact on your business by offering riders a safe and convenient way to clean their helmets!</span> 
+          <h1 class="text-3xl lg:text-6xl font-extrabold mb-14">Your Business Opportunity</h1>
+          <p class="mb-2 px-1 md:px-96">
+            <span class="text-3xl lg:text-3xl font-bold pb-2">Imagine the impact on your business by offering riders a safe and convenient way to clean their helmets!</span> 
           </p>
-          <p class="text-md lg:text-lg text-center mb-6 px-96">
+          <p class="text-md lg:text-lg text-center mb-6 px-1  md:px-96">
            <br> Our innovative vending machines cater to a growing demand, ensuring that every helmet is sanitized, fresh, and ready for the next ride.
           </p>
           
-          <button @click="openModal" class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
-            Learn More About This Opportunity
-          </button>
+          <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform?usp=send_form"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
+        >
+          Inquire Now
+        </a>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@
     <div class="lg:w-2/4 w-full p-10 bg-white flex flex-col lg:mt-20 shadow-lg hover:shadow-2xl rounded-3xl transition-all duration-300">
       <div class="flex flex-col justify-center">
         <h2 class="text-sm title-font text-indigo-600 tracking-widest uppercase mb-2">Clean and Fresh</h2>
-        <h1 class="leading-snug text-gray-900 text-5xl title-font font-bold mb-14">Helmet Cleaning Vending Machine</h1>
+        <h1 class="leading-snug text-gray-900 text-xl lg:text-5xl title-font font-bold mb-14">Helmet Cleaning Vending Machine</h1>
 
         <div class="flex items-center mb-4">
           <div class="flex items-center">
@@ -46,14 +46,19 @@
         </div>
 
         <!-- Product Description -->
-        <p class="leading-relaxed mb-6 text-gray-700 text-lg">
+        <p class="leading-relaxed mb-6 text-gray-700 text-sm lg:text-lg">
           Experience the ultimate solution for maintaining your helmet's hygiene with our Automatic Intelligent Helmet Cleaning Machine. Enjoy quick dry cleaning, disinfection, and deodorization all in one convenient machine.
         </p>
-        <div class="flex items-center justify-between bg-indigo-100 p-6 rounded-lg shadow-inner mt-8">
-          <span class="title-font font-semibold text-4xl text-indigo-700">{{ formattedPrice }}</span>
-          <button @click="openModal" class="text-white bg-indigo-600 border-0 py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all duration-300 text-lg font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-            Order Now
-          </button>
+        <div class="">
+          <!-- <span class="title-font font-semibold text-4xl text-indigo-700">{{ formattedPrice }}</span> -->
+          <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform?usp=send_form"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
+        >
+          Inquire Now
+        </a>
         </div>
       </div>
     </div>

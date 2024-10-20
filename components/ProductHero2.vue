@@ -2,7 +2,7 @@
   <section class="bg-gradient-to-r from-blue-300 to-teal-100">
     <div class="mx-auto flex flex-col items-center text-center">
       <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Partnering for Success</h1>
-        <p class="text-lg lg:text-xl text-gray-700 mb-8 px-96">
+        <p class="text-lg lg:text-xl text-gray-700 mb-8 px-1 lg:px-96">
           Join us in creating innovative solutions for cleaner, safer helmets, while unlocking new opportunities for growth and collaboration in the motorcycle industry.
         </p>
     </div>
@@ -24,9 +24,14 @@
           </p>
         </div>
 
-        <button class="bg-blue-600 mt-4 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
-          Book Now
-        </button>
+        <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
+              >
+                Book Now
+              </a>
       </div>
     </div>
   </section>
