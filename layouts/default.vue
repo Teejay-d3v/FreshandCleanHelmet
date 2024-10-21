@@ -62,7 +62,7 @@
           Contact Us
         </NuxtLink>
         <NuxtLink to="/partnership" class="text-white hover:text-gray-200 transition duration-300">
-          Partner with Us
+          Join Us
         </NuxtLink>
         </div>
 
