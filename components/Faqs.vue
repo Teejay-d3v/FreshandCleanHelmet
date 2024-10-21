@@ -1,35 +1,44 @@
 <template>
-  <div class="faq-container max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-    <h2 class="faq-title text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
-    <div
-      class="faq-item border-b border-gray-200"
-      v-for="(item, index) in faqs"
-      :key="index"
-    >
-      <button
-        class="faq-question flex justify-between items-center w-full py-4 hover:bg-gray-100 focus:outline-none"
-        @click="toggleFAQ(index)"
-        :aria-expanded="activeIndex === index"
-        :aria-controls="'faq-answer-' + index"
-      >
-        <h3 class="text-lg font-medium">{{ item.question }}</h3>
-        <span class="faq-icon transition-transform" :class="{ 'rotate-180': activeIndex === index }">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-          </svg>
-        </span>
-      </button>
-      <transition name="fade">
-        <p 
-          v-if="activeIndex === index" 
-          :id="'faq-answer-' + index"
-          class="faq-answer mt-2 text-gray-600 transition-opacity duration-500"
+  <section class="bg-gradient-to-r from-blue-300 to-teal-100">
+    <div class="py-10">
+      <div class="faq-container  max-w-4xl py-10 mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="faq-title text-4xl font-bold text-center mb-8 text-indigo-600">Frequently Asked Questions</h2>
+        <div
+          class="faq-item border-b border-gray-300 pb-6 mb-6"
+          v-for="(item, index) in faqs"
+          :key="index"
         >
-          {{ item.answer }}
-        </p>
-      </transition>
+          <button
+            class="faq-question flex justify-between items-center w-full py-4 hover:bg-gray-50 focus:outline-none"
+            @click="toggleFAQ(index)"
+            :aria-expanded="activeIndex === index"
+            :aria-controls="'faq-answer-' + index"
+          >
+            <div class="flex items-center">
+              <!-- Icon to the left of the question -->
+              <img src="https://img.icons8.com/color/48/faq.png" alt="FAQ Icon" class="h-8 w-8 mr-4" />
+              <h3 class="text-lg font-medium text-gray-700">{{ item.question }}</h3>
+            </div>
+            <!-- Arrow icon -->
+            <span class="faq-icon transition-transform" :class="{ 'rotate-180': activeIndex === index }">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </button>
+          <transition name="fade">
+            <p 
+              v-if="activeIndex === index" 
+              :id="'faq-answer-' + index"
+              class="faq-answer mt-4 text-gray-600 transition-opacity duration-500 text-md leading-relaxed"
+            >
+              {{ item.answer }}
+            </p>
+          </transition>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -84,8 +93,8 @@ const toggleFAQ = (index) => {
 
 .faq-answer {
   padding: 1rem;
-  border-left: 4px solid #007bff;
-  background-color: #e9ecef;
+  border-left: 4px solid #6366f1;
+  background-color: #f0f4f8;
 }
 
 .fade-enter-active,
