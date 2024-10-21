@@ -23,10 +23,10 @@
         <div class="grid gap-12 grid-cols-1 md:grid-cols-3">
           <!-- Assumption 1 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
-            <div class="mb-4">
+            <div class="mb-4 border-b-2 border-indigo-600 pb-2">
               <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
                 Assumption 1: 90-100% Utilization
               </h2>
@@ -58,10 +58,10 @@
 
           <!-- Assumption 2 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
-            <div class="mb-4">
+            <div class="mb-4 border-b-2 border-indigo-600 pb-2">
               <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
                 Assumption 2: 50% Utilization
               </h2>
@@ -93,10 +93,10 @@
 
           <!-- Assumption 3 -->
           <div
-            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+            class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center text-left transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
           >
             <!-- Heading -->
-            <div class="mb-4">
+            <div class="mb-4 border-b-2 border-indigo-600 pb-2">
               <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
                 Assumption 3: 25% Utilization
               </h2>
