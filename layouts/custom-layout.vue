@@ -1,5 +1,8 @@
 <template>
   <div>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
     <Chatbot />
     <section class="relative w-full bg-indigo-50 text-white overflow-hidden">
       <div class="custom-bg-image">
@@ -31,6 +34,9 @@
           <NuxtLink to="/Computation" class="text-white hover:text-gray-200 transition duration-300">Computation</NuxtLink>
           <NuxtLink to="/faqs" class="text-white hover:text-gray-200 transition duration-300">FAQ's</NuxtLink>
           <NuxtLink to="/contactUs" class="text-white hover:text-gray-200 transition duration-300">Contact Us</NuxtLink>
+          <NuxtLink to="/partnership" class="text-white hover:text-gray-200 transition duration-300">
+          Join Us
+        </NuxtLink>
         </div>
 
         <!-- Button Group for Actions -->
@@ -56,9 +62,20 @@
         <div class="flex items-center mb-4 md:mb-0">
           <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-3" />
         </div>
+        <div class="flex items-center mb-4 md:mb-0">
+          <div class="flex space-x-4 mt-1">
+              <a href="https://www.facebook.com/helmetprosolutions" target="_blank" class="text-blue-600 hover:text-blue-800">
+                <i class="fab fa-facebook-square text-3xl"><span class="text-xl m-2">facebook</span></i>
+              </a>
+              <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" class="text-pink-600 hover:text-pink-800">
+                <i class="fab fa-instagram-square text-3xl"><span class="text-lg m-2">instagram</span></i>
+              </a>
+            </div>
+        </div>
         <div class="text-center text-md font-bold">
-          <p class="mb-2 text-indigo-700">Email: <a href="mailto:example@example.com" class="underline">example@example.com</a></p>
-          <p>Contact: <span class="text-indigo-700">+1 (234) 567-8901</span></p>
+          <p class="mb-2 text-indigo-700">Email: <a href="mailto:partnerships@helmetprosolutions.com" class="underline">partnerships@helmetprosolutions.com</a></p>
+          <p>Contact: <span class="text-indigo-700">
+            +63 962-753-3915</span></p>
         </div>
       </div>
       <div class="text-center font-bold mt-4 text-indigo-700">

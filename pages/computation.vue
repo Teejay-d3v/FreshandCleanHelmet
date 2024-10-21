@@ -2,7 +2,7 @@
   <div>
     <Computation />
     <Facts />
-    <ProductHero2  />
+
   </div>
 </template>
 
