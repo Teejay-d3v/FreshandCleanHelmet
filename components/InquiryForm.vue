@@ -2,18 +2,18 @@
   <section class="bg-gradient-to-r from-blue-300 to-teal-100">
     <div class="mx-auto flex items-center justify-center ">
       <!-- Desktop view -->
-      <div class="h-[300px] relative w-full flex">
+      <div class="lg:h-[300px] relative w-full flex">
         <img src="/images/partnership2.jpg" alt="Partnership" class="w-full h-auto object-cover" />
         
         <!-- Color Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center gap-6 px-4 ">
-          <h1 class="w-1/2 text-5xl mb-4 text-white  rounded-2xl font-extrabold">
+          <h1 class="lg:w-1/2 text-2xl lg:text-5xl lg:mb-4 text-white  rounded-2xl font-extrabold">
             Got Questions?
           </h1>
           <div class="rounded-2xl flex text-center">
-            <p class="text-white mb-6 text-lg">
+            <p class="text-white lg:mb-6 text-lg">
               We're here to help! Click the button below to send us your inquiries via our Google Form.
             </p>
           </div>

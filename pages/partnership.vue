@@ -38,7 +38,7 @@
       </a>  
       </div>
     </section>
-
+    <ProductHero3  />
     <section class="py-16 text-center">
       <h2 class="text-4xl font-bold mb-8 text-indigo-600">Visualize Your Success</h2>
       <div class="flex flex-wrap justify-center gap-6">
@@ -54,16 +54,18 @@
 
     <section class="pb-16 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
       <h2 class="text-4xl font-bold mb-4 text-indigo-600">We're Here to Support You</h2>
-      <p class="text-lg mb-6">Our dedicated team will guide you every step of the way, ensuring your success as a distributor.</p>
+      <p class="text-lg ">Our dedicated team will guide you every step of the way, ensuring your success as a distributor.</p>
+      <p class="text-lg mb-6">Come and join to our Facebook Group Chat to discuss your needs and get support as a distributor in no time.</p>
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSceprgT-LisDTR-giEVZzgx9q2w-JLKnGDMZ3If8sxXXk4O4w/viewform"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out"
       >
-      Contact Us
+      Join Our Facebook Group
       </a>      
     </section>
+    
   </div>
 </template>
 

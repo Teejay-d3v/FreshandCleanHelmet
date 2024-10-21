@@ -1,7 +1,8 @@
 <template>
   <div>
-    <ProductAbout />
-    <ProductHero2  />
+    <BackStory />
+
+
   </div>
 </template>
 

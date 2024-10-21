@@ -1,20 +1,21 @@
 <template>
-  
-  <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-20">
-    <section>
+  <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-10">
+    <!-- <section>
       <div class="container mx-auto flex flex-col items-center text-center">
-        <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Revolutionizing Helmet Hygiene with Advanced Technology</h1>
-        <span class="text-lg lg:text-xl text-gray-700 mb-8">
-            Our Fresh and Clean Helmet vending machines utilize cutting-edge technology to deliver a seamless and efficient helmet cleaning experience. Equipped with automated sanitization systems, they ensure that every helmet is thoroughly cleaned and deodorized in just minutes. By leveraging smart sensors and user-friendly interfaces, we provide riders with an innovative solution that not only enhances safety but also promotes a culture of cleanliness within the motorcycle community. Join us in transforming helmet hygiene and setting a new standard in the industry!
-          </span>
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-4">
+          Revolutionizing Helmet Hygiene
+        </h1>
+        <span class="text-lg lg:text-xl text-gray-700 mb-8 px-40">
+          Our Fresh and Clean Helmet vending machines utilize cutting-edge technology to deliver a seamless cleaning experience. With automated sanitization systems, every helmet is thoroughly cleaned and deodorized in just minutes. Join us in transforming helmet hygiene and setting a new standard in the industry!
+        </span>
       </div>
-    </section>
+    </section> -->
+
     <!-- Section One -->
-    <section class="">
+    <section>
       <div class="container mx-auto h-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image1" class="w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
-            alt="Deep-Clean Technology" src="/public/images/product4.png">
+          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/public/images/product4.png" />
         </div>
         <div ref="paragraph1" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Deep-Clean Technology</h2>
@@ -26,32 +27,30 @@
     </section>
 
     <!-- Section Two -->
-    <section class="">
+    <section>
       <div class="container mx-auto flex flex-col md:flex-row-reverse items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image2" class="w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
-            alt="Turbo-Dry System" src="/public/images/product2.png">
+          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/public/images/product2.png" />
         </div>
         <div ref="paragraph2" class="px-4 md:px-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Turbo-Dry System</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Our Helmet Cleaning Vending Machine utilizes advanced technology to deliver high-temperature drying and a strong stereo airflow, ensuring your helmets dry quickly and effectively. Experience the power of efficient drying that leaves your gear in pristine condition.
+            Our Helmet Cleaning Vending Machine utilizes advanced technology for high-temperature drying and strong stereo airflow, ensuring your helmets dry quickly and effectively.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Section Three -->
-    <section class="">
+    <section>
       <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image3" class="w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500"
-            alt="Bacteria-Busting Power" src="/public/images/product3.png">
+          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/public/images/product3.png" />
         </div>
         <div ref="paragraph3" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Bacteria-Busting Power</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Kill 99.9% of Germs and Bacteria for Long-Lasting Freshness! Our Helmet Cleaning Vending Machine is designed to eliminate harmful germs, providing you with peace of mind and a safe, clean helmet every time.
+            Kill 99.9% of Germs and Bacteria for Long-Lasting Freshness! Our Helmet Cleaning Vending Machine is designed to eliminate harmful germs, providing you with a safe, clean helmet every time.
           </p>
         </div>
       </div>
@@ -88,33 +87,33 @@ setupAnimations([
   {
     element: image1,
     props: { x: ['100%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out' }
+    options: { duration: 0.8, easing: 'ease-out' },
   },
   {
     element: image2,
     props: { x: ['-100%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out' }
+    options: { duration: 0.8, easing: 'ease-out' },
   },
   {
     element: image3,
     props: { x: ['100%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out' }
+    options: { duration: 0.8, easing: 'ease-out' },
   },
   {
     element: paragraph1,
     props: { y: ['-20%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 }
+    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 },
   },
   {
     element: paragraph2,
     props: { y: ['-20%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 }
+    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 },
   },
   {
     element: paragraph3,
     props: { y: ['-20%', '0%'], opacity: [0, 1] },
-    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 }
-  }
+    options: { duration: 0.8, easing: 'ease-out', delay: 0.2 },
+  },
 ]);
 </script>
 

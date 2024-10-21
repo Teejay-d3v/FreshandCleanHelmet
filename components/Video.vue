@@ -1,24 +1,30 @@
 <template>
   <div>
-    <section class="bg-gradient-to-r from-blue-300 to-teal-100 py-20">
-      <div class="flex flex-col text-center w-full  mx-auto">
-          <h1 class="text-5xl font-bold text-indigo-600 mb-2">Walkthrough</h1>
-          <p class="text-black text-center text-3xl">Watch this video to see how it works!</p>
-        </div>
-      <div class="video-wrapper ">
-        <div class="video-container ">
+    <section class="bg-gradient-to-r from-blue-300 to-teal-100">
+      <div class="flex flex-col text-center w-full mx-auto px-4">
+        <h1 class="text-5xl font-bold text-indigo-600 mb-2">Walkthrough</h1>
+        <p class="text-black text-center text-3xl">Watch this video to see how it works!</p>
+      </div>
+      <div class="flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
+        <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
             src="/video.mp4"
             :controls="controls"
             :autoplay="autoplay"
             :loop="loop"
             :muted="muted"
-            class="enhanced-video"
+            class="w-full h-full object-cover"
           ></video>
+
+        </div>
+        <div class="max-w-xl w-full bg-white rounded-lg shadow-md p-4 mt-4">
+          <p class="text-sm">
+            Here you can add a detailed description about the video, what viewers can expect, and other relevant information.
+          </p>
         </div>
       </div>
     </section>
-</div>
+  </div>
 </template>
 
 <script setup>
@@ -50,29 +56,5 @@ defineProps({
 </script>
 
 <style scoped>
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-
-  min-height: 100vh; 
-}
-
-.video-container {
-  position: relative;
-  width: 90%;
-  max-width: 1600px;
-  border: 8px solid rgba(255, 255, 255, 0.8); 
-  border-radius: 15px; 
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
-  overflow: hidden; 
-}
-
-.enhanced-video {
-  width: 100%;
-  height: auto;
-  max-height: 85vh; 
-  object-fit: cover;
-}
+/* Additional scoped styles can go here if needed */
 </style>
