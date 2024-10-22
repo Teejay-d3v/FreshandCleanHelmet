@@ -8,7 +8,7 @@
       <div class="flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/video.mp4"
+            src="/helmetpro-v2.mp4"
             :controls="controls"
             :autoplay="autoplay"
             :loop="loop"
