@@ -16,12 +16,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
       ],
-      script: [
-        {
-          src: 'https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD',
-          defer: true
-        }
-      ]
+
     }
   },
   

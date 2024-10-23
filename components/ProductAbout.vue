@@ -86,17 +86,17 @@ const closeModal = () => {
 setupAnimations([
   {
     element: image1,
-    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    props: { y: ['100%', '0%'], opacity: [0, 1] },
     options: { duration: 0.8, easing: 'ease-out' },
   },
   {
     element: image2,
-    props: { x: ['-100%', '0%'], opacity: [0, 1] },
+    props: { y: ['-100%', '0%'], opacity: [0, 1] },
     options: { duration: 0.8, easing: 'ease-out' },
   },
   {
     element: image3,
-    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    props: { y: ['100%', '0%'], opacity: [0, 1] },
     options: { duration: 0.8, easing: 'ease-out' },
   },
   {
