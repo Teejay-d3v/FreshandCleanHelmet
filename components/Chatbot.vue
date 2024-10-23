@@ -2,7 +2,7 @@
   <section class="lg:h-[100px] flex items-center fixed bottom-6 right-6 justify-center z-50">
     <div class="relative flex flex-col items-center">
       <button @click="toggleButtons" class="z-10">
-        <img src="/public/images/chatlogo.png" class="lg:h-[130px] chat-logo" :class="{ 'rotate': isRotating }" />
+        <img src="/public/images/chatlogo.png" class="lg:h-[90px] chat-logo" :class="{ 'rotate': isRotating }" />
       </button>
 
       <div v-if="showButtons" class="absolute flex flex-col items-center">
@@ -87,6 +87,30 @@ const toggleButtons = () => {
     width: 60px;
     height: 60px;
   }
+
+  .chat-logo {
+    height: 70px; /* Smaller logo on smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .circle-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .chat-logo {
+    height: 70px; /* Smaller logo on smaller screens */
+  }
+}
+
+
+@media (max-width: 1536px) {
+  .circle-button {
+    width: 60px;
+    height: 60px;
+  }
+  
 
   .chat-logo {
     height: 70px; /* Smaller logo on smaller screens */

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="productfeatures-section" style="background: linear-gradient(135deg, #e0e0e0, #f0f0f0);" class="relative overflow-hidden  bg-slate-00">
+    <section id="productfeatures-section"  class="relative overflow-hidden  bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 py-14">
       <div class="h-1/2">
         <!-- Slider Images -->
         <div
@@ -62,7 +62,7 @@ const nextSlide = () => {
 const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
     nextSlide();
-  }, 3000); // Change slide every 3 seconds
+  }, 5000); // Change slide every 3 seconds
 };
 
 // Clear interval before component is unmounted

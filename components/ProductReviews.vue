@@ -28,7 +28,7 @@
                         <h2 class="text-gray-900 font-bold title-font tracking-wider text-lg sm:text-xl md:text-2xl">D*****a</h2>
                         <p class="text-gray-500 text-xs font-bold md:text-lg">Business Woman</p>
                         <!-- Mobile View -->
-                        <div class="lg:hidden">
+                        <div class="2xl:hidden">
                         <div class="flex mb-1 items-center">
                           <i class="mt-2">Quality</i>
                           <span class="text-yellow-500 text-sm lg:text-2xl ml-2">★</span>
@@ -58,7 +58,7 @@
                       </div>
 
                       <!-- Ratings Section -->
-                      <div class="ml-8 hidden lg:block">
+                      <div class="ml-8 hidden 2xl:block">
                         <div class="flex mb-1 items-center">
                           <i class="mt-2">Quality</i>
                           <span class="text-yellow-500 text-2xl ml-2">★</span>
@@ -270,10 +270,10 @@ onMounted(() => {
         perPage: 2,
       },
       1024: {
-        perPage: 3,
+        perPage: 2,
       },
       1440: {
-        perPage: 3,
+        perPage: 2,
       },
       1921: {
         perPage: 3,
@@ -299,6 +299,6 @@ onMounted(() => {
 }
 
 .splide__slide p {
-  font-size: 1.1rem; /* Adjust as needed */
+  font-size: 0.9rem; /* Adjust as needed */
 }
 </style>
