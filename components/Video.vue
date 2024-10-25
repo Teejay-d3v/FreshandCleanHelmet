@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-black md:bg-gradient-to-r  md:from-blue-300  md:to-teal-100 pb-52 lg:pb-20">
+    <section class="bg-gradient-to-r from-blue-300 to-teal-100 md:bg-gradient-to-r  md:from-blue-300  md:to-teal-100 pb-52 lg:pb-20">
       <div class="flex flex-col text-center w-full mx-auto px-4">
         <h1 class="text-5xl font-bold text-white mt-10 md:text-indigo-600 mb-2">Walkthrough</h1>
         <p class="text-black text-center text-3xl">Watch this video to see how it works!</p>
@@ -8,7 +8,7 @@
       <div class="flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/helmetpro.mp4"
+            src="/hpro.mp4"
             :controls="controls"
             :autoplay="autoplay"
             :loop="loop"
