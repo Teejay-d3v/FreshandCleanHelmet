@@ -160,20 +160,27 @@
     <div class="flex flex-col mb-6 md:mb-0">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Quick Links</h2>
       <ul class="space-y-1">
-        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Home</a></li>
-        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">About Us</a></li>
-        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Services</a></li>
-        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Contact</a></li>
+        <li>
+        <NuxtLink to="/">Home</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/about">About Us</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/parnership">Services</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/contactUs">Contact</NuxtLink>
+      </li>
       </ul>
     </div>
 
     <div class="flex flex-col">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
       <div class="flex space-x-4">
-        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-500">facebook<i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-500">instagram<i class="fab fa-twitter"></i></a>
+     
       </div>
     </div>
   </div>

@@ -128,30 +128,63 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-6 text-gray-800">
-      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="flex items-center mb-4 md:mb-0">
-          <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-3" />
-        </div>
-        <div class="flex items-center mb-4 md:mb-0">
-          <div class="flex space-x-4 mt-1">
-            <a href="https://www.facebook.com/helmetprosolutions" target="_blank" class="text-blue-600 hover:text-blue-800">
-              <i class="fab fa-facebook-square text-3xl"><span class="text-xl m-2">facebook</span></i>
-            </a>
-            <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" class="text-pink-600 hover:text-pink-800">
-              <i class="fab fa-instagram-square text-3xl"><span class="text-lg m-2">instagram</span></i>
-            </a>
-          </div>
-        </div>
-        <div class="text-center text-md font-bold">
-          <p class="mb-2 text-indigo-700">Email: <a href="mailto:partnerships@helmetprosolutions.com" class="underline">partnerships@helmetprosolutions.com</a></p>
-          <p>Contact: <span class="text-indigo-700">+63 962-753-3915</span></p>
-        </div>
+    <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-8 text-gray-800">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
+    <div class="flex items-center mb-6 md:mb-0">
+      <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" />
+
+    </div>
+
+    <div class="flex flex-col mb-6 md:mb-0">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
+      <p class="mb-1">
+        <i class="fas fa-envelope text-indigo-600 text-2xl mb-2 mr-4"></i>
+        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
+      </p>
+      <p><i class="fas fa-phone text-indigo-600 text-2xl mb-2 mr-4"></i><span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
+    </div>
+
+    <div class="flex flex-col mb-6 md:mb-0">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Quick Links</h2>
+      <ul class="space-y-1">
+        <li>
+        <NuxtLink to="/">Home</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/about">About Us</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/parnership">Services</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/contactUs">Contact</NuxtLink>
+      </li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
+      <div class="flex space-x-4">
+      
+
+       
+       <ul class="space-y-1">
+          <li><i class="fab fa-facebook-square text-3xl text-indigo-500 mr-2"></i>
+            <a href="https://www.facebook.com/helmetprosolutions" class=" hover:text-indigo-500">facebook</a>
+        </li>
+        <li><i class="fab fa-instagram-square text-3xl text-pink-500 mr-2"></i>
+          <a href="https://www.instagram.com/helmetpro_vendo/" class="  hover:text-pink-600">instagram</a>
+        </li>
+      </ul>
       </div>
-      <div class="text-center font-bold mt-4 text-indigo-700">
-        <p>&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
+  </div>
+
+  <div class="text-center font-medium mt-6 text-indigo-600">
+    <p>&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
+  </div>
+</footer>
+
   </div>
 </template>
 
