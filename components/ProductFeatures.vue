@@ -33,6 +33,7 @@
           <img src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" />
           <img src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" />
           <img src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" />
+          <img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" />
         </div>
 
         <!-- Slider Controls -->

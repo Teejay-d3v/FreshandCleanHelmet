@@ -95,7 +95,6 @@ import Splide from '@splidejs/splide';
 
 
 const mediaItems = [
-  { type: 'video', src: '/video.mp4', thumbnail: '/images/thumbnailvideo2.png' },
   { type: 'image', src: '/images/machine1.png' },
   { type: 'image', src: '/images/machine2.png' },
   { type: 'image', src: '/images/machine3.png' },
@@ -103,6 +102,7 @@ const mediaItems = [
   { type: 'image', src: '/images/machine5.png' },
   { type: 'image', src: '/images/machine6.png' },
   { type: 'image', src: '/images/machine7.png' },
+  { type: 'video', src: '/video.mp4', thumbnail: '/images/thumbnailvideo2.png' },
 ];
 
 // Check if the slide is active

@@ -141,7 +141,6 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 
 // Array of media files with images and videos, with poster thumbnails for videos
 const mediaList = ref([
-  { src: '/video.mp4', poster: '/images/thumbnailvideo2.png' },
   { src: '/images/machine1.png' },
   { src: '/images/machine2.png' },
   { src: '/images/machine3.png' },
@@ -149,6 +148,7 @@ const mediaList = ref([
   { src: '/images/machine5.png' },
   { src: '/images/machine6.png' },
   { src: '/images/machine7.png' },
+  { src: '/video.mp4', poster: '/images/thumbnailvideo2.png' },
 ]);
 
 const currentIndex = ref(0);
