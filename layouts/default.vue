@@ -34,7 +34,7 @@
     <!-- Navigation Bar -->
     <section>
       <nav
-        :class="['fixed top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-400 to-teal-400 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
+        :class="['absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-blue-400 to-teal-400 shadow-lg transition-transform duration-300', { '-translate-y-full': isHidden }]"
       >
         <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
