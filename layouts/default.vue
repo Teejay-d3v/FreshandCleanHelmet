@@ -299,11 +299,5 @@ button:hover {
 transform: translateY(-2px);
 }
 
-.chatbot-icon {
-position: fixed;
-bottom: 20px;
-right: 20px;
-cursor: pointer;
-z-index: 1000; /* Ensure it stays on top of other elements */
-}
+
 </style>

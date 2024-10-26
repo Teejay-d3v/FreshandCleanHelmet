@@ -1,10 +1,10 @@
 <template>
-  <section class="lg:h-[100px] flex items-center fixed bottom-6 right-6 justify-center z-50">
+  <section class="h-[50px] lg:h-[80px] flex items-center fixed bottom-6 right-6 justify-center z-50">
     <div class="relative flex flex-col items-center">
       <button @click="toggleButtons" class="z-10">
         <img src="/public/images/chatlogo.png" class="lg:h-[90px] chat-logo" :class="{ 'rotate': isRotating }" />
       </button>
-      <h6 class="text-center">Click Here!</h6> <!-- Moved h1 below the image -->
+      <h6 class="text-center">Click Here!</h6> 
 
       <div v-if="showButtons" class="absolute flex flex-col items-center">
         <button

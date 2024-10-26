@@ -5,14 +5,14 @@
         <div class="lg:w-4/5 w-full flex flex-wrap bg-white rounded-3xl shadow-2xl overflow-hidden">
           <!-- Main Slider Section -->
           <div class="lg:w-2/4 w-full flex flex-col items-center justify-center p-2 bg-gray-50">
-            <div id="main-slider" class="splide w-full rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div id="main-slider" class="splide w-full rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden max-h-[500px]">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li v-for="(media, index) in mediaItems" :key="index" class="splide__slide">
                     <template v-if="isVideo(media.src)">
                       <video
                         controls
-                        class="w-full max-h-[700px] py-32 object-contain rounded-lg bg-black"
+                        class="w-full max-h-[500px] py-32 object-contain rounded-lg bg-black"
                         :src="media.src"
                         @error="handleVideoError"
                       />
@@ -21,7 +21,7 @@
                       <img
                         :src="media.src"
                         alt="Slide"
-                        class="w-full max-h-[700px] my-10 object-contain rounded-lg bg-black"
+                        class="w-full max-h-[500px] my-10 object-contain rounded-lg bg-black"
                       />
                     </template>
                   </li>
