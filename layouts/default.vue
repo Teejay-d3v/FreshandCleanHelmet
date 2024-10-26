@@ -141,23 +141,49 @@
       <slot />
     </div>
 
-    <footer class="bg-gradient-to-r from-blue-200 to-teal-100 p-6 text-white">
-      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="flex items-center mb-4 md:mb-0">
-          <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-3" />
-        </div>
-        <div class="text-center text-md font-bold text-indigo-700">
-          <p class="mb-2 text-indigo-600">
-            Email:
-            <a href="mailto:partnerships@helmetprosolutions.com" class="underline">partnerships@helmetprosolutions.com</a>
-          </p>
-          <p>Contact: <span class=" text-indigo-600 ">+63-962-753-3915</span></p>
-        </div>
+    <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-8 text-gray-800">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
+    <div class="flex items-center mb-6 md:mb-0">
+      <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" />
+      <span class="text-2xl font-bold text-indigo-700">HELMETPRO</span>
+    </div>
+
+    <div class="flex flex-col mb-6 md:mb-0">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
+      <p class="mb-1">
+        Email:
+        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
+      </p>
+      <p>Contact: <span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
+    </div>
+
+    <div class="flex flex-col mb-6 md:mb-0">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Quick Links</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Home</a></li>
+        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">About Us</a></li>
+        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Services</a></li>
+        <li><a href="#" class="underline text-indigo-600 hover:text-indigo-500">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col">
+      <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
+      <div class="flex space-x-4">
+        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-indigo-600 hover:text-indigo-500"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <div class="text-center font-bold mt-4 text-indigo-600 ">
-        <p>&copy; {{ new Date().getFullYear() }} Your Company Name. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
+  </div>
+
+  <div class="text-center font-medium mt-6 text-indigo-600">
+    <p>&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
+  </div>
+</footer>
+
+
   </div>
 </template>
 

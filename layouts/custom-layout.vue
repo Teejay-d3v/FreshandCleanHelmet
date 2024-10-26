@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="text-center font-bold mt-4 text-indigo-700">
-        <p>&copy; {{ new Date().getFullYear() }} Your Company Name. All rights reserved.</p>
+        <p>&copy; {{ new Date().getFullYear() }} HELMETPRO. All rights reserved.</p>
       </div>
     </footer>
   </div>
