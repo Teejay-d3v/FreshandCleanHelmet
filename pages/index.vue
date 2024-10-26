@@ -1,12 +1,10 @@
 <template>
   <div>
     <ProductHero  />
-   
     <ProductFeatures  />
     <ProductAbout />
     <Video  />
     <BookNow />
-
     <!-- <ProductHero2  /> -->
     <ProductReviews />
     <InquiryForm />

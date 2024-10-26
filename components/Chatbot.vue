@@ -4,6 +4,7 @@
       <button @click="toggleButtons" class="z-10">
         <img src="/public/images/chatlogo.png" class="lg:h-[90px] chat-logo" :class="{ 'rotate': isRotating }" />
       </button>
+      <h6 class="text-center">Click Here!</h6> <!-- Moved h1 below the image -->
 
       <div v-if="showButtons" class="absolute flex flex-col items-center">
         <button
@@ -104,14 +105,12 @@ const toggleButtons = () => {
   }
 }
 
-
 @media (max-width: 1536px) {
   .circle-button {
     width: 60px;
     height: 60px;
   }
   
-
   .chat-logo {
     height: 70px; /* Smaller logo on smaller screens */
   }
