@@ -64,6 +64,7 @@
           >
             <template v-if="isVideo(media.src)">
               <video
+                ref="videos"
                 controls
                 class="w-full max-h-[700px] my-10 object-contain rounded-lg bg-black"
                 :src="media.src"
@@ -79,6 +80,7 @@
             </template>
           </div>
         </div>
+
 
         <!-- Navigation Buttons -->
         <button
@@ -135,11 +137,11 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 
 // Array of media files with images and videos, with poster thumbnails for videos
 const mediaList = ref([
-  { src: '/hpro.mp4', poster: '/images/thumbnailvideo.png' },
+  { src: '/video.mp4', poster: '/images/thumbnailvideo2.png' },
   { src: '/images/machine1.png' },
   { src: '/images/machine2.png' },
   { src: '/images/machine3.png' },
@@ -160,7 +162,7 @@ const visibleThumbnails = computed(() => {
 
 // Function to determine if the media source is a video
 const isVideo = (src) => {
-  return src.endsWith('.mp4'); // Change as needed for your media types
+  return src.endsWith('.mp4');
 };
 
 // Scroll Up Function
@@ -208,6 +210,26 @@ const handleThumbnailHover = (index) => {
 const handleVideoError = (event) => {
   console.error("Video failed to load:", event.target.src);
 };
+
+
+
+// Pause videos on scroll
+const handleScroll = () => {
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <style scoped>

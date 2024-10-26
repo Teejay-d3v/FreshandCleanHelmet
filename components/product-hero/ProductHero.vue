@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section id="product1-section" class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 py-28 shadow-2xl">
-      <div class="flex justify-center items-center lg:px-5">
+    <section id="product1-section" class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 py-10 shadow-2xl">
+      <div class="flex justify-center items-center ">
         <div class="lg:w-4/5 w-full flex flex-wrap bg-white rounded-3xl shadow-2xl overflow-hidden">
           <!-- Main Slider Section -->
-          <div class="lg:w-2/4 w-full flex flex-col items-center justify-center p-8 bg-gray-50">
+          <div class="lg:w-2/4 w-full flex flex-col items-center justify-center p-2 bg-gray-50">
             <div id="main-slider" class="splide w-full rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               <div class="splide__track">
                 <ul class="splide__list">
@@ -89,25 +89,13 @@
 </template>
 
 <script setup>
-import { onMounted, ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import Splide from '@splidejs/splide';
-import ModalComponent from '../components/payments.vue';
 
-const price = ref(3580.00);
-const formattedPrice = computed(() => {
-  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price.value);
-});
 
-const isModalOpen = ref(false);
-const openModal = () => {
-  isModalOpen.value = true;
-};
-const closeModal = () => {
-  isModalOpen.value = false;
-};
 
 const mediaItems = [
-  { type: 'video', src: '/hpro3.mp4', thumbnail: '/images/thumbnailvideo.png' },
+  { type: 'video', src: '/video.mp4', thumbnail: '/images/thumbnailvideo2.png' },
   { type: 'image', src: '/images/machine1.png' },
   { type: 'image', src: '/images/machine2.png' },
   { type: 'image', src: '/images/machine3.png' },
@@ -145,6 +133,26 @@ onMounted(() => {
   mainSlider.on('move', (newIndex) => {
     currentIndex.value = newIndex; // Update the active index
   });
+});
+
+
+
+// Pause videos on scroll
+const handleScroll = () => {
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 </script>
 

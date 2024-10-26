@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="productfeatures-section"  class="relative overflow-hidden  bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 py-14">
+    <section id="productfeatures-section"  class="relative overflow-hidden  bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 lg:py-14">
       <div class="h-1/2">
         <!-- Slider Images -->
         <div
