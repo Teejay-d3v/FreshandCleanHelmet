@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="flex lg:hidden bg-gradient-to-r from-blue-300 to-teal-100 pb-10">
+    <div class="block lg:hidden bg-gradient-to-r from-blue-300 to-teal-100 pb-10">
   <div class="flex flex-col text-center w-full mx-auto px-4">
     <h1 class="text-4xl font-bold text-white mt-10 mb-2">Walkthrough</h1>
     <p class="text-black text-center text-2xl">Watch this video to see how it works!</p>

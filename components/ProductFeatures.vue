@@ -1,10 +1,13 @@
 <template>
   <div>
-    <section id="productfeatures-section"  class="relative overflow-hidden  bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 lg:py-14">
+    <section
+      id="productfeatures-section"
+      class="relative overflow-hidden bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 lg:py-14"
+    >
       <div class="h-1/2">
         <!-- Slider Images -->
         <div
-          class="slider flex transition-transform duration-500"
+          class="hidden lg:flex slider transition-transform duration-500"
           :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
           @touchstart="startTouch"
           @touchmove="moveTouch"
@@ -17,18 +20,33 @@
           <img src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
         </div>
 
+        <!-- Mobile view -->
+        <div
+          class="slider flex lg:hidden transition-transform duration-500"
+          :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
+          @touchstart="startTouch"
+          @touchmove="moveTouch"
+          @touchend="endTouch"
+        >
+          <img src="/images/mobileview/feature2.png" alt="Helmet Fresh Detail" class="w-full" />
+          <img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" />
+          <img src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" />
+          <img src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" />
+          <img src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" />
+        </div>
+
         <!-- Slider Controls -->
         <button
           @click="prevSlide"
           aria-label="Previous slide"
-          class="absolute left-4 top-1/2  bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 hidden lg:block"
+          class="absolute left-2 top-1/2 bg-blue-600 text-white px-3 py-1 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 "
         >
           <span class="material-icons">chevron_left</span>
         </button>
         <button
           @click="nextSlide"
           aria-label="Next slide"
-          class="absolute right-4 top-1/2  bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 hidden lg:block"
+          class="absolute right-2 top-1/2 bg-blue-600 text-white px-3 py-1 rounded-full shadow-lg text-lg font-bold hover:bg-blue-700 transition duration-300 opacity-90 hover:opacity-100 "
         >
           <span class="material-icons">chevron_right</span>
         </button>
@@ -41,7 +59,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const currentSlide = ref(0);
-const totalSlides = 5;
+const totalSlides = 6; // Adjusted to include mobile images
 let autoSlideInterval;
 
 // Touch event variables
@@ -62,7 +80,7 @@ const nextSlide = () => {
 const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
     nextSlide();
-  }, 5000); // Change slide every 3 seconds
+  }, 5000); // Change slide every 5 seconds
 };
 
 // Clear interval before component is unmounted
