@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true, 
   modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag'],
   css: [
     '~/assets/css/main.css',
@@ -24,12 +25,13 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
         { hid: 'description', name: 'description', content: 'Discover the Future of Helmet Cleaning!' }, // SEO description
-        { hid: 'keywords', name: 'keywords', content: 'Helmet vending machine, helmet rental, automatic helmet dispenser, helmet cleaning, helmet hygiene, motolvog, helmetpro' }, // Keywords for SEO
+        { hid: 'keywords', name: 'keywords', content: 'Helmet vending machine, helmet rental, automatic helmet dispenser, helmet cleaning, helmet hygiene, motolvog, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
         { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
         { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
         { hid: 'og:image', property: 'og:image', content: 'https://www.helmetprosolutions.com/images/logo4og.png' }, // Open Graph image
         { hid: 'og:url', property: 'og:url', content: 'https://www.helmetprosolutions.com/' }, // Open Graph URL
         { hid: 'og:type', property: 'og:type', content: 'website' }, // Open Graph type
+        { hid: 'fb:app_id', property: 'fb:app_id', content: 'YOUR_FACEBOOK_APP_ID' } // Facebook App ID
       ],
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
