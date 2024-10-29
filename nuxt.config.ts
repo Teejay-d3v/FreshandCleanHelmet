@@ -18,18 +18,28 @@ export default defineNuxtConfig({
       }
     ]
   },
+
   app: {
     head: {
-      title: 'Nuxt 3',
+      title: 'HelmetPro',
       meta: [
-        { name: 'meta tag name', content: 'meta tag description' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
+        { hid: 'description', name: 'description', content: 'Discover the Future of Helmet Cleaning!' }, // SEO description
+        { hid: 'keywords', name: 'keywords', content: 'Helmet vending machine, helmet rental, automatic helmet dispenser, helmet cleaning, helmet hygiene, motolvog, helmetpro' }, // Keywords for SEO
+        { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
+        { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
+        { hid: 'og:image', property: 'og:image', content: '/images/logo2.png' }, // Open Graph image
+        { hid: 'og:url', property: 'og:url', content: 'https://www.helmetprosolutions.com/' }, // Open Graph URL
+        { hid: 'og:type', property: 'og:type', content: 'website' }, // Open Graph type
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+        { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
+        { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
       ],
-
     }
   },
+
   
   runtimeConfig: {
     // This will make currencyKey available in browser as process.env.CURRENCY_API_KEY using -> const { currencyKey } = useRuntimeConfig() 

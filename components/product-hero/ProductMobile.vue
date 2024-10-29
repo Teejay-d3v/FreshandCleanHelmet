@@ -82,8 +82,6 @@
           </div>
         </div>
       </div>
-
-      <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
     </section>
   </div>
 </template>

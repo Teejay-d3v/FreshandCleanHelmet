@@ -1,8 +1,5 @@
 <template>
   <div>
-    <head>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </head>
     <Chatbot /> 
     <!-- Banner Section -->
     <section class="relative w-full bg-indigo-50 text-white md:h-screen overflow-hidden">
@@ -171,7 +168,7 @@
         <NuxtLink to="/about">About Us</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/parnership">Services</NuxtLink>
+        <NuxtLink to="/partnership">Services</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/contactUs">Contact</NuxtLink>
