@@ -1,11 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-gtag'],
 
   css: [
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
   ],
+
+  'google-gtag': {
+    id: 'G-37QBP6H10E', // Make sure to remove any leading spaces
+    config: {
+      anonymize_ip: true,
+      send_page_view: true
+    },
+    debug: false // Set to true for debugging in development
+  },
 
   app: {
     head: {
@@ -25,5 +34,6 @@ export default defineNuxtConfig({
     // Check -> ([code].js file)
     currencyKey: process.env.CURRENCY_API_KEY
   },
-  compatibilityDate: '2024-08-20'
+  compatibilityDate: '2024-08-20',
+  
 })
