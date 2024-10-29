@@ -1,21 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-gtag'],
-
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag'],
   css: [
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
   ],
 
-  'google-gtag': {
-    id: 'G-37QBP6H10E', // Make sure to remove any leading spaces
-    config: {
-      anonymize_ip: true,
-      send_page_view: true
-    },
-    debug: false // Set to true for debugging in development
+  gtag: {
+    tags: [
+      {
+        id : 'G-37QBP6H10E',
+        config : {
+          anonymize_ip: true,
+          send_page_view: true
+        },
+        debug : false
+      }
+    ]
   },
-
   app: {
     head: {
       title: 'Nuxt 3',
