@@ -139,7 +139,7 @@
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
       <p class="mb-1">
         <i class="fas fa-envelope text-indigo-600 text-2xl mb-2 mr-4"></i>
-        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
+        <a href="mailto:partnerships@helmetprosolutions.com"  class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
       </p>
       <p><i class="fas fa-phone text-indigo-600 text-2xl mb-2 mr-4"></i><span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
     </div>
@@ -170,10 +170,10 @@
        
        <ul class="space-y-1">
           <li><i class="fab fa-facebook-square text-3xl text-indigo-500 mr-2"></i>
-            <a href="https://www.facebook.com/helmetprosolutions" class=" hover:text-indigo-500">facebook</a>
+            <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class=" hover:text-indigo-500">facebook</a>
         </li>
         <li><i class="fab fa-instagram-square text-3xl text-pink-500 mr-2"></i>
-          <a href="https://www.instagram.com/helmetpro_vendo/" class="  hover:text-pink-600">instagram</a>
+          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="  hover:text-pink-600">instagram</a>
         </li>
       </ul>
       </div>

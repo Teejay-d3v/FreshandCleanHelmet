@@ -1,5 +1,8 @@
 <template>
   <div>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
     <Chatbot /> 
     <!-- Banner Section -->
     <section class="relative w-full bg-indigo-50 text-white md:h-screen overflow-hidden">
@@ -141,20 +144,21 @@
       <slot />
     </div>
 
+    <!-- Footer Section -->
     <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-8 text-gray-800">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
     <div class="flex items-center mb-6 md:mb-0">
       <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" />
-      <span class="text-2xl font-bold text-indigo-700">HELMETPRO</span>
+
     </div>
 
     <div class="flex flex-col mb-6 md:mb-0">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
       <p class="mb-1">
-        Email:
-        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
+        <i class="fas fa-envelope text-indigo-600 text-2xl mb-2 mr-4"></i>
+        <a href="mailto:partnerships@helmetprosolutions.com"  class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
       </p>
-      <p>Contact: <span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
+      <p><i class="fas fa-phone text-indigo-600 text-2xl mb-2 mr-4"></i><span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
     </div>
 
     <div class="flex flex-col mb-6 md:mb-0">
@@ -178,9 +182,17 @@
     <div class="flex flex-col">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
       <div class="flex space-x-4">
-        <a href="#" class="text-indigo-600 hover:text-indigo-500">facebook<i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-indigo-600 hover:text-indigo-500">instagram<i class="fab fa-twitter"></i></a>
-     
+      
+
+       
+       <ul class="space-y-1">
+          <li><i class="fab fa-facebook-square text-3xl text-indigo-500 mr-2"></i>
+            <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500">facebook</a>
+        </li>
+        <li><i class="fab fa-instagram-square text-3xl text-pink-500 mr-2"></i>
+          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-600">instagram</a>
+        </li>
+      </ul>
       </div>
     </div>
   </div>
