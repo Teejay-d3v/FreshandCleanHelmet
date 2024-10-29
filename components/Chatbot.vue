@@ -11,6 +11,7 @@
           ref="button1"
           class="circle-button bg-blue-500 text-white animate-show"
           style="top: 0; left: 0;"
+          @click="handleButtonClick"
         >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScPH78it2IObDmevPColeGFe16743x8IzgvmQNGKGxYfX2wDQ/viewform?usp=send_form" target="_blank" rel="noopener noreferrer">
             Book Now
@@ -20,6 +21,7 @@
           ref="button2"
           class="circle-button bg-blue-500 text-white animate-show"
           style="top: 0; left: 0;"
+          @click="handleButtonClick"
         >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform" target="_blank" rel="noopener noreferrer">
             Inquire Now
@@ -29,6 +31,7 @@
           ref="button3"
           class="circle-button bg-blue-500 text-white animate-show z-10"
           style="top: 0; left: 0;"
+          @click="handleButtonClick"
         >
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdagJhiw1LHysZAHzuqV16C6vQPvLy9dHs0o3bUxza1HqvV_Q/viewform" target="_blank" rel="noopener noreferrer">
             Help Support
@@ -56,6 +59,12 @@ const toggleButtons = () => {
       button.classList.toggle('animate-out', !showButtons.value);
     });
   });
+};
+
+const handleButtonClick = () => {
+  // Hide buttons after one is clicked
+  showButtons.value = false;
+  isRotating.value = false; // Optionally stop rotating the main button
 };
 </script>
 
