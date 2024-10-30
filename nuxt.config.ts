@@ -53,8 +53,20 @@ export default defineNuxtConfig({
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-        { rel: 'icon', type: 'image/png', href: '/images/logo.png' },
+        // { rel: 'icon', type: 'image/png', href: 'images/logo.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/images/logo-favicon.ico' }
       ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.helmetprosolutions.com",
+            "logo": "https://www.helmetprosolutions.com/logo.png"
+          }),
+        }
+      ]
     }
   },
 
