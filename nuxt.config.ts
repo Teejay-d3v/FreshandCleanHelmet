@@ -1,12 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true, 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', ],
   css: [
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
   ],
-
+  sitemap: {
+    hostname: 'https://www.helmetprosolutions.com',
+    gzip: true,
+    routes: [
+      '/',
+      '/about',
+      '/computation',
+      '/faqs',
+      '/contactUs',
+      '/partnership',
+    ],
+  },
   gtag: {
     tags: [
       {
