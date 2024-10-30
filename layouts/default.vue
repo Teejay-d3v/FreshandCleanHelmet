@@ -70,7 +70,7 @@
               >About</NuxtLink
             >
             <NuxtLink
-              to="/Computation"
+              to="/computation"
               class="text-white hover:text-gray-200 transition duration-300"
               >Computation</NuxtLink
             >
@@ -80,7 +80,7 @@
               >FAQ's</NuxtLink
             >
             <NuxtLink
-              to="/contactUs"
+              to="/contactus"
               class="text-white hover:text-gray-200 transition duration-300"
               >Contact Us</NuxtLink
             >
@@ -110,7 +110,7 @@
     >About</NuxtLink
   >
   <NuxtLink
-    to="/Computation"
+    to="/computation"
     @click="toggleMenu"
     class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
     >Computation</NuxtLink
@@ -122,7 +122,7 @@
     >FAQ's</NuxtLink
   >
   <NuxtLink
-    to="/contactUs"
+    to="/contactus"
     @click="toggleMenu"
     class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
     >Contact Us</NuxtLink

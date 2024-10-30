@@ -6,17 +6,23 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
   ],
-  sitemap: {
-    hostname: 'https://www.helmetprosolutions.com',
+  site: {
+    url: 'https://helmetprosolutions.com',
+    title: 'HelmetPro',
+    description: 'Discover the Future of Helmet Cleaning!',
+  },
+  sitemap : {
+    hostname: 'https://helmetprosolutions.com',
     gzip: true,
     routes: [
       '/',
       '/about',
       '/computation',
       '/faqs',
-      '/contactUs',
-      '/partnership',
-    ],
+      '/contactus',
+      '/partnership'
+    ]
+
   },
   gtag: {
     tags: [
