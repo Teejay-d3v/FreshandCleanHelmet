@@ -40,7 +40,6 @@ export default defineNuxtConfig({
     head: {
       title: 'HelmetPro',
       meta: [
-        { name: 'google-site-verification', content: 'mHQvuhVBW3VoNiu4sXj2VYdASDbEwHHv_6S38lOj6cQ'},
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
         { hid: 'description', name: 'description', content: 'Discover the Future of Helmet Cleaning!' }, // SEO description
         { hid: 'keywords', name: 'keywords', content: 'Helmet vending machine, helmet rental, automatic helmet dispenser, helmet cleaning, helmet hygiene, motolvog, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
