@@ -36,10 +36,13 @@
             <h3 class="text-lg font-semibold text-indigo-600">Social Media</h3>
             <div class="flex space-x-4 mt-1">
               <a href="https://www.facebook.com/helmetprosolutions" target="_blank" class="text-blue-600 hover:text-blue-800">
-                <i class="fab fa-facebook-square text-2xl"><span class="text-lg m-2">facebook</span></i>
+                <i class="fab fa-facebook-square text-lg"><span class="text-lg m-2">facebook</span></i>
               </a>
               <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" class="text-pink-600 hover:text-pink-800">
-                <i class="fab fa-instagram-square text-2xl"><span class="text-lg m-2">instagram</span></i>
+                <i class="fab fa-instagram-square text-lg"><span class="text-lg m-2">instagram</span></i>
+              </a>
+              <a href="https://m.me/helmetprosolutions" target="_blank" class="text-blue-500 hover:text-blue-700">
+                <i class="fab fa-facebook-messenger text-lg"><span class="text-lg m-2">messenger</span></i>
               </a>
             </div>
           </div>

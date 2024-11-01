@@ -166,11 +166,15 @@
 
        
        <ul class="space-y-1">
-          <li><i class="fab fa-facebook-square text-3xl text-indigo-500 mr-2"></i>
-            <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class=" hover:text-indigo-500">facebook</a>
+          <li><i class="fab fa-facebook-square text-3xl text-indigo-700 "><span class="text-lg m-2"></span></i>
+            <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class=" hover:text-indigo-500">Facebook</a>
         </li>
-        <li><i class="fab fa-instagram-square text-3xl text-pink-500 mr-2"></i>
-          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="  hover:text-pink-600">instagram</a>
+        <li><i class="fab fa-instagram-square text-3xl text-pink-500 "><span class="text-lg m-2"></span></i>
+          <a href="https://www.instagram.com/helmetpro_vendo/" target="_blank" rel="noopener noreferrer" class="  hover:text-pink-600">Instagram</a>
+        </li>
+        <li>
+          <i class="fab fa-facebook-messenger text-3xl text-blue-700"><span class="text-lg m-2"></span></i>
+          <a href="https://m.me/helmetprosolutions" target="_blank" class=" hover:text-blue-700">Messenger </a>
         </li>
       </ul>
       </div>
