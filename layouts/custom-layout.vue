@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Chatbot />
+    <!-- <Chatbot /> -->
 
     <!-- Hero Section -->
     <section class="relative w-full bg-indigo-50 text-white overflow-hidden">
       <div class="custom-bg-image">
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
         <div class="relative z-10 mx-auto flex flex-col items-center justify-center text-center p-6">
-          <img class="w-1/2 lg:w-1/4 mb-8 object-cover rounded-3xl shadow-lg" alt="hero" src="/images/logo3.png" />
+          <nuxt-img class="w-1/2 lg:w-1/4 mb-8 object-cover rounded-3xl shadow-lg" alt="hero" src="/images/logo3.png" />
           <h1 class="text-center text-3xl font-extrabold mb-4 text-white">{{ pageName }}</h1>
         </div>
       </div>
@@ -21,7 +21,7 @@
         <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <img src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" />
+            <nuxt-img src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" />
           </NuxtLink>
 
           <!-- Burger Menu for Mobile -->
@@ -128,7 +128,7 @@
     <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-8 text-gray-800">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
     <div class="flex items-center mb-6 md:mb-0">
-      <img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" />
+      <nuxt-img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" />
 
     </div>
 
@@ -186,7 +186,7 @@
 </template>
 
 <script setup>
-import Chatbot from '@/components/Chatbot.vue';
+// import Chatbot from '@/components/Chatbot.vue';
 import { ref, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 

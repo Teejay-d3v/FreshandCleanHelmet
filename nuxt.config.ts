@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true, 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', ],
+  modules: [
+    '@nuxtjs/tailwindcss', 
+    'nuxt-gtag', 
+    '@nuxtjs/sitemap', 
+    '@nuxt/image',
+  ],
   css: [
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
@@ -22,7 +27,6 @@ export default defineNuxtConfig({
       '/contactus',
       '/partnership'
     ]
-
   },
   gtag: {
     tags: [
@@ -53,20 +57,40 @@ export default defineNuxtConfig({
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-        // { rel: 'icon', type: 'image/png', href: 'images/logo.png' },
-        { rel: 'icon', type: 'image/x-icon', href: '/images/logo-favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: 'https://www.helmetprosolutions.com/images/logo-favicon.ico' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://www.helmetprosolutions.com/favicon/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://www.helmetprosolutions.com/favicon/favicon-16x16.png' }
+        
       ],
       script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "url": "https://www.helmetprosolutions.com",
-            "logo": "https://www.helmetprosolutions.com/logo.png"
-          }),
-        }
-      ]
+              {
+                type: 'application/ld+json',
+                innerHTML: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "url": "https://www.helmetprosolutions.com",
+                  "logo": "https://www.helmetprosolutions.com/logo.png"
+                }),
+              },
+              {
+                hid: 'tawk-to',
+                innerHTML: `
+                  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                  (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/67243b532480f5b4f5971b2a/1ibioffge';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                  })();
+                `,
+                type: 'text/javascript',
+              }
+            ],
+            __dangerouslyDisableSanitizersByTagID: {
+              'tawk-to': ['innerHTML']
+            }
     }
   },
 

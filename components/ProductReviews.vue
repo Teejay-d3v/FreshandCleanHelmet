@@ -21,7 +21,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <img alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile.png">
+                      <nuxt-img alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile.png" />
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->
@@ -100,7 +100,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <img alt="testimonial" class="w-28 h-28  object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile2.png">
+                      <nuxt-img alt="testimonial" class="w-28 h-28  object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile2.png" />
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->
@@ -179,7 +179,7 @@
 
                     <div class="flex items-center justify-center space-x-6">
                       <!-- Larger Image -->
-                      <img alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile3.png">
+                      <nuxt-img alt="testimonial" class="w-28 h-28 object-cover object-center rounded-full border-4 border-indigo-500 shadow-lg" src="/images/profile3.png" />
                       
                       <div class="text-left">
                         <!-- Name and Occupation -->

@@ -27,10 +27,10 @@
               class="cursor-pointer h-auto p-2 relative rounded-md overflow-hidden transition-all duration-200 hover:border-2 hover:border-black"
             >
               <template v-if="isVideo(media.src)">
-                <img :src="media.poster" alt="Video Thumbnail" class="w-32 h-auto  rounded-md object-contain " />
+                <nuxt-img :src="media.poster" alt="Video Thumbnail" class="w-32 h-auto  rounded-md object-contain " />
               </template>
               <template v-else>
-                <img :src="media.src" alt="Image Thumbnail" class="w-32 h-auto rounded-md object-contain " />
+                <nuxt-img :src="media.src" alt="Image Thumbnail" class="w-32 h-auto rounded-md object-contain " />
               </template>
             </div>
           </div>
@@ -72,7 +72,7 @@
               />
             </template>
             <template v-else>
-              <img
+              <nuxt-img
                 :src="media.src"
                 alt="Slide"
                 class="w-full max-h-[700px] my-10 object-contain rounded-lg bg-black"

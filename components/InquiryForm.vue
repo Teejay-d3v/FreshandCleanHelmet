@@ -3,7 +3,7 @@
     <div class="mx-auto flex items-center justify-center ">
       <!-- Desktop view -->
       <div class="lg:h-[300px] relative w-full flex">
-        <img src="/images/partnership2.jpg" alt="Partnership" class="w-full h-auto object-cover" />
+        <nuxt-img src="/images/partnership2.jpg" alt="Partnership" class="w-full h-auto object-cover" />
         
         <!-- Color Overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>

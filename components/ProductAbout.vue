@@ -15,10 +15,10 @@
     <section>
       <div class="container mx-auto h-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image1" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/public/images/product4.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/product4.png" />
         </div>
         <div ref="image1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/public/images/mobileview/helmet.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/mobileview/helmet.png" />
         </div>
         <div ref="paragraph1" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Deep-Clean Technology</h2>
@@ -33,11 +33,11 @@
     <section>
       <div class="container mx-auto flex flex-col md:flex-row-reverse items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image2" class="lg:flex hidden w-full justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/public/images/product2.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/product2.png" />
         </div>
         <!-- Mobile view -->
         <div ref="image2" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/public/images/mobileview/helmet2.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" />
         </div>
         <div ref="paragraph2" class="px-4 md:px-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Turbo-Dry System</h2>
@@ -52,11 +52,11 @@
     <section>
       <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
         <div ref="image3" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/public/images/product3.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/images/product3.png" />
         </div>
         <!-- Mobile view -->
         <div ref="image3" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/public/images/mobileview/helmet3.png" />
+          <nuxt-img class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" />
         </div>
         <div ref="paragraph3" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Bacteria-Busting Power</h2>

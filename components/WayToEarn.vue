@@ -11,7 +11,7 @@
 
       <!-- Enlarged Image Section -->
       <div class="flex justify-center ">
-        <img src="/images/product5.png" alt="Helmet Pro Vending Machine" class="w-full  h-auto object-cover  shadow-lg transition-transform transform hover:scale-105" />
+        <nuxt-img src="/images/product5.png" alt="Helmet Pro Vending Machine" class="w-full  h-auto object-cover  shadow-lg transition-transform transform hover:scale-105" />
       </div>
 
 
