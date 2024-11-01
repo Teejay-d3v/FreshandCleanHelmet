@@ -57,7 +57,9 @@ export default defineNuxtConfig({
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-        { rel: 'icon', type: 'image/x-icon', href: 'https://www.helmetprosolutions.com/images/logo-favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: 'https://www.helmetprosolutions.com/favicon/favicon.ico' },
+        { rel: 'icon', type: 'image/png', sizes: '512x512', href: 'https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://www.helmetprosolutions.com/favicon/android-chrome-192x192.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://www.helmetprosolutions.com/favicon/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://www.helmetprosolutions.com/favicon/favicon-16x16.png' }
         
