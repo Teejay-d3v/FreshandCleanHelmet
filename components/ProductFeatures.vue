@@ -60,7 +60,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const currentSlide = ref(0);
-const totalSlides = 6; // Adjusted to include mobile images
+const totalSlides = 5; // Adjusted to include mobile images
 let autoSlideInterval;
 
 // Touch event variables

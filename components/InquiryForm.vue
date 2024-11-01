@@ -1,5 +1,5 @@
   <template>
-  <section class="bg-gradient-to-r from-blue-300 to-teal-100">
+  <section class="bg-gradient-to-r from-blue-300 to-teal-100 pt-10">
     <div class="mx-auto flex items-center justify-center ">
       <!-- Desktop view -->
       <div class="lg:h-[300px] relative w-full flex">
