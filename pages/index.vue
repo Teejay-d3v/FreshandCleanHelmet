@@ -6,7 +6,7 @@
     <Video  />
     <BookNow />
     <!-- <ProductHero2  /> -->
-    <ProductReviews />
+   <!-- <ProductReviews /> -->
     <InquiryForm />
 
   </div>
