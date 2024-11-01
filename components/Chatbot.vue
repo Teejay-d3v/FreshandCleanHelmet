@@ -2,7 +2,7 @@
   <section class="h-[50px] lg:h-[80px] flex items-center fixed bottom-6 right-6 justify-center z-50">
     <div class="relative flex flex-col items-center">
       <button @click="toggleButtons" class="z-10">
-        <nuxt-img src="/images/chatlogo.png" class="lg:h-[90px] chat-logo" :class="{ 'rotate': isRotating }" />
+        <nuxt-img src="/images/chatlogo.png" class="lg:h-[90px] chat-logo" :class="{ 'rotate': isRotating }" lazy  />
       </button>
       <h6 class="text-center">Click Here!</h6> 
 

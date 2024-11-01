@@ -9,7 +9,7 @@
     <div class="mx-auto flex items-center justify-center min-h-screen relative overflow-hidden">
 
       <!-- Image -->
-      <nuxt-img src="/images/partnership.jpg" alt="Partnership" class="absolute inset-0 w-full h-full object-cover" />
+      <nuxt-img src="/images/partnership.jpg" alt="Partnership" class="absolute inset-0 w-full h-full object-cover" lazy />
       
       <!-- Color Overlay -->
       <div class="absolute inset-0 bg-black bg-opacity-70"></div>

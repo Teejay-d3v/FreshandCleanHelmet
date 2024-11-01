@@ -16,7 +16,7 @@
           >
             <div class="flex items-center">
               <!-- Icon to the left of the question -->
-              <nuxt-img src="https://img.icons8.com/color/48/faq.png" alt="FAQ Icon" class="h-8 w-8 mr-4" />
+              <nuxt-img src="https://img.icons8.com/color/48/faq.png" alt="FAQ Icon" class="h-8 w-8 mr-4" lazy />
               <h3 class="text-lg font-medium text-gray-700">{{ item.question }}</h3>
             </div>
             <!-- Arrow icon -->

@@ -45,6 +45,7 @@
                 src="/images/machine10.png"
                 alt="Helmet Clean and Fresh Machine"
                 class="w-full h-auto object-cover rounded-lg"
+                lazy 
               />
             </div>
           </div>

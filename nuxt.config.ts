@@ -55,6 +55,8 @@ export default defineNuxtConfig({
         { hid: 'fb:app_id', property: 'fb:app_id', content: 'YOUR_FACEBOOK_APP_ID' } // Facebook App ID
       ],
       link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet',  href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
         { rel: 'icon', type: 'image/x-icon', href: 'https://www.helmetprosolutions.com/favicon/favicon.ico' },
@@ -75,24 +77,31 @@ export default defineNuxtConfig({
                 }),
               },
               {
-                hid: 'tawk-to',
-                innerHTML: `
-                  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                  (function(){
-                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                    s1.async=true;
-                    s1.src='https://embed.tawk.to/67243b532480f5b4f5971b2a/1ibioffge';
-                    s1.charset='UTF-8';
-                    s1.setAttribute('crossorigin','*');
-                    s0.parentNode.insertBefore(s1,s0);
-                  })();
-                `,
+                src: 'https://embed.tawk.to/67243b532480f5b4f5971b2a/1ibioffge',
                 type: 'text/javascript',
+                hid: 'tawk-to',
+                async: true,
+                crossorigin: 'anonymous'
               }
+              // {
+              //   hid: 'tawk-to',
+              //   innerHTML: `
+              //     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              //     (function(){
+              //       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              //       s1.async=true;
+              //       s1.src='https://embed.tawk.to/67243b532480f5b4f5971b2a/1ibioffge';
+              //       s1.charset='UTF-8';
+              //       s1.setAttribute('crossorigin','*');
+              //       s0.parentNode.insertBefore(s1,s0);
+              //     })();
+              //   `,
+              //   type: 'text/javascript',
+              // }
             ],
-            __dangerouslyDisableSanitizersByTagID: {
-              'tawk-to': ['innerHTML']
-            }
+            // __dangerouslyDisableSanitizersByTagID: {
+            //   'tawk-to': ['innerHTML']
+            // }
     }
   },
 

@@ -22,6 +22,7 @@
                         :src="media.src"
                         alt="Slide"
                         class="w-full max-h-[700px] my-10 object-contain rounded-lg bg-black"
+                        lazy 
                       />
                     </template>
                   </li>
@@ -35,10 +36,10 @@
                 <ul class="splide__list">
                   <li v-for="(media, index) in mediaItems" :key="index" class="splide__slide">
                     <template v-if="media.type === 'image'">
-                      <nuxt-img :src="media.src" alt="Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" />
+                      <nuxt-img :src="media.src" alt="Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" lazy />
                     </template>
                     <template v-else-if="media.type === 'video'">
-                      <nuxt-img :src="media.thumbnail" alt="Video Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" />
+                      <nuxt-img :src="media.thumbnail" alt="Video Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" lazy />
                     </template>
                   </li>
                 </ul>

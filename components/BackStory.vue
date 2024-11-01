@@ -25,6 +25,7 @@
             alt="Factory" 
             class="h-100 w-full object-cover rounded-lg shadow-lg" 
             src="/images/factory.png" 
+            lazy
           />
         </div>
         <div class="lg:w-1/2 w-full lg:pl-10">
@@ -59,6 +60,7 @@
             alt="Warehouse" 
             class="h-66 w-full object-cover rounded-lg shadow-lg" 
             src="/images/warehouse.jpg" 
+            lazy 
           />
         </div>
       </div>

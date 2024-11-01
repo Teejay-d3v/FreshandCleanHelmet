@@ -10,7 +10,7 @@
         
         <div v-for="(benefit, index) in benefits" :key="index" class="flex flex-col bg-white shadow-lg border border-slate-200 rounded-lg my-6 w-80 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
           <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
-            <nuxt-img class="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90" :src="benefit.icon" :alt="benefit.title" />
+            <nuxt-img class="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90" :src="benefit.icon" :alt="benefit.title" lazy  />
           </div>
           <div class="p-6 text-center">
             <h4 class="mb-1 text-2xl font-semibold text-slate-800">{{ benefit.title }}</h4>
@@ -48,6 +48,7 @@
           :src="image.src" 
           :alt="image.alt" 
           class="w-full max-w-md object-cover rounded-lg transition-transform transform hover:scale-105 hover:shadow-2xl duration-300" 
+          lazy 
         />
       </div>
     </section>

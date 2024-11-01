@@ -13,11 +13,11 @@
           @touchmove="moveTouch"
           @touchend="endTouch"
         >
-          <nuxt-img src="/images/1.png" alt="Helmet Fresh" class="w-full flex-shrink-0" />
-          <nuxt-img src="/images/2.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
-          <nuxt-img src="/images/3.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
-          <nuxt-img src="/images/4.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" />
-          <nuxt-img src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" />
+          <nuxt-img src="/images/1.png" alt="Helmet Fresh" class="w-full flex-shrink-0" lazy />
+          <nuxt-img src="/images/2.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" lazy />
+          <nuxt-img src="/images/3.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" lazy />
+          <nuxt-img src="/images/4.png" alt="Helmet Fresh Detail" class="w-full flex-shrink-0" lazy />
+          <nuxt-img src="/images/5.png" alt="Helmet Fresh Application" class="w-full flex-shrink-0" lazy />
         </div>
 
         <!-- Mobile view -->
@@ -28,12 +28,12 @@
           @touchmove="moveTouch"
           @touchend="endTouch"
         >
-          <nuxt-img src="/images/mobileview/feature2.png" alt="Helmet Fresh Detail" class="w-full" />
-          <nuxt-img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" />
-          <nuxt-img src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" />
-          <nuxt-img src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" />
-          <nuxt-img src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" />
-          <nuxt-img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" />
+          <nuxt-img src="/images/mobileview/feature2.png" alt="Helmet Fresh Detail" class="w-full" lazy />
+          <nuxt-img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" lazy />
+          <nuxt-img src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" lazy />
+          <nuxt-img src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" lazy />
+          <nuxt-img src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" lazy />
+          <nuxt-img src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" lazy />
         </div>
 
         <!-- Slider Controls -->
