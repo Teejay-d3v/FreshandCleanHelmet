@@ -4,15 +4,15 @@
       <div class="container px-5 pt-20 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
           <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">
-  About Us
-</h1>
-<p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">
-  Our journey started with a vision to create products that inspire trust and excellence. From humble beginnings, we've grown into a company that values quality, sustainability, and innovation, driven by a passionate team dedicated to delivering exceptional results.
-</p>
-<br>
-<p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">
-  We believe success is built on integrity, teamwork, and continuous improvement. As we look to the future, we remain committed to enhancing our operations and making a positive impact in our industry.
-</p>
+            About Us
+          </h1>
+          <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
+            At HelmetProSolutions, we are committed to revolutionizing <strong>HELMET HYGIENE</strong> and rider safety with our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>. Our state-of-the-art <strong>VENDO MACHINE HELMET</strong> and AUTOMATIC HELMET DISPENSERS provide seamless and convenient solutions for riders on the go. We understand the importance of maintaining clean and hygienic helmets, which is why we offer comprehensive HELMET CLEANING services to ensure each helmet is safe and ready for use.
+          </p>
+          <br>
+          <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
+            With our <strong>HELMET CLEANING VENDING MACHINE</strong> riders can easily access high-quality helmets without the hassle of ownership, making us the go-to choice for those who value convenience and cleanliness. Our mission is to promote <strong>HELMET HYGIENE</strong> and foster a safer riding community through our advanced solutions. Trust <strong>HELMETPRO</strong> for all your helmet needs and experience the difference with <strong>HELMETPROSOLUTIONS</strong>.
+          </p>
 
           
         </div>
