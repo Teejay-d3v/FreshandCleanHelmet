@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'HelmetPro',
+      title: 'HelmetProSolutions',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
         { hid: 'description', name: 'description', content: 'Discover the Future of Helmet Cleaning!' }, // SEO description

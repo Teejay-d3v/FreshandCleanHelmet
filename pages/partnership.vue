@@ -76,7 +76,44 @@ import { ref } from 'vue';
 definePageMeta({
   layout: 'custom-layout',
   name: 'JOIN US',
+  head: {
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Partnership Opportunities",
+          "description": "Explore partnership opportunities with HelmetPro.",
+          "url": "https://www.helmetprosolutions.com/partnership"
+        }),
+      },
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "HelmetPro",
+          "url": "https://www.helmetprosolutions.com",
+          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "description": "HelmetPro provides state-of-the-art helmet cleaning vending machines and dedicated support for business growth. We partner with distributors to ensure their long-term success.",
+          "sameAs": [
+            "https://www.facebook.com/helmetprosolutions",
+            "https://www.instagram.com/helmetpro_vendo"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+63-962-753-3915",
+            "contactType": "Sales",
+            "areaServed": "PH",
+            "availableLanguage": "English"
+          }
+        }),
+      }
+    ]
+  }
 });
+
 
 const benefits = ref([
   {

@@ -77,6 +77,45 @@
 definePageMeta({
   layout: 'custom-layout',
   name: 'CONTACT-US',
+  head: {
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Us - HelmetPro",
+          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries.",
+          "url": "https://www.helmetprosolutions.com/contactus",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "HelmetPro",
+            "url": "https://www.helmetprosolutions.com",
+            "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+63 962-753-3915",
+              "contactType": "Customer Service",
+              "email": "partnerships@helmetprosolutions.com",
+              "areaServed": "PH",
+              "availableLanguage": "English"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Agoho St. Phase 2 Central, Camella Springville, Brgy. Molino 3",
+              "addressLocality": "Bacoor",
+              "addressRegion": "Cavite",
+              "addressCountry": "PH"
+            },
+            "sameAs": [
+            "https://www.facebook.com/helmetprosolutions",
+            "https://www.instagram.com/helmetpro_vendo"
+            ]
+          }
+        }),
+      }
+    ]
+  }
 });
 </script>
 
