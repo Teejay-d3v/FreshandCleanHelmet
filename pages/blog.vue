@@ -25,7 +25,7 @@ const blogContent = {
 <template>
   <div class="bg-gradient-to-r from-blue-200 to-teal-100 pb-20">
     <article class="px-6 py-16 max-w-[1500px] mx-auto">
-      <header class="mb-8">
+      <header class="mb-8 ">
         <h1 class="text-5xl font-bold text-gray-800">{{ blogContent.title }}</h1>
         <p class="text-gray-500 mt-2">{{ blogContent.date }}</p>
       </header>
@@ -33,7 +33,7 @@ const blogContent = {
       <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
         
         <!-- Image Section -->
-        <figure class="md:col-span-3">
+        <figure class="md:col-span-3 shadow-2xl">
           <nuxt-img
             :src="blogContent.image"
             :alt="blogContent.title + ' - Helmet Cleaning Vending Machine by Helmet Pro Solutions'"
@@ -43,7 +43,7 @@ const blogContent = {
         </figure>
 
         <!-- Text Section -->
-        <section class="md:col-span-2 bg-white p-8 pt-10 rounded-lg shadow-lg">
+        <section class="md:col-span-2 bg-white p-8 pt-10 rounded-lg shadow-2xl">
           <div v-html="blogContent.content" class="prose max-w-none text-gray-700"></div>
         </section>
       </div>
