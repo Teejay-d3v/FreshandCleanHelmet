@@ -23,7 +23,7 @@
         <div ref="paragraph1" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Deep-Clean Technology</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative Helmet Cleaning Vending Machine guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
+            Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative Helmet Cleaner guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@
         <div ref="paragraph2" class="px-4 md:px-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Turbo-Dry System</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Our Helmet Cleaning Vending Machine utilizes advanced technology for high-temperature drying and strong stereo airflow, ensuring your helmets dry quickly and effectively.
+           Utilizes advanced technology for high-temperature drying and strong stereo airflow, ensuring your helmets dry quickly and effectively.
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@
         <div ref="paragraph3" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
           <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Bacteria-Busting Power</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Kill 99.9% of Germs and Bacteria for Long-Lasting Freshness! Our Helmet Cleaning Vending Machine is designed to eliminate harmful germs, providing you with a safe, clean helmet every time.
+            Kill 99.9% of Germs and Bacteria for Long-Lasting Freshness! designed to eliminate harmful germs, providing you with a safe, clean helmet every time.
           </p>
         </div>
       </div>

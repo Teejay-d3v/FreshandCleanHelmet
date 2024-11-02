@@ -118,7 +118,7 @@
 
             <!-- Product Description -->
             <p class="leading-relaxed mb-6 text-gray-700 text-sm lg:text-lg">
-              Keep your helmet fresh and sanitized with our Automatic Intelligent Helmet Cleaning Machine. It offers fast and efficient dry cleaning, thorough disinfection, and effective deodorization, all in one sleek, user-friendly machine. Designed for convenience, this is the ultimate solution for helmet hygiene and care.
+              HelmetPro is the ultimate solution for helmet hygiene and care. Keep your helmet fresh and sanitized with our Automatic Intelligent Helmet Cleaning Machine. It offers fast and efficient dry cleaning, thorough disinfection, and effective deodorization, all in one sleek, user-friendly machine. Designed for convenience, this is the ultimate solution for helmet hygiene and care.
             </p>
             <div>
               <a
