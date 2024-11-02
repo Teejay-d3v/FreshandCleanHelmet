@@ -49,7 +49,7 @@
             <NuxtLink
               to="/about"
               class="text-white hover:text-gray-200 transition duration-300"
-              >About</NuxtLink
+              >About Us</NuxtLink
             >
             <NuxtLink
               to="/Computation"
@@ -70,6 +70,11 @@
               to="/partnership"
               class="text-white hover:text-gray-200 transition duration-300"
               >Join Us</NuxtLink
+            >
+            <NuxtLink
+              to="/blog"
+              class="text-white hover:text-gray-200 transition duration-300"
+              >Blog</NuxtLink
             >
           </div>
         </div>
