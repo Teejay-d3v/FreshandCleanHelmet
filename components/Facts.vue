@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="relative w-full mb-8">
-        <nuxt-img src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-[500px] lg:h-auto  shadow-lg" lazy />
+        <NuxtImg src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-[500px] lg:h-auto  shadow-lg" loading="lazy"/>
         <div class="absolute inset-0 bg-black opacity-60 "></div>
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white p-4 sm:p-6">
           <h1 class="text-2xl sm:text-3xl lg:text-6xl font-extrabold mb-6 sm:mb-14">Your Business Opportunity</h1>

@@ -23,7 +23,7 @@ definePageMeta({
           "@type": "WebSite",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
-          "description": "Discover the Future of Helmet Cleaning! A vending machine that automatically cleans helmets for hygiene and convenience.",
+          "description": "Discover the Future of Helmet Cleaning! Our helmet cleaning vending machine offers a seamless way to maintain hygiene and convenience, automatically cleaning your gear with cutting-edge technology. Join us in revolutionizing helmet care!",
           "potentialAction": {
             "@type": "SearchAction",
             "target": "https://www.helmetprosolutions.com/?s={search_term_string}",

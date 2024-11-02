@@ -23,11 +23,11 @@
 
                     </template>
                     <template v-else>
-                      <nuxt-img
+                      <NuxtImg
                         :src="media.src"
                         alt="Slide"
                         class="w-full max-h-[500px] my-10 object-contain rounded-lg bg-black"
-                        lazy 
+                        loading="lazy"
                       />
                     </template>
                   </li>
@@ -41,10 +41,10 @@
                 <ul class="splide__list">
                   <li v-for="(media, index) in mediaItems" :key="index" class="splide__slide">
                     <template v-if="media.type === 'image'">
-                      <nuxt-img :src="media.src" alt="Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" lazy />
+                      <NuxtImg :src="media.src" alt="Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" loading="lazy"/>
                     </template>
                     <template v-else-if="media.type === 'video'">
-                      <nuxt-img :src="media.thumbnail" alt="Video Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" lazy />
+                      <NuxtImg :src="media.thumbnail" alt="Video Thumbnail" class="w-20 h-20 object-cover rounded-lg cursor-pointer hover:shadow-lg transition duration-300" loading="lazy"/>
                     </template>
                   </li>
                 </ul>

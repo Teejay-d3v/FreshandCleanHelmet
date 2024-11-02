@@ -7,7 +7,7 @@
       <!-- Left side: Image Slider and Details -->
       <div class="w-1/2 p-6 flex flex-col justify-center items-center border-r border-gray-200">
         <div class="relative w-full h-96 mb-4">
-          <nuxt-img :src="images[currentImageIndex]" alt="Helmet Fresh and Clean" class="w-full h-full object-cover rounded-lg shadow-md" lazy />
+          <NuxtImg :src="images[currentImageIndex]" alt="Helmet Fresh and Clean" class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy"/>
           <button @click="prevImage" class="absolute left-0 top-1/2  bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
             &lt;
           </button>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="flex space-x-2 mt-2">
-          <nuxt-img v-for="(image, index) in images" :key="index" :src="image" alt="" class="w-16 h-16 object-cover rounded-lg cursor-pointer border" 
+          <NuxtImg v-for="(image, index) in images" :key="index" :src="image" alt="" class="w-16 h-16 object-cover rounded-lg cursor-pointer border" 
                :class="{'border-blue-500': currentImageIndex === index}" 
                @click="currentImageIndex = index" />
         </div>

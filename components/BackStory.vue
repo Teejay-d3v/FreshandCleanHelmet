@@ -21,7 +21,7 @@
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col lg:flex-row mb-12">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <nuxt-img 
+          <NuxtImg 
             alt="Factory" 
             class="h-100 w-full object-cover rounded-lg shadow-lg" 
             src="/images/factory.png" 
@@ -56,11 +56,11 @@
           </p>
         </div>
         <div class="lg:w-1/2 w-full">
-          <nuxt-img 
+          <NuxtImg 
             alt="Warehouse" 
             class="h-66 w-full object-cover rounded-lg shadow-lg" 
             src="/images/warehouse.jpg" 
-            lazy 
+            loading="lazy"
           />
         </div>
       </div>

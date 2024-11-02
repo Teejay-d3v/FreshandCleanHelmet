@@ -19,7 +19,7 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "About HelmetPro",
-          "description": "Learn more about HelmetPro and our mission.",
+          "description": "Learn more about HelmetPro, our mission, and how we provide innovative helmet cleaning vending machines for hygiene and convenience.",
           "url": "https://www.helmetprosolutions.com/about"
         }),
       }

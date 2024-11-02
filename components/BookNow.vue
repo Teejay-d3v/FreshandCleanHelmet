@@ -41,11 +41,11 @@
           <!-- Main Slider Section -->
           <div class="lg:w-2/4 w-full flex flex-col items-center shadow-md justify-center p-4 lg:p-8">
             <div class="w-full rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
-              <nuxt-img
+              <NuxtImg
                 src="/images/machine10.png"
                 alt="Helmet Clean and Fresh Machine"
                 class="w-full h-auto object-cover rounded-lg"
-                lazy 
+                loading="lazy"
               />
             </div>
           </div>

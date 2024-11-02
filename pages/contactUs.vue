@@ -66,7 +66,7 @@
             height="300"
             style="border:0;"
             allowfullscreen=""
-            loading="lazy"
+            loading="lazy""
           ></iframe>
         </div>
       </div>
@@ -88,7 +88,7 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "ContactPage",
           "name": "Contact Us - HelmetPro",
-          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries.",
+          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services.",
           "url": "https://www.helmetprosolutions.com/contactus",
           "mainEntity": {
             "@type": "Organization",

@@ -22,7 +22,7 @@
             </a>
           </div>
         </div>
-        <nuxt-img alt="Partnership" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-lg shadow-lg" src="/images/partnership.jpg" lazy />
+        <NuxtImg alt="Partnership" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-lg shadow-lg" src="/images/partnership.jpg" loading="lazy"/>
       </div>
     </div>
   </section>
