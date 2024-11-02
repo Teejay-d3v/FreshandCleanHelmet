@@ -139,6 +139,12 @@
     class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
     >Join Us</NuxtLink
   >
+  <NuxtLink
+    to="/blog"
+    @click="toggleMenu"
+    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+    >Blog</NuxtLink
+  >
 </div>
       </nav>
     </section>

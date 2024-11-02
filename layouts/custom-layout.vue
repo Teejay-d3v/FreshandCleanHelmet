@@ -80,48 +80,54 @@
         </div>
 
         <!-- Mobile Menu -->
-<!-- Mobile Menu -->
-<div
-  v-show="isMenuOpen"
-  class="md:hidden bg-blue-500 text-white space-y-2 px-4 py-2 shadow-lg transition-all duration-300"
->
-  <NuxtLink
-    to="/"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Home</NuxtLink
-  >
-  <NuxtLink
-    to="/about"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >About</NuxtLink
-  >
-  <NuxtLink
-    to="/Computation"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Computation</NuxtLink
-  >
-  <NuxtLink
-    to="/faqs"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >FAQ's</NuxtLink
-  >
-  <NuxtLink
-    to="/contactUs"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Contact Us</NuxtLink
-  >
-  <NuxtLink
-    to="/partnership"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Join Us</NuxtLink
-  >
-</div>
+          <!-- Mobile Menu -->
+          <div
+            v-show="isMenuOpen"
+            class="md:hidden bg-blue-500 text-white space-y-2 px-4 py-2 shadow-lg transition-all duration-300"
+          >
+            <NuxtLink
+              to="/"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Home</NuxtLink
+            >
+            <NuxtLink
+              to="/about"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >About</NuxtLink
+            >
+            <NuxtLink
+              to="/Computation"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Computation</NuxtLink
+            >
+            <NuxtLink
+              to="/faqs"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >FAQ's</NuxtLink
+            >
+            <NuxtLink
+              to="/contactUs"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Contact Us</NuxtLink
+            >
+            <NuxtLink
+              to="/partnership"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Join Us</NuxtLink
+            >
+            <NuxtLink
+              to="/blog"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Blog</NuxtLink
+            >
+          </div>
       </nav>
     </section>
 

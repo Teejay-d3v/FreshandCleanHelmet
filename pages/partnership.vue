@@ -3,7 +3,7 @@
 
     <section class="flex flex-col items-center py-16 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
       <div class="relative z-10 text-center">
-        <h1 class="text-5xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Why Join Us?</h1>
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Why Join Us?</h1>
        
       </div>
       <div class="flex flex-wrap justify-center gap-8">
