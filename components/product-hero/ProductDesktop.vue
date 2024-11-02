@@ -1,12 +1,10 @@
 <template>
+  
   <div class="flex bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 shadow-2xl">
     <!-- Thumbnail Slider on the Left -->
 
     <div class="flex p-5 bg-slate-300 max-h-[800px]">
-  
-      
       <div class="relative w-1/12 h-auto overflow-hidden p-2 bg-white">
-      
         <div class="bg-slate-200">
           <!-- Up Button -->
           <div class="flex justify-center mb-2">

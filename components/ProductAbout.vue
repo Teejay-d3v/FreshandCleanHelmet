@@ -67,14 +67,13 @@
       </div>
     </section>
 
-    <ModalComponent :isVisible="isModalOpen" @close="closeModal" />
+
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { useAnimations } from '@/composables/useAnimations';
-import ModalComponent from '../components/payments.vue';
 
 const image1 = ref(null);
 const image2 = ref(null);
