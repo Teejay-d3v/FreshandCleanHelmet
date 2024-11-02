@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'HelmetPro',
+      title: 'HelmetPro - Helmet Cleaning Vending Machine Helmet Discover the Future of Helmet Cleaning and Drying Machine with Sterilizer',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
 
