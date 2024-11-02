@@ -1,8 +1,9 @@
 <template>
   <div>
     <ProductHero  />
-    <ProductFeatures  />
+
     <ProductAbout />
+    <ProductFeatures  />
     <Video  />
     <BookNow />
     <!-- <ProductHero2  /> -->
