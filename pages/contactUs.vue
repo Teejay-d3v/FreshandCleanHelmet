@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 bg-gradient-to-r from-blue-300 to-teal-100">
+  <div class="py-10 bg-gradient-to-r from-blue-300 to-teal-100">
     <section class="text-gray-600 body-font">
       <div class="lg:hidden block container px-5 p-5 mx-auto text-center bg-white">
         <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Contact Us / Visit Us</h1>
