@@ -18,12 +18,13 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/product4.png" loading="lazy"/>
         </div>
         <div ref="image1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/mobileview/helmet.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/mobileview/helmet1.png" loading="lazy"/>
         </div>
         <div ref="paragraph1" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
-          <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Deep-Clean Technology</h2>
+          <h1 class=" text-indigo-700 py-2">Deep-Clean Technology</h1>
+          <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative Helmet Cleaner guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
+            Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>Helmet Cleaning Vending Machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
           </p>
         </div>
       </div>
@@ -40,9 +41,10 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" loading="lazy"/>
         </div>
         <div ref="paragraph2" class="px-4 md:px-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4">
-          <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Turbo-Dry System</h2>
+          <h1 class=" text-indigo-700 py-2">Turbo-Dry System</h1>
+          <h2 class="text-gray-900  py-2">High-temperature drying</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-           Utilizes advanced technology for high-temperature drying and strong stereo airflow, ensuring your helmets dry quickly and effectively.
+           Our <strong>Helmet Cleaning Vending Machine</strong> utilizes cutting-edge technology to deliver high-temperature drying combined with powerful stereo airflow, ensuring your helmets dry rapidly and thoroughly after each cleaning cycle.
           </p>
         </div>
       </div>
@@ -59,9 +61,10 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" loading="lazy"/>
         </div>
         <div ref="paragraph3" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
-          <h2 class="text-3xl md:text-5xl font-semibold text-indigo-600 py-2">Bacteria-Busting Power</h2>
+          <h1 class=" text-indigo-700 py-2">Bacteria-Busting Power</h1>
+          <h2 class="text-gray-900  py-2"> Eliminate 99.9% of germs</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Kill 99.9% of Germs and Bacteria for Long-Lasting Freshness! designed to eliminate harmful germs, providing you with a safe, clean helmet every time.
+            Eliminate 99.9% of germs and bacteria with the <strong>Helmet Cleaning Vending Machine</strong>. It’s designed to deliver unmatched cleanliness and long-lasting freshness, so your helmet stays safe and hygienic for every ride.
           </p>
         </div>
       </div>
@@ -132,9 +135,6 @@ img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-  color: #4F46E5; /* Indigo 600 for headers */
-}
 
 p {
   max-width: 600px; /* Limit paragraph width for better readability */

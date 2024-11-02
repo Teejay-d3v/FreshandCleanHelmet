@@ -103,9 +103,9 @@
       <div class="w-1/4 overflow-hidden bg-white h-auto">
         <div class="p-5">
           <div class="flex flex-col justify-center">
-            <h2 class="text-sm title-font text-indigo-600 tracking-widest uppercase mb-2">Clean and Fresh</h2>
-            <h1 class="leading-snug text-gray-900 text-xl lg:text-5xl title-font font-bold mt-10 mb-14">Helmet Cleaning Vending Machine</h1>
-
+           
+            <h1 class="leading-snug text-indigo-600 text-xl lg:text-5xl title-font font-bold mt-10 mb-14">Helmet Cleaning Vending Machine</h1>
+            <h2 class=" title-font  tracking-widest uppercase mb-2">Clean and Fresh</h2>
             <div class="flex items-center mb-4">
               <div class="flex items-center">
                 <svg v-for="n in 5" :key="n" fill="currentColor" class="w-5 h-5 text-indigo-500" viewBox="0 0 24 24">
