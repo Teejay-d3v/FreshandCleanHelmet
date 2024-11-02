@@ -2,8 +2,8 @@
   <div class="bg-gradient-to-r from-blue-200 to-teal-100 pb-20">
     <article class="lg:px-4 py-4 lg:py-8 max-w-[1500px] mx-auto">
       <header class="mb-6">
-        <div class="relative z-10 text-center ">
-          <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 px-2 lg:mx-52">{{ blogContent.title }}</h1>
+        <div class="relative z-10 text-center bg-white ;g:p-4 shadow-lg rounded-lg">
+          <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 lg:p-5 px-2 lg:mx-52">{{ blogContent.title }}</h1>
         </div>
         <!-- <p class="text-gray-500 mt-2">{{ blogContent.date }}</p> -->
       </header>

@@ -2,8 +2,8 @@
   <div class="bg-gradient-to-r from-blue-300 to-teal-100">
     <!-- Section 1: Introduction -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-20 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
+      <div class="container lg:px-5 pt-5 lg:pt-20 mx-auto">
+        <div class="flex flex-col bg-white p-5 w-full mb-12 rounded-lg shadow-2xl mx-auto text-center">
           <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">
             Potential Income Computation
           </h1>

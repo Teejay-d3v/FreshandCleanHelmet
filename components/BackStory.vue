@@ -1,14 +1,18 @@
 <template>
   <section class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 body-font overflow-hidden">
     <div class="container px-5 mx-auto pt-10">
-      <div class="lg:hidden block relative z-10 text-center">
+
+
+      <div class="flex flex-col text-center w-full mb-12 lg:px-5 lg:p-5 pt-5 bg-white rounded-lg shadow-lg">
+
+        <div class="lg:hidden block relative z-10 text-center">
         <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Helmet Pro Solutions Revolutionizing Helmet Cleaning Vending Machine</h1>
       </div>
-      <div class="flex flex-col text-center w-full mb-12 lg:px-5 lg:p-5 pt-5 bg-white rounded-lg shadow-lg">
-        <h1 class="hidden lg:block text-5xl font-extrabold text-indigo-600 mb-6">
+      <div class="hidden lg:block relative z-10 text-center">
+        <h1 class=" lg:block text-5xl font-extrabold text-indigo-600 mb-6">
           About Us | Helmet Pro Solutions - Revolutionizing Helmet Cleaning Vending Machine
         </h1>
-
+      </div>
         <!-- Images below the heading -->
         <div class="flex flex-wrap justify-center mb-6">
           <NuxtImg 

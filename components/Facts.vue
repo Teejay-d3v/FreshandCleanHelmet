@@ -1,25 +1,27 @@
 <template>
-  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 pt-20">
-    <div class="mx-auto flex flex-col items-center text-center sm:px-6">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-4 sm:mb-6">Motorcycle Usage in the Philippines</h1>
-      <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-2">
-        As of 2024, there are approximately registered motorcycles in the Philippines. 
-      </p>
-      <p ref="achievementCounter1" class="font-bold text-indigo-600 text-4xl sm:text-5xl mb-2">
-        0
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 mb-6">
-        <div class="px-4 sm:px-10">
-          <h3 class="text-indigo-600 text-lg sm:text-xl">Safety Commitment</h3>
-          <p class="text-sm sm:text-md lg:text-lg mb-6 sm:mb-10">
-            Most riders are dedicated to safety, proudly donning helmets on every journey. However, many face the challenge of maintaining helmet hygiene and combating unpleasant odors.
-          </p>
-        </div>
-        <div class="px-4 sm:px-10">
-          <h3 class="text-indigo-600 text-lg sm:text-xl">The Challenge</h3>
-          <p class="text-sm sm:text-md lg:text-lg mb-6 sm:mb-10">
-            Helmets can accumulate dirt, sweat, and odor over time, making it essential for riders to have a reliable cleaning solution. This is where HelmetPro comes in.
-          </p>
+  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 ">
+    <div class="container mx-auto flex flex-col items-center text-center sm:px-6">
+      <div class="rounded-lg shadow-2xl text-center bg-white mb-10 p-5">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-4 sm:mb-6">Motorcycle Usage in the Philippines</h1>
+        <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-2">
+          As of 2024, there are approximately registered motorcycles in the Philippines. 
+        </p>
+        <p ref="achievementCounter1" class="font-bold text-indigo-600 text-4xl sm:text-5xl p-5">
+          0
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 mb-6">
+          <div class="px-4 sm:px-10">
+            <h3 class="text-indigo-600 text-lg sm:text-xl">Safety Commitment</h3>
+            <p class="text-sm sm:text-md lg:text-lg mb-6 sm:mb-10">
+              Most riders are dedicated to safety, proudly donning helmets on every journey. However, many face the challenge of maintaining helmet hygiene and combating unpleasant odors.
+            </p>
+          </div>
+          <div class="px-4 sm:px-10">
+            <h3 class="text-indigo-600 text-lg sm:text-xl">The Challenge</h3>
+            <p class="text-sm sm:text-md lg:text-lg mb-6 sm:mb-10">
+              Helmets can accumulate dirt, sweat, and odor over time, making it essential for riders to have a reliable cleaning solution. This is where HelmetPro comes in.
+            </p>
+          </div>
         </div>
       </div>
       <div class="relative w-full mb-8">

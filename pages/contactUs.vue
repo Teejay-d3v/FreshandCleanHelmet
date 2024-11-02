@@ -1,14 +1,21 @@
 <template>
   <div class="py-20 bg-gradient-to-r from-blue-300 to-teal-100">
     <section class="text-gray-600 body-font">
-      <div class="container px-5 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Contact Us / Visit Us</h1>
-          <p class="lg:w-full mx-auto leading-relaxed text-base">
+      <div class="lg:hidden block container px-5 p-5 mx-auto text-center bg-white">
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Contact Us / Visit Us</h1>
+        <p class="lg:w-full mx-auto leading-relaxed text-base">
             We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
           </p>
-        </div>
       </div>
+      <div class="hidden lg:block container px-5 p-10 rounded-lg shadow-2xl mx-auto text-center bg-white">
+        <h1 class=" lg:block text-5xl font-extrabold text-indigo-600 mb-6">
+          Contact Us / Visit Us
+        </h1>
+        <p class="lg:w-full mx-auto leading-relaxed text-base">
+            We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
+          </p>
+      </div>
+
     </section>
 
     <section class="py-12 text-gray-800">
@@ -91,7 +98,7 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "ContactPage",
           "name": "Contact Us - HelmetPro",
-          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services. Our mission is to provide innovative solutions for helmet hygiene and convenience.",
+          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services.",
           "url": "https://www.helmetprosolutions.com/contactus",
           "mainEntity": {
             "@type": "Organization",
