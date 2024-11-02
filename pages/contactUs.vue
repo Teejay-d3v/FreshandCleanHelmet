@@ -66,8 +66,7 @@
             height="300"
             style="border:0;"
             allowfullscreen=""
-            loading="lazy""
-          ></iframe>
+            loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -81,6 +80,10 @@ definePageMeta({
   layout: 'custom-layout',
   name: 'CONTACT-US',
   head: {
+    meta: [
+            { hid: 'description', name: 'description', content: 'Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services. Our mission is to provide innovative solutions for helmet hygiene and convenience.' },
+            { hid: 'keywords', name: 'keywords', content: 'HelmetPro, helmet cleaning, vending machines, hygiene, convenience' }
+          ],
     script: [
       {
         type: 'application/ld+json',
@@ -88,7 +91,7 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "ContactPage",
           "name": "Contact Us - HelmetPro",
-          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services.",
+          "description": "Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services. Our mission is to provide innovative solutions for helmet hygiene and convenience.",
           "url": "https://www.helmetprosolutions.com/contactus",
           "mainEntity": {
             "@type": "Organization",

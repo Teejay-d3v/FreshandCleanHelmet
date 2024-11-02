@@ -15,6 +15,18 @@
 <script setup>
 definePageMeta({
   head: {
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Learn more about HelmetPro, our mission, and how we provide innovative helmet cleaning vending machines that prioritize hygiene and convenience for riders.'
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'HelmetPro, helmet cleaning, vending machines, hygiene, convenience, innovative solutions, rider safety'
+      }
+    ],
     script: [
       {
         type: 'application/ld+json',
@@ -23,7 +35,7 @@ definePageMeta({
           "@type": "WebSite",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
-          "description": "Discover the Future of Helmet Cleaning! Our helmet cleaning vending machine offers a seamless way to maintain hygiene and convenience, automatically cleaning your gear with cutting-edge technology. Join us in revolutionizing helmet care!",
+          "description": "Discover the Future of Helmet Cleaning! HelmetPro offers an innovative helmet cleaning vending machine that automatically maintains hygiene and convenience for riders, revolutionizing helmet care.",
           "potentialAction": {
             "@type": "SearchAction",
             "target": "https://www.helmetprosolutions.com/?s={search_term_string}",
@@ -34,6 +46,7 @@ definePageMeta({
     ]
   }
 });
+
 import ProductHero from '@/components/ProductHero.vue';
 import ProductFeatures from '@/components/ProductFeatures.vue';
 import ProductReviews from '~/components/ProductReviews.vue';
