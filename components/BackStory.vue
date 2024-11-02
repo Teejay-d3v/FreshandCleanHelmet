@@ -1,63 +1,81 @@
 <template>
   <section class="bg-gradient-to-r from-blue-300 to-teal-100 text-gray-700 body-font overflow-hidden">
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 pt-20 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">
-            About Us
-          </h1>
-          <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
-            At HelmetProSolutions, we are committed to revolutionizing <strong>HELMET HYGIENE</strong> and rider safety with our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>. Our state-of-the-art <strong>VENDO MACHINE HELMET</strong> and AUTOMATIC HELMET DISPENSERS provide seamless and convenient solutions for riders on the go. We understand the importance of maintaining clean and hygienic helmets, which is why we offer comprehensive HELMET CLEANING services to ensure each helmet is safe and ready for use.
-          </p>
-          <br>
-          <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
-            With our <strong>HELMET CLEANING VENDING MACHINE</strong> riders can easily access high-quality helmets without the hassle of ownership, making us the go-to choice for those who value convenience and cleanliness. Our mission is to promote <strong>HELMET HYGIENE</strong> and foster a safer riding community through our advanced solutions. Trust <strong>HELMETPRO</strong> for all your helmet needs and experience the difference with <strong>HELMETPROSOLUTIONS</strong>.
-          </p>
+    <div class="container px-5 mx-auto pt-10">
+      <div class="flex flex-col text-center w-full mb-12 px-5 p-5 pt-5 bg-white rounded-lg shadow-lg">
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-6">
+          About Us | Helmet Pro Solutions - Revolutionizing Helmet Hygiene
+        </h1>
 
-          
-        </div>
-      </div>
-    </section>
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col lg:flex-row mb-12">
-        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <!-- Images below the heading -->
+        <div class="flex flex-wrap justify-center mb-6">
           <NuxtImg 
-            alt="Factory" 
-            class="h-100 w-full object-cover rounded-lg shadow-lg" 
-            src="/images/factory.png" 
-            lazy
+            alt="Helmet Cleaning Vending Machine" 
+            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            src="/images/machine1.png" 
+            loading="lazy"
+          />
+          <NuxtImg 
+            alt="Helmet Parameter" 
+            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            src="/images/machine6.png" 
+            loading="lazy"
+          />
+          <NuxtImg 
+            alt="Rider Specifications" 
+            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            src="/images/machine4.png" 
+            loading="lazy"
           />
         </div>
-        <div class="lg:w-1/2 w-full lg:pl-10">
+
+        <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
+          At Helmet Pro Solutions, we are committed to revolutionizing <strong>helmet hygiene</strong> and rider safety with our innovative <strong>Helmet Cleaning Vending Machine</strong>. Our state-of-the-art <strong>vending machine helmet</strong> and <strong>automatic helmet dispensers</strong> provide seamless and convenient solutions for riders on the go. We understand the importance of maintaining clean and hygienic helmets, which is why we offer comprehensive <strong>helmet cleaning services</strong> to ensure each helmet is safe and ready for use.
+        </p>
+        <br>
+        <p class="lg:w-full mx-auto leading-relaxed text-base text-gray-700">
+          With our <strong>Helmet Cleaning Vending Machine</strong>, riders can easily access high-quality helmets without the hassle of ownership, making us the go-to choice for those who value convenience and cleanliness. Our mission is to promote <strong>helmet hygiene</strong> and foster a safer riding community through our advanced solutions. Trust <strong>Helmet Pro</strong> for all your helmet needs and experience the difference with <strong>Helmet Pro Solutions</strong>.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row mb-12 gap-2">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <NuxtImg 
+            alt="Our Factory: A Commitment to Quality" 
+            class="h-100 w-full object-cover rounded-lg shadow-lg" 
+            src="/images/factory.png" 
+            loading="lazy"
+          />
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-10 bg-white rounded-lg shadow-lg p-5">
           <h2 class="text-2xl font-semibold mb-4 text-indigo-600">Our Factory: A Commitment to Quality</h2>
           <p class="text-lg mb-4">
-            At the heart of our operations lies our state-of-the-art factory, a place where innovation meets craftsmanship. Here, we blend modern technology with traditional values to create products that not only meet but exceed industry standards. Our factory is a testament to our commitment to quality and efficiency, ensuring that every item that leaves our production line is crafted with care.
+            At the heart of our operations lies our state-of-the-art factory, where innovation meets craftsmanship. Here, we blend modern technology with traditional values to create products that not only meet but exceed industry standards.
           </p>
           <p class="text-lg mb-4">
-            With a dedicated team of skilled professionals, we maintain rigorous quality control processes, ensuring that our products are safe, reliable, and sustainable. Our factory embraces eco-friendly practices, minimizing waste and energy consumption while maximizing productivity. We believe that a successful business must also be a responsible one, and our manufacturing practices reflect this philosophy.
+            With a dedicated team of skilled professionals, we maintain rigorous quality control processes, ensuring that our products are safe, reliable, and sustainable. Our factory embraces eco-friendly practices, minimizing waste and energy consumption while maximizing productivity. 
           </p>
           <p class="text-lg mb-4">
-            Each day, our team comes together to innovate and collaborate, driven by a shared passion for excellence. We take pride in our ability to adapt to changing market demands while remaining true to our core values of integrity, quality, and service. Our factory is not just a building; it's a community dedicated to making a difference in our industry and beyond.
+            Each day, our team innovates and collaborates, driven by a shared passion for excellence. We pride ourselves on our ability to adapt to changing market demands while remaining true to our core values of integrity, quality, and service. 
           </p>
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row">
-        <div class="lg:w-1/2 w-full mb-6 lg:pr-10">
+      <div class="flex flex-col lg:flex-row gap-2">
+        <div class="lg:w-1/2 w-full mb-6 lg:pr-10 bg-white rounded-lg shadow-lg p-5">
           <h2 class="text-2xl font-semibold mb-4 text-indigo-600">Our Warehouse: The Backbone of Our Operations</h2>
           <p class="text-lg mb-4">
-            Behind every great product is an efficient supply chain, and our warehouse plays a pivotal role in this process. Designed for optimal organization and functionality, our warehouse ensures that every product is stored safely and dispatched promptly. With advanced inventory management systems, we can track our products from the moment they arrive until they reach our customers' hands.
+            Behind every great product is an efficient supply chain, and our warehouse plays a pivotal role in this process. Designed for optimal organization and functionality, our warehouse ensures that every product is stored safely and dispatched promptly. 
           </p>
           <p class="text-lg mb-4">
-            Our warehouse is staffed by a dedicated team who understands the importance of precision and care in handling our products. Each member is trained to ensure that quality is maintained throughout the storage and shipping processes. We prioritize a streamlined workflow, which allows us to respond swiftly to customer needs and market changes, ensuring that we remain competitive and reliable.
+            Our warehouse is staffed by a dedicated team who understands the importance of precision and care in handling our products. Each member is trained to ensure that quality is maintained throughout the storage and shipping processes. 
           </p>
           <p class="text-lg mb-4">
-            We view our warehouse not just as a storage space but as an integral part of our customer experience. By maintaining high standards of organization and efficiency, we can guarantee timely deliveries and exceptional service. Our commitment to excellence extends beyond our factory and into every corner of our operations, ensuring that our customers receive only the best.
+            We view our warehouse not just as a storage space but as an integral part of our customer experience. By maintaining high standards of organization and efficiency, we can guarantee timely deliveries and exceptional service. 
           </p>
         </div>
         <div class="lg:w-1/2 w-full">
           <NuxtImg 
-            alt="Warehouse" 
+            alt="Our Warehouse: The Backbone of Our Operations" 
             class="h-66 w-full object-cover rounded-lg shadow-lg" 
             src="/images/warehouse.jpg" 
             loading="lazy"
@@ -65,7 +83,7 @@
         </div>
       </div>
       
-      <div class="mt-12 text-center">
+      <div class="mt-12 text-center bg-white rounded-lg shadow-lg p-5">
         <h2 class="text-2xl font-semibold mb-4 text-indigo-600">Our Vision and Values</h2>
         <p class="text-lg mb-4">
           At the core of our company is a vision to lead the industry through innovation, quality, and sustainability. We believe that every product we create should reflect our commitment to excellence and our desire to contribute positively to our community and the environment. Our values guide us in every decision we make, ensuring that we remain focused on our mission to deliver outstanding products while fostering a culture of integrity and respect.
