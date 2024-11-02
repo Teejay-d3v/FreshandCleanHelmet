@@ -25,7 +25,8 @@ export default defineNuxtConfig({
       '/computation',
       '/faqs',
       '/contactus',
-      '/partnership'
+      '/partnership',
+      '/blog'
     ]
   },
   gtag: {
