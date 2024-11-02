@@ -1,3 +1,33 @@
+<template>
+  <div class="bg-gradient-to-r from-blue-200 to-teal-100 pb-20">
+    <article class="px-6 py-16 max-w-[1500px] mx-auto">
+      <header class="mb-8 ">
+        <h1 class="text-5xl font-bold text-gray-800">{{ blogContent.title }}</h1>
+        <!-- <p class="text-gray-500 mt-2">{{ blogContent.date }}</p> -->
+      </header>
+      
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        
+        <!-- Image Section -->
+        <figure class="md:col-span-3 shadow-2xl">
+          <nuxt-img
+            :src="blogContent.image"
+            :alt="blogContent.title + ' - Helmet Cleaning Vending Machine by Helmet Pro Solutions'"
+            class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"
+          />
+          <figcaption class="text-sm text-gray-500 mt-2">Helmet Pro Solutions' Helmet Cleaning Vending Machine - advanced, eco-friendly, and user-friendly solution for helmet hygiene.</figcaption>
+        </figure>
+
+        <!-- Text Section -->
+        <section class="md:col-span-2 bg-white p-8 pt-10 rounded-lg shadow-2xl">
+          <div v-html="blogContent.content" class="prose max-w-none text-gray-700"></div>
+        </section>
+      </div>
+    </article>
+  </div>
+</template>
+
+
 <script setup>
 definePageMeta({
   layout: 'custom-layout',
@@ -22,34 +52,7 @@ const blogContent = {
 };
 </script>
 
-<template>
-  <div class="bg-gradient-to-r from-blue-200 to-teal-100 pb-20">
-    <article class="px-6 py-16 max-w-[1500px] mx-auto">
-      <header class="mb-8 ">
-        <h1 class="text-5xl font-bold text-gray-800">{{ blogContent.title }}</h1>
-        <p class="text-gray-500 mt-2">{{ blogContent.date }}</p>
-      </header>
-      
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-        
-        <!-- Image Section -->
-        <figure class="md:col-span-3 shadow-2xl">
-          <nuxt-img
-            :src="blogContent.image"
-            :alt="blogContent.title + ' - Helmet Cleaning Vending Machine by Helmet Pro Solutions'"
-            class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"
-          />
-          <figcaption class="text-sm text-gray-500 mt-2">Helmet Pro Solutions' Helmet Cleaning Vending Machine - advanced, eco-friendly, and user-friendly solution for helmet hygiene.</figcaption>
-        </figure>
 
-        <!-- Text Section -->
-        <section class="md:col-span-2 bg-white p-8 pt-10 rounded-lg shadow-2xl">
-          <div v-html="blogContent.content" class="prose max-w-none text-gray-700"></div>
-        </section>
-      </div>
-    </article>
-  </div>
-</template>
 
 <style scoped>
 .prose h2 {
