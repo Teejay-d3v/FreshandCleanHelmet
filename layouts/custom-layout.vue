@@ -345,4 +345,16 @@ onUnmounted(() => {
     width: 80vw;
   }
 }
+.link-item {
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.link-item:hover {
+  color: #fff;
+  background-color: #1d4ed8; /* Indigo-700 */
+}
 </style>

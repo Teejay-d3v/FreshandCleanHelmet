@@ -170,12 +170,12 @@
       <p><i class="fas fa-phone text-indigo-600 text-2xl mb-2 mr-4"></i><span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <div class="flex flex-col mb-6 md:mb-0">
+  <h2 class="text-lg font-bold text-indigo-700 mb-4">Quick Links</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
     <!-- Links Column 1 -->
     <ul class="space-y-5">
-      <div>
-        
-      </div>
       <li>
         <NuxtLink
           to="/"
@@ -252,6 +252,7 @@
       </li>
     </ul>
   </div>
+</div>
 
     <div class="flex flex-col">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
