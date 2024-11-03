@@ -4,7 +4,7 @@
       <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg alt="Helmet Cleaning Vendo Machine Feature" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
+            <NuxtImg alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
           </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
@@ -202,10 +202,10 @@
     <section>
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
         <div ref="image1" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/product4.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Helmet Cleaning Service" src="/images/product4.png" loading="lazy"/>
         </div>
         <div ref="image1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/mobileview/helmet.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Helmet Cleaning Service" src="/images/mobileview/helmet.png" loading="lazy"/>
         </div>
         <div ref="paragraph1" class="px-4 w-full mt-4 flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-3xl shadow-2xl bg-slate-100">
           <h1 class=" text-indigo-700 py-2">Deep-Clean Technology</h1>
@@ -221,7 +221,7 @@
     <section>
       <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
         <div ref="image2" class="lg:flex hidden w-full justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/product2.png" loading="lazy"/>
+          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Helmet Pro" src="/images/product2.png" loading="lazy"/>
         </div>
         <!-- Mobile view -->
         <div ref="image2" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">

@@ -55,16 +55,35 @@
   </div>
 </div>
 
-
+    <script type="application/ld+json" v-html="structuredData"></script>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { definePageMeta, defineProps } from 'vue';
+// Define the page meta to include structured data in the head
+definePageMeta({
+  script: [
+    {
+      type: 'application/ld+json',
+      json: {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "How Our Helmet Cleaning Vending Machine Works",
+        "description": "Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine.",
+        "thumbnailUrl": "https://www.helmetprosolutions.com/images/thumbnail.jpg",
+        "uploadDate": "2024-11-03",
+        "contentUrl": "https://www.helmetprosolutions.com/hpro.mp4",
+        "embedUrl": "https://www.helmetprosolutions.com/hpro.mp4",
+        "duration": "PT2M30S",
+        "interactionCount": "1000"
+      }
+    }
+  ]
+});
 
 // Define the props for the video component
 defineProps({
-
   controls: {
     type: Boolean,
     default: true,

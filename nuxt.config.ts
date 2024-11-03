@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
 
         { hid: 'description', name: 'description', content: 'Helmet Pro is a leading provider of Helmet Cleaning Vending Machine. With HelmetProSolutions, you can experience the future of helmet hygiene and care.  you can enjoy a smooth and efficient helmet cleaning process. Discover HelmetPro’s innovative helmet vending machine, designed for helmet rental, automatic helmet dispenser services, and superior helmet cleaning. Prioritizing helmet hygiene, HelmetProSolutions offers a convenient solution for riders with advanced helmet cleaning capabilities and ease of use.' },// SEO description
-        { hid: 'keywords', name: 'keywords', content: 'Helmet vending machine, helmet rental, automatic helmet dispenser, helmet cleaning, helmet hygiene, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
+        { hid: 'keywords', name: 'keywords', content: 'HelmetPro, Helmet Cleaning Vending Machine, Helmet Cleaning Vendo Machine, Helmet Cleaning Service, Helmet Pro, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
         { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
         { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
         { hid: 'og:image', property: 'og:image', content: 'https://www.helmetprosolutions.com/images/logo4og.png' }, // Open Graph image
