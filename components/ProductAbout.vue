@@ -2,12 +2,12 @@
   <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-10">
   
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-10 mx-auto flex flex-wrap">
+        <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg alt="Helmet Cleaning Vendo Machine Feature" class="object-cover object-center rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
+            <NuxtImg alt="Helmet Cleaning Vendo Machine Feature" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
           </div>
 
-            <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left text-center bg-white">
+            <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
                 <div class="flex flex-col mb-5 items-start">
                     <h1 class="text-gray-900 font-semibold">Product Features</h1>
                     <h2 class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="flex flex-col mb-4 items-start">
                     <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="#4F46E5"><path d="M128 112c0-26.5 21.5-48 48-48s48 21.5 48 48l0 164.5c0 17.3 7.1 31.9 15.3 42.5C249.8 332.6 256 349.5 256 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5L128 112zM176 0C114.1 0 64 50.1 64 112l0 164.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C43.2 304.2 32 334.8 32 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6L288 112C288 50.1 237.9 0 176 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3L192 112c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 210.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zM480 160l32 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l32 0 0 288c0 17.7 14.3 32 32 32s32-14.3 32-32l0-288z" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 500" fill="#4F46E5"><path d="M128 112c0-26.5 21.5-48 48-48s48 21.5 48 48l0 164.5c0 17.3 7.1 31.9 15.3 42.5C249.8 332.6 256 349.5 256 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5L128 112zM176 0C114.1 0 64 50.1 64 112l0 164.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C43.2 304.2 32 334.8 32 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6L288 112C288 50.1 237.9 0 176 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3L192 112c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 210.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zM480 160l32 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l32 0 0 288c0 17.7 14.3 32 32 32s32-14.3 32-32l0-288z" /></svg>
                     </div>
                     <div class="flex-grow">
                         <h2 class="text-gray-900 text-lg title-font mb-3 font-semibold">Tumble Dry on High Heat</h2>
@@ -57,22 +57,22 @@
           <div class="lg:hidden block w-full  lg:rounded-t-3xl overflow-hidden">
             <NuxtImg alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="/images/machine4.png" loading="lazy" />
           </div>
-          <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left  bg-white">
+          <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
             <div class="flex flex-col mb-5 items-start ">
-                <h1 class="text-gray-900 font-semibold ">Product Specifications</h1>
-                <h2 class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
-                
-                <div class=" rounded flex h-full items-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                      <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                  <h2 class="text-gray-900 text-lg title-font font-medium ">Advertising Sticker Area</h2>
-                </div>
-                <div class="flex-grow">
-                  <p class="leading-relaxed text-slate-400 text-sm">Customize with brand or promotional stickers for enhanced visibility and marketing impact.</p>
-                </div>
+              <h1 class="text-gray-900 font-semibold ">Product Specifications</h1>
+              <h2 class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
+              
+              <div class=" rounded flex h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <h2 class="text-gray-900 text-lg title-font font-medium ">Advertising Sticker Area</h2>
               </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-slate-400 text-sm">Customize with brand or promotional stickers for enhanced visibility and marketing impact.</p>
+              </div>
+            </div>
 
               <div class="flex flex-col mb-5 items-start ">
                 <div class=" rounded flex h-full items-center">
@@ -184,7 +184,7 @@
               </div>
 
               <div class="">
-                <p class="info-text text-slate-400 mt-2 pr-5 p-5 lg:p-0 lg:pr-4 lg:text-center ">
+                <p class="info-text text-slate-400 mt-2 pr-5 p-5 lg:p-0 lg:pr-4 lg: ">
                   Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine. 
                   <NuxtLink to="#how-it-works" class="link"> Click Here! </NuxtLink>
                 </p>
@@ -200,17 +200,17 @@
 
     <!-- Section One -->
     <section>
-      <div class="container mx-auto h-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
+      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
         <div ref="image1" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/product4.png" loading="lazy"/>
         </div>
         <div ref="image1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Deep-Clean Technology" src="/images/mobileview/helmet.png" loading="lazy"/>
         </div>
-        <div ref="paragraph1" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
+        <div ref="paragraph1" class="px-4 w-full mt-4 flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-3xl shadow-2xl bg-slate-100">
           <h1 class=" text-indigo-700 py-2">Deep-Clean Technology</h1>
           <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
-          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed w-full flex-row">
             Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>Helmet Cleaning Vending Machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
           </p>
         </div>
@@ -219,7 +219,7 @@
 
     <!-- Section Two -->
     <section>
-      <div class="container mx-auto flex flex-col md:flex-row-reverse items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
+      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
         <div ref="image2" class="lg:flex hidden w-full justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/product2.png" loading="lazy"/>
         </div>
@@ -227,7 +227,7 @@
         <div ref="image2" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" loading="lazy"/>
         </div>
-        <div ref="paragraph2" class="px-4 md:px-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4">
+        <div ref="paragraph2" class="px-4 md:px-10 mt-4 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-3xl shadow-2xl bg-slate-100">
           <h1 class=" text-indigo-700 py-2">Turbo-Dry System</h1>
           <h2 class="text-gray-900  py-2">High-temperature drying</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
@@ -239,7 +239,7 @@
 
     <!-- Section Three -->
     <section>
-      <div class="container mx-auto flex flex-col md:flex-row items-center rounded-3xl bg-white mb-20 shadow-2xl p-4">
+      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
         <div ref="image3" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/images/product3.png" loading="lazy"/>
         </div>
@@ -247,7 +247,7 @@
         <div ref="image3" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" loading="lazy"/>
         </div>
-        <div ref="paragraph3" class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10">
+        <div ref="paragraph3" class="px-4 mt-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-3xl shadow-2xl bg-slate-100">
           <h1 class=" text-indigo-700 py-2">Bacteria-Busting Power</h1>
           <h2 class="text-gray-900  py-2"> Eliminate 99.9% of germs</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
@@ -345,9 +345,9 @@ useHead({
 <style scoped>
 
 .link {
-  color: #007bff; /* Primary link color */
-  text-decoration: underline; /* Underline for links */
-  transition: color 0.3s; /* Smooth color transition on hover */
+  color: #007bff; 
+  text-decoration: underline;
+  transition: color 0.3s; 
 }
 
 .link:hover {
@@ -359,15 +359,4 @@ img:hover {
 }
 
 
-p {
-  max-width: 600px; /* Limit paragraph width for better readability */
-}
-
-button {
-  transition: transform 0.2s;
-}
-
-button:hover {
-  transform: translateY(-2px);
-}
 </style>
