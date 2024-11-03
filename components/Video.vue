@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="hidden lg:flex flex-col text-center w-full mx-auto px-4  bg-gradient-to-r from-blue-300 to-teal-100 md:bg-gradient-to-r  md:from-blue-300  md:to-teal-100 pb-52 lg:pb-20">
-      <div class="">
-        <h1 class="text-5xl font-bold text-white mt-10 md:text-indigo-600 mb-2">Walkthrough</h1>
-        <p class="text-black text-center text-3xl">Watch this video to see how it works!</p>
+      <div class=" p-5">
+        <h1 class="lg:text-5xl font-bold text-white mt-10 md:text-indigo-600 mb-2">Walkthrough</h1>
+        <h2 id="how-it-works" class="text-black text-center ">How Our Helmet Cleaning Vending Machine Works</h2>
+        <p class="info-text">
+          Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine. 
+        </p>
       </div>
-      <div class="hidden lg:flex  flex-col items-center justify-center py-2 lg:min-h-[80vh]">
+      <div  class="hidden lg:flex  flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
             src="/hpro.mp4"
@@ -27,10 +30,13 @@
 
     <div class="block lg:hidden bg-gradient-to-r from-blue-300 to-teal-100 pb-10">
   <div class="flex flex-col text-center w-full mx-auto px-4">
-    <h1 class="text-4xl font-bold text-white mt-10 mb-2">Walkthrough</h1>
-    <p class="text-black text-center text-2xl">Watch this video to see how it works!</p>
+    <h1 class="text-3xl lg:text-5xl font-bold text-indigo-700 mt-10 mb-2">Walkthrough</h1>
+    <h2 id="how-it-works" class="text-black text-center text-xl lg:text-3xl">How Our Helmet Cleaning Vending Machine Works</h2>
+    <p class="info-text">
+          Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine. 
+        </p>
   </div>
-  <div class="flex flex-col items-center justify-center">
+  <div id="how-it-works" class="flex flex-col items-center justify-center">
     <div class="relative w-full h-[500px] border-2 rounded-lg shadow-lg overflow-hidden">
       <video
         src="/hpro.mp4"
