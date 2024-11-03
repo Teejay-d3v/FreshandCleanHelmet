@@ -170,30 +170,92 @@
       <p><i class="fas fa-phone text-indigo-600 text-2xl mb-2 mr-4"></i><span class="font-medium text-indigo-600">+63-962-753-3915</span></p>
     </div>
 
-    <div class="flex flex-col mb-6 md:mb-0">
-      <h2 class="text-lg font-bold text-indigo-700 mb-2">Quick Links</h2>
-      <ul class="space-y-1">
-        <li>
-        <NuxtLink to="/">Home</NuxtLink>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Links Column 1 -->
+    <ul class="space-y-5">
+      <div>
+        
+      </div>
+      <li>
+        <NuxtLink
+          to="/"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'home']" class="mr-2" />
+          Home
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about">About Us</NuxtLink>
+        <NuxtLink
+          to="/about"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'info-circle']" class="mr-2" />
+          About
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/partnership">Services</NuxtLink>
+        <NuxtLink
+          to="/Computation"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'calculator']" class="mr-2" />
+          Computation
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/contactUs">Contact</NuxtLink>
+        <NuxtLink
+          to="/faqs"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'question-circle']" class="mr-2" />
+          FAQ's
+        </NuxtLink>
       </li>
-      </ul>
-    </div>
+    </ul>
+
+    <!-- Links Column 2 -->
+    <ul class="space-y-2">
+      <li>
+        <NuxtLink
+          to="/contactUs"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2" />
+          Contact Us
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/partnership"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'handshake']" class="mr-2" />
+          Join Us
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/blog"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'blog']" class="mr-2" />
+          Blog
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
 
     <div class="flex flex-col">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>
       <div class="flex space-x-4">
-      
-
-       
        <ul class="space-y-1">
           <li><i class="fab fa-facebook-square text-3xl text-indigo-700 mr-2"></i>
             <a href="https://www.facebook.com/helmetprosolutions" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500">Facebook</a>
@@ -324,6 +386,18 @@ onUnmounted(() => {
   height: auto;
 }
 
+.link-item {
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.link-item:hover {
+  color: #fff;
+  background-color: #1d4ed8; /* Indigo-700 */
+}
 @media (max-width: 1024px) {
   .custom-bg-image {
     height: 80vh; /* Adjust background height for tablets */

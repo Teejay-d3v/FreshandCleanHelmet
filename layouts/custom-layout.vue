@@ -153,22 +153,88 @@
     </div>
 
     <div class="flex flex-col mb-6 md:mb-0">
-      <h2 class="text-lg font-bold text-indigo-700 mb-2">Quick Links</h2>
-      <ul class="space-y-1">
-        <li>
-        <NuxtLink to="/">Home</NuxtLink>
+  <h2 class="text-lg font-bold text-indigo-700 mb-4">Quick Links</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Links Column 1 -->
+    <ul class="space-y-5">
+      <li>
+        <NuxtLink
+          to="/"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'home']" class="mr-2" />
+          Home
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about">About Us</NuxtLink>
+        <NuxtLink
+          to="/about"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'info-circle']" class="mr-2" />
+          About
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/partnership">Services</NuxtLink>
+        <NuxtLink
+          to="/Computation"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'calculator']" class="mr-2" />
+          Computation
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/contactUs">Contact</NuxtLink>
+        <NuxtLink
+          to="/faqs"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'question-circle']" class="mr-2" />
+          FAQ's
+        </NuxtLink>
       </li>
-      </ul>
-    </div>
+    </ul>
+
+    <!-- Links Column 2 -->
+    <ul class="space-y-2">
+      <li>
+        <NuxtLink
+          to="/contactUs"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2" />
+          Contact Us
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/partnership"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'handshake']" class="mr-2" />
+          Join Us
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          to="/blog"
+          @click="toggleMenu"
+          class="link-item"
+        >
+          <font-awesome-icon :icon="['fas', 'blog']" class="mr-2" />
+          Blog
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
+</div>
 
     <div class="flex flex-col">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Follow Us</h2>

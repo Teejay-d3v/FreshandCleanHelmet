@@ -3,7 +3,7 @@
     <div class="container px-5 mx-auto pt-10">
 
 
-      <div class="flex flex-col text-center w-full mb-12 lg:px-5 lg:p-5 pt-5 bg-white rounded-lg shadow-lg">
+      <div class="flex flex-col text-center w-full mb-12 lg:px-5 lg:p-5 pt-5 bg-white rounded-lg shadow-2xl">
 
         <div class="lg:hidden block relative z-10 text-center">
         <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6">Helmet Pro Solutions Revolutionizing Helmet Cleaning Vending Machine</h1>
@@ -17,19 +17,19 @@
         <div class="flex flex-wrap justify-center mb-6">
           <NuxtImg 
             alt="Helmet Cleaning Vending Machine" 
-            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
             src="/images/machine1.png" 
             loading="lazy"
           />
           <NuxtImg 
             alt="Helmet Parameter" 
-            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
             src="/images/machine6.png" 
             loading="lazy"
           />
           <NuxtImg 
             alt="Rider Specifications" 
-            class="h-96 w-96 object-cover rounded-lg shadow-lg m-2" 
+            class="h-96 w-96 object-cover rounded-lg shadow-2xl m-2" 
             src="/images/machine4.png" 
             loading="lazy"
           />
@@ -90,7 +90,7 @@
         </div>
       </div>
       
-      <div class="mt-12 text-center bg-white rounded-lg shadow-lg p-5">
+      <div class="mt-12 text-center bg-white rounded-2xl shadow-2xl p-5 mb-10">
         <h2 class="text-2xl font-semibold mb-4 text-indigo-600">Our Vision and Values</h2>
         <p class="text-lg mb-4">
           At the core of our company is a vision to lead the industry through innovation, quality, and sustainability. We believe that every product we create should reflect our commitment to excellence and our desire to contribute positively to our community and the environment. Our values guide us in every decision we make, ensuring that we remain focused on our mission to deliver outstanding products while fostering a culture of integrity and respect.
