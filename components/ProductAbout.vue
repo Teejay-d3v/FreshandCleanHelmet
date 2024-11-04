@@ -208,7 +208,7 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Helmet Cleaning Service" src="/images/mobileview/helmet.png" loading="lazy"/>
         </div>
         <div ref="paragraph1" class="px-4 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class="text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
+          <h1 class="lg:text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
           <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed w-full flex-row">
             Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>Helmet Cleaning Vending Machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
@@ -225,7 +225,7 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" loading="lazy"/>
         </div>
         <div ref="paragraph2" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class=" text-indigo-700 py-2">Turbo-Dry System</h1>
+          <h1 class=" lg:text-5xl text-indigo-700 py-2">Turbo-Dry System</h1>
           <h2 class="text-gray-900  py-2">High-temperature drying</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
            Our <strong>Helmet Cleaning Vending Machine</strong> utilizes cutting-edge technology to deliver high-temperature drying combined with powerful stereo airflow, ensuring your helmets dry rapidly and thoroughly after each cleaning cycle.
@@ -242,7 +242,7 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" loading="lazy"/>
         </div>
         <div ref="paragraph3" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class=" text-indigo-700 py-2">Bacteria-Busting Power</h1>
+          <h1 class=" lg:text-5xl text-indigo-700 py-2">Bacteria-Busting Power</h1>
           <h2 class="text-gray-900  py-2"> Eliminate 99.9% of germs</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
             Eliminate 99.9% of germs and bacteria with the <strong>Helmet Cleaning Vending Machine</strong>. It’s designed to deliver unmatched cleanliness and long-lasting freshness, so your helmet stays safe and hygienic for every ride.
