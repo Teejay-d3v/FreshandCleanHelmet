@@ -1,13 +1,11 @@
 <template>
   <div>
-    
     <ProductHero  />
     <ProductAbout />
     <ProductFeatures  />
     <Video  />
     <BookNow />
     <InquiryForm />
-
   </div>
 </template>
 
