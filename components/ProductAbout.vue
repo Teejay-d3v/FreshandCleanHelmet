@@ -208,7 +208,7 @@
           <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg transform hover:scale-105 transition duration-500" alt="Helmet Cleaning Service" src="/images/mobileview/helmet.png" loading="lazy"/>
         </div>
         <div ref="paragraph1" class="px-4 w-full mt-4 flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-3xl shadow-2xl bg-slate-100">
-          <h1 class=" text-indigo-700 py-2">Deep-Clean Technology</h1>
+          <h1 class="text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
           <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed w-full flex-row">
             Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>Helmet Cleaning Vending Machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
@@ -310,36 +310,7 @@ setupAnimations([
 ]);
 
 
-const schemaMarkup = {
-  "@context": "http://schema.org",
-  "@type": "Product",
-  "name": "Helmet Cleaning Vending Machine",
-  "description": "A vending machine designed for cleaning helmets, featuring HD touch display, ambient lighting, helmet washing area, and coin ware.",
-  "image": "https://www.helmetprosolutions.com/images/machine4.png",
-  "brand": {
-    "@type": "Brand",
-    "name": "Helmet Pro Solutions - Helmet Cleaning Vending Machine"
-  },
-  "weight": "105kg",
-  "height": "1720mm",
-  "width": "560mm",
-  "additionalProperty": [
-    { "@type": "PropertyValue", "name": "Advertising Sticker Area", "value": "Yes" },
-    { "@type": "PropertyValue", "name": "Breathe Ambient Lighting", "value": "Yes" },
-    { "@type": "PropertyValue", "name": "Helmet Washing Area", "value": "Yes" },
-    { "@type": "PropertyValue", "name": "Coin Ware", "value": "Yes" }
-  ]
-}
 
-
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify(schemaMarkup),
-    }
-  ]
-})
 </script>
 
 <style scoped>

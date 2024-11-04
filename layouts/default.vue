@@ -8,7 +8,7 @@
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent"></div>
 
         <div class="container relative z-10 px-5 py-24 mx-auto flex flex-col items-center justify-center text-center">
-          <NuxtImg
+          <nuxt-img
             class="w-1/2 lg:w-1/4 mb-8 object-cover rounded-3xl shadow-lg"
             alt="hero"
             src="/images/logo3.png"
@@ -40,7 +40,7 @@
         <div class="container mx-auto flex justify-between items-center h-[70px] px-4 md:px-10">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <NuxtImg src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" loading="lazy"/>
+            <nuxt-img src="/images/logo2.png" alt="Logo" class="h-12 md:h-16" loading="lazy"/>
           </NuxtLink>
 
           <!-- Burger Menu for Mobile -->
@@ -157,7 +157,7 @@
     <footer class="bg-gradient-to-r from-blue-300 to-teal-200 p-8 text-gray-800">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
     <div class="flex items-center mb-6 md:mb-0">
-      <NuxtImg src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" loading="lazy"/>
+      <nuxt-img src="/images/logo2.png" alt="Logo" class="h-[120px] mr-4" loading="lazy"/>
 
     </div>
 
@@ -182,7 +182,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'home']" class="mr-2" />
+          
           Home
         </NuxtLink>
       </li>
@@ -192,7 +192,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'info-circle']" class="mr-2" />
+          
           About
         </NuxtLink>
       </li>
@@ -202,7 +202,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'calculator']" class="mr-2" />
+         
           Computation
         </NuxtLink>
       </li>
@@ -212,7 +212,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'question-circle']" class="mr-2" />
+          
           FAQ's
         </NuxtLink>
       </li>
@@ -226,7 +226,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2" />
+          
           Contact Us
         </NuxtLink>
       </li>
@@ -236,7 +236,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'handshake']" class="mr-2" />
+          
           Join Us
         </NuxtLink>
       </li>
@@ -246,7 +246,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'blog']" class="mr-2" />
+
           Blog
         </NuxtLink>
       </li>

@@ -164,7 +164,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'home']" class="mr-2" />
+
           Home
         </NuxtLink>
       </li>
@@ -174,7 +174,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'info-circle']" class="mr-2" />
+       
           About
         </NuxtLink>
       </li>
@@ -184,7 +184,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'calculator']" class="mr-2" />
+     
           Computation
         </NuxtLink>
       </li>
@@ -194,7 +194,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'question-circle']" class="mr-2" />
+
           FAQ's
         </NuxtLink>
       </li>
@@ -208,7 +208,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2" />
+
           Contact Us
         </NuxtLink>
       </li>
@@ -218,7 +218,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'handshake']" class="mr-2" />
+
           Join Us
         </NuxtLink>
       </li>
@@ -228,7 +228,7 @@
           @click="toggleMenu"
           class="link-item"
         >
-          <font-awesome-icon :icon="['fas', 'blog']" class="mr-2" />
+
           Blog
         </NuxtLink>
       </li>

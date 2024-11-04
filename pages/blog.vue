@@ -12,7 +12,7 @@
         
         <!-- Image Section -->
         <figure class="md:col-span-3 shadow-2xl">
-          <NuxtImg
+          <nuxt-img
             :src="blogContent.image"
             :alt="blogContent.title + ' - Helmet Cleaning Vending Machine by Helmet Pro Solutions'"
             class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"

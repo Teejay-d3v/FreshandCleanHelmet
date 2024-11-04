@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <ProductHero  />
     <ProductAbout />
     <ProductFeatures  />
