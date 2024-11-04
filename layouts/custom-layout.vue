@@ -142,7 +142,7 @@
     
     <!-- Logo Section -->
     <div class="flex items-center mb-6 md:mb-0">
-      <nuxt-img src="/images/logo2.png" alt="Logo" class="h-20 md:h-[120px] mr-4" loading="lazy"/>
+      <NuxtImg src="/images/logo2.png" alt="Logo" class="h-20 md:h-[120px] mr-4" loading="lazy"/>
     </div>
 
     <!-- Contact Section -->
