@@ -14,21 +14,97 @@ export default defineNuxtConfig({
   site: {
     url: 'https://helmetprosolutions.com',
     title: 'HelmetPro',
-    description: 'Discover the Future of Helmet Cleaning!',
+    description: 'Discover the Future of Helmet Cleaning Vending Machine!',
   },
-  sitemap : {
+  sitemap: {
     hostname: 'https://helmetprosolutions.com',
     gzip: true,
     routes: [
-      '/',
-      '/about',
-      '/computation',
-      '/faqs',
-      '/contactus',
-      '/partnership',
-      '/blog'
+      {
+        url: '/',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/machine4.png', // Replace with your home image
+            title: 'Home Image',
+            caption: 'Welcome to HelmetPro'
+          }
+        ]
+      },
+      {
+        url: '/about',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/machine7.png', // Replace with your about page image
+            title: 'About Us Image',
+            caption: 'Learn more about HelmetPro'
+          }
+        ]
+      },
+      {
+        url: '/computation',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/computation.jpg', // Replace with your computation page image
+            title: 'Computation Image',
+            caption: 'Income assumptions for HelmetPro'
+          }
+        ]
+      },
+      {
+        url: '/faqs',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/machine8.png', // Replace with your FAQs page image
+            title: 'FAQs Image',
+            caption: 'Frequently Asked Questions'
+          }
+        ]
+      },
+      {
+        url: '/contactus',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/contactus.jpg', // Replace with your contact page image
+            title: 'Contact Us Image',
+            caption: 'Get in touch with HelmetPro'
+          }
+        ]
+      },
+      {
+        url: '/partnership',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/partnership.jpg', // Replace with your partnership page image
+            title: 'Partnership Image',
+            caption: 'Join us for partnership opportunities'
+          }
+        ]
+      },
+      {
+        url: '/blog',
+        img: [
+          {
+            url: 'https://www.helmetprosolutions.com/images/machine3.png.jpg', // Replace with your blog page image
+            title: 'Blog Overview',
+            caption: 'Insights on helmet cleaning and maintenance'
+          }
+        ]
+      }
     ]
   },
+  // sitemap : {
+  //   hostname: 'https://helmetprosolutions.com',
+  //   gzip: true,
+  //   routes: [
+  //     '/',
+  //     '/about',
+  //     '/computation',
+  //     '/faqs',
+  //     '/contactus',
+  //     '/partnership',
+  //     '/blog'
+  //   ]
+  // },
   gtag: {
     tags: [
       {
