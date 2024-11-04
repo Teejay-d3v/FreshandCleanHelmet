@@ -98,58 +98,58 @@
           </div>
         </div>
 
-<!-- Mobile Menu -->
-<div
-  v-show="isMenuOpen"
-  class="md:hidden bg-blue-500 text-white space-y-2 px-4 py-2 shadow-lg transition-all duration-300"
->
-  <NuxtLink
-    to="/"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Home</NuxtLink
-  >
-  <NuxtLink
-    to="/about"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >About</NuxtLink
-  >
-  <NuxtLink
-    to="/computation"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Computation</NuxtLink
-  >
-  <NuxtLink
-    to="/faqs"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >FAQ's</NuxtLink
-  >
-  <NuxtLink
-    to="/contactus"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Contact Us</NuxtLink
-  >
-  <NuxtLink
-    to="/partnership"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Join Us</NuxtLink
-  >
-  <NuxtLink
-    to="/blog"
-    @click="toggleMenu"
-    class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-    >Blog</NuxtLink
-  >
-</div>
+          <!-- Mobile Menu -->
+          <div
+            v-show="isMenuOpen"
+            class="md:hidden bg-blue-500 text-white space-y-2 px-4 py-2 shadow-lg transition-all duration-300"
+          >
+            <NuxtLink
+              to="/"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Home</NuxtLink
+            >
+            <NuxtLink
+              to="/about"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >About</NuxtLink
+            >
+            <NuxtLink
+              to="/computation"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Computation</NuxtLink
+            >
+            <NuxtLink
+              to="/faqs"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >FAQ's</NuxtLink
+            >
+            <NuxtLink
+              to="/contactus"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Contact Us</NuxtLink
+            >
+            <NuxtLink
+              to="/partnership"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Join Us</NuxtLink
+            >
+            <NuxtLink
+              to="/blog"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Blog</NuxtLink
+            >
+          </div>
       </nav>
     </section>
 
-    <div>
+    <div >
       <slot />
     </div>
 
@@ -336,6 +336,8 @@ onUnmounted(() => {
   position: relative;
   padding: 1rem; /* Add padding for spacing on smaller screens */
 }
+
+
 
 .centered-image {
   max-width: 90%; /* Ensure the image is responsive */

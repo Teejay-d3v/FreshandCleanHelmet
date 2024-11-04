@@ -1,35 +1,37 @@
 <template>
   <div class="py-10 bg-gradient-to-r from-blue-300 to-teal-100">
     <section class="text-gray-600 body-font">
-  <div class="lg:hidden block container px-5 p-5 mx-auto bg-white  flex-col items-center">
-    <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 text-center">Contact Us / Visit Us</h1>
-    <div class="flex flex-col items-center">
-      <NuxtImg 
-        alt="Helmet Cleaning Vending Machine" 
-        class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
-        src="/images/contactus.jpg" 
-        loading="lazy"
-      />
-      <p class="leading-relaxed text-base text-center">
-        We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
-      </p>
+      <!-- Desktop -->
+      <div class="hidden lg:flex container  rounded-lg shadow-2xl mx-auto bg-white">
+        <NuxtImg 
+          alt="Helmet Cleaning Vending Machine" 
+          class="h-96 w-1/3 object-contain rounded-lg " 
+          src="/images/contactus.jpg" 
+          loading="lazy"
+        />
+        <div class="flex-1 py-8 pr-5 p-10">
+          <h1 class="text-5xl font-extrabold text-indigo-600 ">Contact Us / Visit Us</h1>
+          <h2 class="title-font text-lg text-gray-400 mb-4">HelmetProSolutions</h2>
+          <p class="leading-10 text-base mx-auto ">
+            We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
+          </p>
+        </div>
+      </div>
+      <!-- MOBILE -->
+      <div class="lg:hidden block container px-5 p-5 mx-auto bg-white  flex-col items-center">
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 text-center">Contact Us / Visit Us</h1>
+        <div class="flex flex-col items-center">
+          <NuxtImg 
+            alt="Helmet Cleaning Vending Machine" 
+            class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
+            src="/images/contactus.jpg" 
+            loading="lazy"
+          />
+          <p class="leading-relaxed text-base text-center">
+            We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
+          </p>
 
-    </div>
-  </div>
-
-  <div class="hidden lg:flex container px-5 p-10 rounded-lg shadow-2xl mx-auto bg-white">
-    <NuxtImg 
-      alt="Helmet Cleaning Vending Machine" 
-      class="h-96 w-[800px] object-contain rounded-lg  m-2 " 
-      src="/images/contactus.jpg" 
-      loading="lazy"
-    />
-    <div class="flex-1">
-      <h1 class="text-5xl font-extrabold text-indigo-600 mb-6">Contact Us / Visit Us</h1>
-      <p class="leading-10 text-base mx-auto">
-        We’re here to help you every step of the way! Whether you have questions about our innovative <strong>HELMET CLEANING VENDING MACHINE</strong>, feedback on our services, or just want to say hello, don’t hesitate to reach out. You can contact us via email or phone, and our friendly team <strong>HelmetProSolutions</strong> is always ready to assist you. If you prefer a personal touch, feel free to visit us at our office located in the heart of Molino 3, Bacoor. We can’t wait to connect with you and provide the support you need!
-      </p>
-    </div>
+        </div>
   </div>
 
     </section>
@@ -106,6 +108,7 @@ definePageMeta({
     meta: [
             { hid: 'description', name: 'description', content: 'Get in touch with HelmetPro for questions, feedback, or inquiries about our helmet cleaning vending machines and services. Our mission is to provide innovative solutions for helmet hygiene and convenience.' },
             { hid: 'keywords', name: 'keywords', content: 'HelmetPro, helmet cleaning, vending machines, hygiene, convenience' }
+            { hid: 'canonical', rel: 'canonical', href: 'https://www.helmetprosolutions.com/contactus' } 
           ],
     script: [
       {

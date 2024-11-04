@@ -4,37 +4,37 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-20 mx-auto">
         <div class="lg:hidden block container px-5 p-5 mx-auto bg-white  flex-col items-center">
-    <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 text-center">Potential Income Computation</h1>
-    <div class="flex flex-col items-center">
-      <NuxtImg 
-        alt="Helmet Cleaning Vending Machine" 
-        class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
-        src="/images/computation.jpg" 
-        loading="lazy"
-      />
-      <p class="leading-relaxed text-base text-center ">
-        With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
-      </p>
+          <h1 class="text-3xl lg:text-5xl font-extrabold text-indigo-600 mb-6 text-center">Potential Income Computation</h1>
+          <div class="flex flex-col items-center">
+            <NuxtImg 
+              alt="Helmet Cleaning Vending Machine" 
+              class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
+              src="/images/computation.jpg" 
+              loading="lazy"
+            />
+            <p class="leading-relaxed text-base text-center ">
+              With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
+            </p>
 
-    </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="hidden lg:flex container px-5 p-10 rounded-lg shadow-2xl mx-auto bg-white">
-    <NuxtImg 
-      alt="Helmet Cleaning Vending Machine" 
-      class="h-96 w-auto object-contain rounded-lg  m-2 " 
-      src="/images/computation.jpg" 
-      loading="lazy"
-    />
-    <div class="flex-1 ">
-      <h1 class="text-5xl font-extrabold text-indigo-600 mb-6 px-10 ">Potential Income Computation</h1>
-      <p class="leading-10 text-base mx-auto px-10">
-        With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
+        <div class="hidden lg:flex container  rounded-lg shadow-2xl mx-auto bg-white">
+          <NuxtImg 
+            alt="Helmet Cleaning Vending Machine" 
+            class="h-96 w-auto object-contain rounded-lg  m-2 " 
+            src="/images/computation.jpg" 
+            loading="lazy"
+          />
+          <div class="flex-1 p-5">
+            <h1 class="text-5xl font-extrabold text-indigo-600 mb-6 px-10 ">Potential Income Computation</h1>
+            <p class="leading-10 text-base mx-auto px-10">
+              With our HelmetPro vending machines, you can tap into a lucrative market that is rapidly growing and evolving. These innovative machines not only provide a convenient solution for helmet cleaning but also present an exciting opportunity for entrepreneurs and business owners looking to diversify their income streams.
 
-        Here’s a comprehensive breakdown of potential earnings based on various utilization assumptions. By analyzing different scenarios—such as operating hours, customer demand, and pricing strategies—you can gain valuable insights into how our vending machines can maximize your profitability. 
-      </p>
-    </div>
-  </div>
+              Here’s a comprehensive breakdown of potential earnings based on various utilization assumptions. By analyzing different scenarios—such as operating hours, customer demand, and pricing strategies—you can gain valuable insights into how our vending machines can maximize your profitability. 
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 

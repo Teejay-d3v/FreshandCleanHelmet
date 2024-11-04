@@ -12,6 +12,12 @@
 <script setup>
 definePageMeta({
   head: {
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://helmetprosolutions.com/'
+      }
+    ],
     meta: [
       {
         hid: 'description',
@@ -50,3 +56,8 @@ import Video from '~/components/Video.vue';
 import BookNow from '~/components/BookNow.vue';
 import InquiryForm from '~/components/InquiryForm.vue';
 </script>
+
+
+<style>
+
+</style>
