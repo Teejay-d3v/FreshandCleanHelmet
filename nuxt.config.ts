@@ -12,12 +12,12 @@ export default defineNuxtConfig({
     '@splidejs/splide/dist/css/splide.min.css'
   ],
   site: {
-    url: 'https://helmetprosolutions.com',
+    url: 'https://www.helmetprosolutions.com',
     title: 'HelmetPro',
     description: 'Discover the Future of Helmet Cleaning Vending Machine!',
   },
   sitemap: {
-    hostname: 'https://helmetprosolutions.com',
+    hostname: 'https://www.helmetprosolutions.com',
     gzip: true,
     routes: [
       {

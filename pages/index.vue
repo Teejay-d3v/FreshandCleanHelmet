@@ -15,7 +15,7 @@ definePageMeta({
     link: [
       {
         rel: 'canonical',
-        href: 'https://helmetprosolutions.com/'
+        href: 'https://www.helmetprosolutions.com/'
       }
     ],
     meta: [
