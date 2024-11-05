@@ -57,6 +57,7 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted } from 'vue';
 // Define page metadata
 definePageMeta({
   layout: 'custom-layout',
@@ -121,6 +122,26 @@ definePageMeta({
       }
     ]
   }
+});
+
+
+
+// Pause videos on scroll
+const handleScroll = () => {
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 </script>
 

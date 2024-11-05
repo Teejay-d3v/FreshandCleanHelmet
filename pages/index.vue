@@ -3,6 +3,7 @@
     <ProductHero  />
     <ProductAbout />
     <ProductFeatures  />
+    <!-- <Video  /> -->
     <BookNow />
     <InquiryForm />
   </div>
@@ -51,6 +52,7 @@ definePageMeta({
 
 import ProductHero from '@/components/ProductHero.vue';
 import ProductFeatures from '@/components/ProductFeatures.vue';
+// import Video from '~/components/Video.vue';
 import BookNow from '~/components/BookNow.vue';
 import InquiryForm from '~/components/InquiryForm.vue';
 </script>

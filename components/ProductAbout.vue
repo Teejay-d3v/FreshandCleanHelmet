@@ -253,6 +253,22 @@
           <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
           <p class="text-gray-700 text-base md:text-lg leading-relaxed w-full flex-row">
             Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>helmet washing vending machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
+            <NuxtLink 
+                href="/how-it-works" 
+                class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
+                How it Works
+                <svg 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    class="w-5 h-5 ml-2" 
+                    viewBox="0 0 24 24"
+                >
+                    <path d="M7 17l10-10M17 17V7h-10" />
+                </svg>
+            </NuxtLink>
           </p>
         </div>
       </div>
@@ -271,6 +287,22 @@
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
             Our <strong>helmet cleaning</strong> machine utilizes cutting-edge technology to deliver high-temperature drying combined with powerful stereo airflow, ensuring your helmets dry rapidly and thoroughly after each cleaning cycle.
           </p>
+          <NuxtLink 
+                href="/how-it-works" 
+                class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
+                How it Works
+                <svg 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  class="w-5 h-5 ml-2" 
+                  viewBox="0 0 24 24"
+              >
+                  <path d="M7 17l10-10M17 17V7h-10" />
+                </svg>
+            </NuxtLink>
         </div>
       </div>
 
@@ -288,6 +320,22 @@
           <p class="text-gray-700 text-base md:text-lg leading-relaxed">
             Eliminate 99.9% of germs and bacteria with the <strong>helmet cleaning vendo machine</strong>. It’s designed to deliver unmatched cleanliness and long-lasting freshness, so your helmet stays safe and hygienic for every ride.
           </p>
+          <NuxtLink 
+              href="/how-it-works" 
+              class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
+              How it Works
+              <svg 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                stroke-width="2" 
+                class="w-5 h-5 ml-2" 
+                viewBox="0 0 24 24"
+            >
+                <path d="M7 17l10-10M17 17V7h-10" />
+              </svg>
+            </NuxtLink>
         </div>
       </div>
     </section>
