@@ -62,6 +62,11 @@
               >FAQ's</NuxtLink
             >
             <NuxtLink
+              to="/how-it-works"
+              class="text-white hover:text-gray-200 transition duration-300"
+              >How it Works</NuxtLink
+            >
+            <NuxtLink
               to="/contactUs"
               class="text-white hover:text-gray-200 transition duration-300"
               >Contact Us</NuxtLink
@@ -79,7 +84,6 @@
           </div>
         </div>
 
-        <!-- Mobile Menu -->
           <!-- Mobile Menu -->
           <div
             v-show="isMenuOpen"
@@ -108,6 +112,12 @@
               @click="toggleMenu"
               class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
               >FAQ's</NuxtLink
+            >
+            <NuxtLink
+              to="/how-it-works"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >How it Works</NuxtLink
             >
             <NuxtLink
               to="/contactUs"
@@ -177,6 +187,9 @@
           </li>
         </ul>
         <ul class="space-y-2">
+          <li>
+            <NuxtLink to="/how-it-works" @click="toggleMenu" class="link-item">How it works</NuxtLink>
+          </li>
           <li>
             <NuxtLink to="/contactUs" @click="toggleMenu" class="link-item">Contact Us</NuxtLink>
           </li>

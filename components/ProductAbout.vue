@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-10">
-  
+    <NuxtLink to="/how-it-works" class="link-item">how it works</NuxtLink>
       <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
@@ -8,10 +8,30 @@
           </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
-                <div class="flex flex-col mb-5 items-start">
-                    <h1  class="text-gray-900 font-semibold">Product Features</h1>
-                    <h2 class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Machine</h2>
-                    <div ref="product_feature_svg1" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                <div class="flex flex-col mb-5 items-start">  
+                  <div class="flex flex-col lg:flex-row justify-between items-start w-full p-4">
+                    <div class="mb-4 lg:mb-0">
+                        <h1 class="text-gray-900 font-semibold text-2xl">Product Features</h1>
+                        <h2 class="text-gray-400 text-lg font-semibold">Helmet Cleaning Machine</h2>
+                    </div>
+                    <NuxtLink 
+                        href="/how-it-works" 
+                        class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
+                        How it Works
+                        <svg 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2" 
+                            class="w-5 h-5 ml-2" 
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M7 17l10-10M17 17V7h-10" />
+                        </svg>
+                    </NuxtLink>
+                </div>
+                      <div ref="product_feature_svg1" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#4F46E5"><path d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
                     </div>
                     <div  class="flex-grow">
@@ -58,10 +78,14 @@
             <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="/images/machine4.png" loading="lazy" />
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
-            <div class="flex flex-col mb-5 items-start ">
-              <h1 ref="product_specifications_h1" class="text-gray-900 font-semibold ">Product Specifications</h1>
-              <h2 ref="product_specifications_h2" class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
-              
+            <div class="flex flex-col mb-5 items-start ">              
+              <div class="flex flex-col lg:flex-row justify-between items-start w-full p-4">
+                    <div class="mb-4 lg:mb-0">
+                      <h1 ref="product_specifications_h1" class="text-gray-900 font-semibold ">Product Specifications</h1>
+                      <h2 ref="product_specifications_h2" class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
+                    </div>
+
+                </div>
               <div  class=" rounded flex h-full items-center">
                 <svg ref="product_specifications_svg1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -183,12 +207,29 @@
                 </div>
               </div>
 
-              <div class="">
-                <p class="info-text text-slate-400 mt-2 pr-5 p-5 lg:p-0 lg:pr-4 lg: ">
-                  Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine. 
-                  <NuxtLink to="#how-it-works" class="link"> Click Here! </NuxtLink>
+              <div class="lg:pr-4">
+                <p class="info-text text-slate-400 mt-2 p-5 lg:p-0 lg:pr-4">
+                    Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine. 
+                    <NuxtLink 
+                        href="/how-it-works" 
+                        class="text-orange-600 hover:text-orange-800 text-lg font-medium items-center inline-flex"
+                    >
+                        <span>How it Works</span>
+                        <svg 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2" 
+                            class="w-5 h-5 ml-1" 
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M7 17l10-10M17 17V7h-10" />
+                        </svg>
+                    </NuxtLink>
                 </p>
-              </div>
+            </div>
+
 
           </div>
           <div ref="product_specifications_img" class="hidden lg:block lg:w-1/2 w-full mb-5 lg:mb-0   ">
