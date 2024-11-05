@@ -16,7 +16,9 @@
             autoplay
             loop
             muted
+            loading="lazy"
             class="w-full h-full object-cover"
+             aria-label="Helmet Cleaning Vending Machine walkthrough video"
           ></video>
         </div>
         <div class="max-w-xl w-full bg-white rounded-lg shadow-md md:p-4 md:mt-4 mt-20">
@@ -43,7 +45,9 @@
             autoplay
             loop
             muted
+            loading="lazy"
             class="w-full h-full object-contain bg-black"
+             aria-label="Helmet Cleaning Vending Machine walkthrough video"
           ></video>
         </div>
         <div class="max-w-xl w-full bg-white rounded-lg shadow-md p-4 mt-4">
@@ -64,11 +68,16 @@ definePageMeta({
   name: 'How it Works',
   head: {
     link: [
-      {
-        rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/how-it-works' 
-      }
-    ],
+    {
+      rel: 'preload',
+      href: '/hpro.mp4',
+      as: 'video'
+    },
+    {
+      rel: 'canonical',
+      href: 'https://www.helmetprosolutions.com/how-it-works'
+    }
+  ],
     script: [
       {
         type: 'application/ld+json',
@@ -124,17 +133,28 @@ definePageMeta({
   }
 });
 
-
-
-// Pause videos on scroll
+let scrollTimeout;
 const handleScroll = () => {
-  const videos = document.querySelectorAll('video');
-  videos.forEach(video => {
-    if (!video.paused) {
-      video.pause();
-    }
-  });
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      if (!video.paused) {
+        video.pause();
+      }
+    });
+  }, 200); // adjust delay as needed
 };
+
+// // Pause videos on scroll
+// const handleScroll = () => {
+//   const videos = document.querySelectorAll('video');
+//   videos.forEach(video => {
+//     if (!video.paused) {
+//       video.pause();
+//     }
+//   });
+// };
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
