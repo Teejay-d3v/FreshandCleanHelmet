@@ -89,7 +89,19 @@ export default defineNuxtConfig({
             caption: 'Insights on helmet cleaning and maintenance'
           }
         ]
-      }
+      },
+      {
+        url: '/', 
+        video: [
+          {
+            content_loc: 'https://www.helmetprosolutions.com/hpro.mp4',
+            title: 'How Our Helmet Cleaning Vending Machine Works',
+            description: 'This video provides a step-by-step guide on how to use the HelmetPro Cleaning Vending Machine.',
+            thumbnail_loc: 'https://www.helmetprosolutions.com/images/thumbnailvideo.png',
+            duration: 10600, // Duration in seconds
+          },
+        ],
+      },
     ]
   },
   // sitemap : {
