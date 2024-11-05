@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 // Define page metadata
 definePageMeta({
   layout: 'custom-layout',
