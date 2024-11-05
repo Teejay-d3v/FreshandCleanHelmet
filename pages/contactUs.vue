@@ -85,13 +85,15 @@
     <section>
       <div class="contact-us-container">
         <div class="map-container mb-6">
-          <iframe
+          <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12865.080123659327!2d120.949117!3d14.446871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b9931daff42057%3A0xa10da4648c920012!2sMolino%203%2C%20Bacoor%20City%2C%20Cavite%2C%20Philippines!5e0!3m2!1sen!2sus!4v1698063299158!5m2!1sen!2sus"
             width="100%"
             height="300"
             style="border:0;"
             allowfullscreen=""
-            loading="lazy"></iframe>
+            loading="lazy"></iframe> -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15458.67564260357!2d120.9862246!3d14.3885581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3b0e5a510eb%3A0x66d07e63c978d0e4!2sHelmetPRO%20-%20Helmet%20Cleaning%20Vending%20Machine!5e0!3m2!1sen!2sph!4v1730811259124!5m2!1sen!2sph" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
