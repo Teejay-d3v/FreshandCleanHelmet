@@ -1,6 +1,5 @@
 <template>
   <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-10">
-    <NuxtLink to="/how-it-works" class="link-item">how it works</NuxtLink>
       <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
@@ -9,9 +8,9 @@
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
                 <div class="flex flex-col mb-5 items-start">  
-                  <div class="flex flex-col lg:flex-row justify-between items-start w-full p-4">
+                  <div class="flex flex-col lg:flex-row justify-between items-start w-full lg:py-4 lg:pr-5">
                     <div class="mb-4 lg:mb-0">
-                        <h1 class="text-gray-900 font-semibold text-2xl">Product Features</h1>
+                        <h1 class="text-gray-900 font-semibold text-2xl lg:text-5xl">Product Features</h1>
                         <h2 class="text-gray-400 text-lg font-semibold">Helmet Cleaning Machine</h2>
                     </div>
                     <NuxtLink 
@@ -79,9 +78,9 @@
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
             <div class="flex flex-col mb-5 items-start ">              
-              <div class="flex flex-col lg:flex-row justify-between items-start w-full p-4">
+              <div class="flex flex-col lg:flex-row justify-between items-start w-full ">
                     <div class="mb-4 lg:mb-0">
-                      <h1 ref="product_specifications_h1" class="text-gray-900 font-semibold ">Product Specifications</h1>
+                      <h1 ref="product_specifications_h1" class="text-gray-900 font-semibold text-2xl lg:text-5xl">Product Specifications</h1>
                       <h2 ref="product_specifications_h2" class="text-gray-400 text-lg font-semibold mb-5">Helmet Cleaning Vending Machine</h2>
                     </div>
 
@@ -251,8 +250,9 @@
         <div ref="paragraph1" class="px-4 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
           <h1 class="lg:text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
           <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
-          <p class="text-gray-700 text-base md:text-lg leading-relaxed w-full flex-row">
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
             Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>helmet washing vending machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
+          </p>
             <NuxtLink 
                 href="/how-it-works" 
                 class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
@@ -269,7 +269,6 @@
                     <path d="M7 17l10-10M17 17V7h-10" />
                 </svg>
             </NuxtLink>
-          </p>
         </div>
       </div>
 

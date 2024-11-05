@@ -33,7 +33,6 @@
           <NuxtImg src="/images/mobileview/feature4.png" alt="Helmet Fresh Detail" class="w-full" loading="lazy"/>
           <NuxtImg src="/images/mobileview/feature5.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
           <NuxtImg src="/images/mobileview/feature6.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
-          <NuxtImg src="/images/mobileview/feature3.png" alt="Helmet Fresh Application" class="w-full" loading="lazy"/>
         </div>
 
         <!-- Slider Controls -->
