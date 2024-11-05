@@ -82,9 +82,9 @@ definePageMeta({
             "@type": "VideoObject",
             "name": "How to Use the HelmetPro Cleaning Vending Machine",
             "description": "A step-by-step guide on using the HelmetPro Cleaning Vending Machine, featuring efficient helmet sanitization.",
-            "thumbnailUrl": "https://www.helmetprosolutions.com/hpro_thumbnail.jpg", // Add your thumbnail URL here
+            "thumbnailUrl": "https://www.helmetprosolutions.com/thumbnailvideo.png", // Add your thumbnail URL here
             "contentUrl": "https://www.helmetprosolutions.com/hpro.mp4",
-            "embedUrl": "https://www.helmetprosolutions.com/how-it-works#video", // Optional: point to a watch page
+            "embedUrl": "https://www.helmetprosolutions.com/hpro.mp4", // Optional: point to a watch page
             "duration": "PT2M33S", // Example duration; update accordingly
             "uploadDate": "2024-11-05", // Update with the actual upload date
             "publisher": {
