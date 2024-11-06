@@ -174,12 +174,11 @@ export default defineNuxtConfig({
                 crossorigin: 'anonymous'
               },
               {
-                src: '//js.hs-scripts.com/48016608.js',
                 type: 'text/javascript',
+                src: '//js.hs-scripts.com/48016608.js',
                 async: true,
                 defer: true,
                 id: 'hs-script-loader',
-                tagPosition: 'bodyClose'
               }
               // {
               //   hid: 'tawk-to',
