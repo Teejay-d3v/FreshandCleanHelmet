@@ -49,10 +49,10 @@
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
-              <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
+              <h2 class="font-semibold text-indigo-800 mb-2 uppercase">
                 Assumption 1: 90-100% Utilization
               </h2>
-              <p class="text-sm text-indigo-600">
+              <p class="text-sm text-gray-500 ">
                 If your machine is running (10 hours/day) throughout the day,
                 servicing about
                 <span class="font-bold">40 helmets daily:</span>
@@ -61,17 +61,17 @@
             <!-- Income Breakdown -->
             <div>
               <ul class="space-y-3 text-lg text-gray-600">
-                <li>Average Price Per Wash: <span class="font-bold">₱100</span></li>
+                <li ><span class="font-bold">Average Price Per Wash:</span> ₱100</li>
                 <li>
-                  <span class="font-semibold">Daily Income:</span> ₱4,000
+                  <span class="font-bold">Daily Income:</span> ₱4,000
                   (₱100 x 40 helmets)
                 </li>
                 <li>
-                  <span class="font-semibold">Weekly Income:</span> ₱28,000
+                  <span class="font-bold">Weekly Income:</span> ₱28,000
                   (₱4,000 x 7 days)
                 </li>
                 <li>
-                  <span class="font-semibold">Monthly Income:</span> ₱120,400
+                  <span class="font-bold">Monthly Income:</span> ₱120,400
                   (₱28,000 x 4.3 weeks)
                 </li>
               </ul>
@@ -84,10 +84,10 @@
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
-              <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
+              <h2 class=" font-semibold text-indigo-800 mb-2 uppercase">
                 Assumption 2: 50% Utilization
               </h2>
-              <p class="text-sm text-indigo-600">
+              <p class="text-sm text-gray-500 ">
                 If your machine is running at half capacity, cleaning
                 approximately
                 <span class="font-bold">20 helmets daily:</span>
@@ -96,17 +96,17 @@
             <!-- Income Breakdown -->
             <div>
               <ul class="space-y-3 text-lg text-gray-600">
-                <li>Average Price Per Wash: <span class="font-bold">₱100</span></li>
+                <li><span class="font-bold">Average Price Per Wash:</span> ₱100</li>
                 <li>
-                  <span class="font-semibold">Daily Income:</span> ₱2,000
+                  <span class="font-bold">Daily Income:</span> ₱2,000
                   (₱100 x 20 helmets)
                 </li>
                 <li>
-                  <span class="font-semibold">Weekly Income:</span> ₱14,000
+                  <span class="font-bold">Weekly Income:</span> ₱14,000
                   (₱2,000 x 7 days)
                 </li>
                 <li>
-                  <span class="font-semibold">Monthly Income:</span> ₱60,200
+                  <span class="font-bold">Monthly Income:</span> ₱60,200
                   (₱14,000 x 4.3 weeks)
                 </li>
               </ul>
@@ -119,10 +119,10 @@
           >
             <!-- Heading -->
             <div class="mb-4 border-b-2 border-indigo-600 pb-2">
-              <h2 class="text-2xl font-semibold text-indigo-800 mb-2">
+              <h2 class=" font-semibold text-indigo-800 mb-2 uppercase">
                 Assumption 3: 25% Utilization
               </h2>
-              <p class="text-sm text-indigo-600">
+              <p class="text-sm text-gray-500 ">
                 If your machine is running at 25% capacity, cleaning around
                 <span class="font-bold">10 helmets per day:</span>
               </p>
@@ -130,17 +130,17 @@
             <!-- Income Breakdown -->
             <div>
               <ul class="space-y-3 text-lg text-gray-600">
-                <li>Average Price Per Wash: <span class="font-bold">₱100</span></li>
+                <li><span class="font-bold">Average Price Per Wash:</span> ₱100</li>
                 <li>
-                  <span class="font-semibold">Daily Income:</span> ₱1,000
+                  <span class="font-bold">Daily Income:</span> ₱1,000
                   (₱100 x 10 helmets)
                 </li>
                 <li>
-                  <span class="font-semibold">Weekly Income:</span> ₱7,000
+                  <span class="font-bold">Weekly Income:</span> ₱7,000
                   (₱1,000 x 7 days)
                 </li>
                 <li>
-                  <span class="font-semibold">Monthly Income:</span> ₱30,100
+                  <span class="font-bold">Monthly Income:</span> ₱30,100
                   (₱7,000 x 4.3 weeks)
                 </li>
               </ul>
