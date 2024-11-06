@@ -33,10 +33,34 @@
 definePageMeta({
   layout: 'custom-layout',
   name: 'BLOG',
+  head: {
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.helmetprosolutions.com/blog'
+      }
+    ],
+    meta: [
+            { hid: 'description', name: 'description', content: 'Helmet Cleaning Vending Machine, offering a game-changing approach to helmet hygiene and sanitation. This automated helmet cleaning solution is designed to make helmet care accessible, efficient, and eco-friendly for motorcyclists. Utilizing advanced helmet cleaning technology, our machine ensures helmet disinfection by effectively removing bacteria, sweat, and odors. Perfect for high-traffic areas, this self-service helmet cleaner provides convenient and reliable helmet sanitization that supports a' },
+            { hid: 'keywords', name: 'keywords', content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' }
+          ],
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "HelmetPro - Blog",
+          "description": "Helmet Cleaning Vending Machine, offering a game-changing approach to helmet hygiene and sanitation. This automated helmet cleaning solution is designed to make helmet care accessible, efficient, and eco-friendly for motorcyclists. Utilizing advanced helmet cleaning technology, our machine ensures helmet disinfection by effectively removing bacteria, sweat, and odors. Perfect for high-traffic areas, this self-service helmet cleaner provides convenient and reliable helmet sanitization that supports a",
+          "url": "https://www.helmetprosolutions.com/blog"
+        }),
+      }
+    ]
+  }
 });
 const blogContent = {
   title: 'Revolutionizing Helmet Hygiene with the Helmet Cleaning Vending Machine',
-  date: '2024-11-02',
+  date: '2024-11-06',
   image: '/images/machine3.png',
   content: ` 
     <p>Helmet Pro Solutions introduces a revolutionary <strong>Helmet Cleaning Vending Machine</strong>, offering a game-changing approach to <strong>helmet hygiene</strong> and <strong>sanitation</strong>. This <strong>automated helmet cleaning solution</strong> is designed to make <strong>helmet care</strong> accessible, efficient, and <strong>eco-friendly</strong> for motorcyclists. Utilizing <strong>advanced helmet cleaning technology</strong>, our machine ensures <strong>helmet disinfection</strong> by effectively removing bacteria, sweat, and odors. Perfect for high-traffic areas, this <strong>self-service helmet cleaner</strong> provides convenient and reliable <strong>helmet sanitization</strong> that supports a cleaner, healthier riding experience.</p><br><br>
