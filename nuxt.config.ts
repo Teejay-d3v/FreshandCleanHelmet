@@ -172,13 +172,6 @@ export default defineNuxtConfig({
                 hid: 'tawk-to',
                 async: true,
                 crossorigin: 'anonymous'
-              },
-              {
-                type: 'text/javascript',
-                src: '//js.hs-scripts.com/48016608.js',
-                async: true,
-                defer: true,
-                id: 'hs-script-loader',
               }
               // {
               //   hid: 'tawk-to',
