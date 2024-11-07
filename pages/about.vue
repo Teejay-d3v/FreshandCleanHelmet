@@ -19,9 +19,9 @@ definePageMeta({
       }
     ],
     meta: [
-            { hid: 'description', name: 'description', content: 'Learn more about HelmetPro, our mission, and how we provide innovative helmet cleaning vending machines for hygiene and convenience.' },
-            { hid: 'keywords', name: 'keywords', content: 'HelmetPro, helmet cleaning, vending machines, hygiene, convenience' }
-          ],
+      { hid: 'description', name: 'description', content: 'Discover HelmetPro and our commitment to revolutionizing helmet hygiene with our advanced vending machines that offer convenience and cleanliness.' },
+      { hid: 'keywords', name: 'keywords', content: 'HelmetPro, helmet hygiene, vending solutions, innovative cleaning, convenience, hygiene machines' }
+    ],
     script: [
       {
         type: 'application/ld+json',
@@ -29,13 +29,14 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "About HelmetPro",
-          "description": "Learn more about HelmetPro, our mission, and how we provide innovative helmet cleaning vending machines for hygiene and convenience.",
+          "description": "Discover HelmetPro and our commitment to revolutionizing helmet hygiene with our advanced vending machines that offer convenience and cleanliness.",
           "url": "https://www.helmetprosolutions.com/about"
         }),
       }
     ]
   }
 });
+
 </script>
 
 <style scoped>

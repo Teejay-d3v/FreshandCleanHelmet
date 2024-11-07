@@ -91,7 +91,7 @@ definePageMeta({
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Partnership Opportunities",
-          "description": "Explore partnership opportunities with HelmetPro.",
+          "description": "Discover the exciting partnership opportunities with HelmetPro and how you can join us in transforming helmet hygiene solutions.",
           "url": "https://www.helmetprosolutions.com/partnership"
         }),
       },
@@ -99,11 +99,11 @@ definePageMeta({
         type: 'application/ld+json',
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "WebPage",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
           "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
-          "description": "HelmetPro provides state-of-the-art helmet cleaning vending machines and dedicated support for business growth. We partner with distributors to ensure their long-term success.",
+          "description": "HelmetPro offers cutting-edge helmet cleaning vending machines and comprehensive business support for distributors, helping them thrive and grow.",
           "sameAs": [
             "https://www.facebook.com/helmetprosolutions",
             "https://www.instagram.com/helmetpro_vendo"
@@ -120,6 +120,7 @@ definePageMeta({
     ]
   }
 });
+
 
 
 const benefits = ref([
