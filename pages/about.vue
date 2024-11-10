@@ -5,7 +5,11 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
+const route = useRoute()
+const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
 
 
 definePageMeta({
@@ -16,7 +20,7 @@ definePageMeta({
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/about'
+        href: canonicalUrl.value
       }
     ],
     meta: [

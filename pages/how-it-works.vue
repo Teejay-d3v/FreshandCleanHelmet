@@ -61,7 +61,11 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, computed } from 'vue';
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
 // Define page metadata
 definePageMeta({
   layout: 'custom-layout',
@@ -76,7 +80,7 @@ definePageMeta({
     {
       hid: 'canonical',
       rel: 'canonical',
-      href: 'https://www.helmetprosolutions.com/how-it-works'
+      href: canonicalUrl.value
     }
   ],
     script: [

@@ -72,7 +72,11 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
+const route = useRoute()
+const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
 definePageMeta({
   layout: 'custom-layout',
   name: 'JOIN US',
@@ -81,7 +85,7 @@ definePageMeta({
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://www.helmetprosolutions.com/partnership'
+        href: canonicalUrl.value
       }
     ],
 
