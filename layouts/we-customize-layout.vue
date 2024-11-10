@@ -52,7 +52,7 @@
               >About Us</NuxtLink
             >
             <NuxtLink
-              to="/our-service"
+              to="/wecustomize"
               class="text-white hover:text-gray-200 transition duration-300"
               >Our Service</NuxtLink
             >

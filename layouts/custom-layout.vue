@@ -190,19 +190,18 @@
     <!-- Contact Section -->
     <div class="flex flex-col mb-6 md:mb-0">
       <h2 class="text-lg font-bold text-indigo-700 mb-2">Contact Us</h2>
-      <p class="mb-1 flex items-center">
+      <p class="mb-1 flex items-center py-2">
         <i class="fas fa-envelope text-indigo-600 text-2xl mr-2"></i>
-        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500">partnerships@helmetprosolutions.com</a>
+        <a href="mailto:partnerships@helmetprosolutions.com" class="underline text-indigo-600 hover:text-indigo-500 pl-4 ">partnerships@helmetprosolutions.com</a>
       </p>
-      <p class="flex items-center">
+      <p class="flex items-center py-2">
         <i class="fas fa-phone text-indigo-600 text-2xl mr-2"></i>
-        <span class="font-medium text-indigo-600">+63-962-753-3915</span>
+        <span class="font-medium text-indigo-600 pl-4">+63-962-753-3915</span>
       </p>
-      <p class="flex items-center">
+      <p class="flex items-center py-2">
         <i class="fas fa-map-marker-alt text-indigo-600 text-4xl mb-2"></i>
-        <span class="font-medium text-indigo-600">Location</span>
+        <span class="font-medium text-indigo-600 pl-4"><NuxtLink to="https://maps.app.goo.gl/XQ56tYcUKCKjtw8d7" target="_blank" rel="noopener noreferrer">Camella Spring Vile Molino 3 Bacoor</NuxtLink></span>
       </p>
-       
     </div>
 
     <!-- Quick Links Section -->

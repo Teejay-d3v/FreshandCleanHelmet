@@ -347,7 +347,7 @@
           <!-- Headline with bold font and glowing text effect -->
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 animate__animated animate__fadeInUp 
                     text-shadow-lg">
-            Rebrand Your Helmet Cleaning Vending Machine
+            We Customize Your Helmet Cleaning Vending Machine
           </h1>
           
           <!-- Description with increased contrast for readability -->
