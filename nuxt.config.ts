@@ -262,11 +262,6 @@ export default defineNuxtConfig({
         { hid: 'fb:app_id', property: 'fb:app_id', content: 'YOUR_FACEBOOK_APP_ID' } // Facebook App ID
       ],
       link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://www.helmetprosolutions.com' 
-        },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
