@@ -147,7 +147,7 @@ definePageMeta({
               "addressCountry": "PH"
             },
             "sameAs": [
-            "https://www.facebook.com/helmetprosolutions",
+            "https://www.facebook.com/helmetprosolutions ",
             "https://www.instagram.com/helmetpro_vendo"
             ]
           }

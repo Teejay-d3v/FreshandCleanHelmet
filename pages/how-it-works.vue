@@ -3,7 +3,7 @@
     <div class="hidden lg:flex flex-col text-center w-full mx-auto px-4 bg-gradient-to-r from-blue-300 to-teal-100 md:bg-gradient-to-r md:from-blue-300 md:to-teal-100 pb-52 lg:pb-20">
       <div class="p-5">
         <h1 class="lg:text-5xl font-bold text-white mt-10 md:text-indigo-600 mb-2">Walkthrough</h1>
-        <h2 class="text-black text-center text-xl lg:text-3xl">How Our Helmet Cleaning Vending Machine Works</h2>
+        <h2 class="text-black text-center text-xl lg:text-3xl">How Our Helmet Cleaning Vending Machine Works </h2>
         <p class="info-text">
           Discover the innovative features and functionalities of our Helmet Cleaning Vending Machine.
         </p>

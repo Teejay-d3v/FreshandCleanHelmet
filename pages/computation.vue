@@ -19,7 +19,7 @@ definePageMeta({
           "@type": "WebPage",
           "name": "Potential Income Computation",
           "url": "https://www.helmetprosolutions.com/computation",
-          "description": "Calculate your potential income from the Helmet Cleaning Vending Machine based on various utilization rates.",
+          "description": "Calculate your potential income from the Helmet Cleaning  Vending Machine based on various utilization rates.",
           "mainEntity": {
             "@type": "HowTo",
             "name": "Income Calculation for Helmet Cleaning Vending Machine",

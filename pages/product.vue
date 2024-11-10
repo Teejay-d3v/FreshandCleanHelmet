@@ -1,6 +1,54 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-300 to-teal-100 py-10">
-      <!-- <section class="text-gray-600 body-font">
+  <div class="bg-gradient-to-r from-blue-200 to-teal-100 pb-20">
+    <section class="lg:px-4 py-4 lg:py-8 max-w-[1500px] mx-auto">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+  
+  <!-- Image Section -->
+  <div class="md:col-span-1 shadow-2xl">
+    <NuxtImg
+      src="/images/machine3.png"
+      alt="Revolutionizing Helmet Hygiene with the Helmet Cleaning Vending Machine - Helmet Pro Solutions"
+      class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"
+    />
+    <div  class="text-xs md:text-sm text-gray-500 mt-2">
+      
+      Helmet Pro Solutions' Helmet Cleaning Vending Machine - advanced, eco-friendly,  and user-friendly solution for helmet hygiene.
+    </div>
+    
+  </div>
+
+  <!-- Text Section -->
+  <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-2xl ">
+    <h1 ref="revolutionizing_title1" class="text-3xl lg:text-5xl font-extrabold text-indigo-600 ">
+      Revolutionizing Helmet Hygiene 
+    </h1>
+    <h2 ref="revolutionizing_subtitle1" class="text-xl lg:text-2xl font-extrabold text-gray-600">Helmet Cleaning Vending Machine</h2>
+    <div class="prose max-w-none text-gray-700 mt-4">
+      
+      <p ref="revolutionizing_paragraph1">
+        Helmet Pro Solutions introduces a revolutionary <strong>Helmet Cleaning Vending Machine</strong>, offering a game-changing approach to <strong>helmet hygiene</strong> and <strong>sanitation</strong>. This <strong>automated helmet cleaning solution</strong> is designed to make <strong>helmet care</strong> accessible, efficient, and <strong>eco-friendly</strong> for motorcyclists. Utilizing <strong>advanced helmet cleaning technology</strong>, our machine ensures <strong>helmet disinfection</strong> by effectively removing bacteria, sweat, and odors. Perfect for high-traffic areas, this <strong>self-service helmet cleaner</strong> provides convenient and reliable <strong>helmet sanitization</strong> that supports a cleaner, healthier riding experience.
+      </p>
+
+      <h2 ref="revolutionizing_subtitle2">Advanced Helmet Cleaning Technology</h2>
+      <p ref="revolutionizing_paragraph2">
+        Our vending machine uses innovative cleaning technology that thoroughly <strong>sanitizes helmets</strong>, removing bacteria, sweat, and odors. The process is quick and effective, making it ideal for <strong>high-traffic areas</strong> like <strong>motorcycle parking spots</strong>, and helmet rental stations.
+      </p>
+
+      <h2 ref="revolutionizing_subtitle3">Eco-Friendly Cleaning Solutions</h2>
+      <p ref="revolutionizing_paragraph3">
+        We prioritize <strong>eco-friendly helmet cleaning</strong> agents that are safe for both users and the environment. This approach helps us maintain high standards in helmet hygiene without compromising sustainability. Our products are carefully chosen to ensure <strong>helmet disinfection</strong> that is gentle on materials yet powerful against bacteria.
+      </p>
+
+      <h2 ref="revolutionizing_subtitle4">Effortless User Experience</h2>
+      <p ref="revolutionizing_paragraph4">
+        Our <strong>Helmet Cleaning Vending Machine</strong> is incredibly <strong>user-friendly</strong>, allowing anyone to clean their helmet in minutes. This standalone solution is perfect for riders who value cleanliness and convenience, making <strong>helmet hygiene</strong> as easy as inserting a coin or card.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+    <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
             <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
@@ -68,7 +116,6 @@
             </div>
         </div>
       </section>
-
 
       <section class="text-gray-600 body-font">
         <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
@@ -235,157 +282,57 @@
             <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="/images/machine4.png" loading="lazy" />
           </div>
         </div>
-      </section> -->
-
-
-    <!-- Section One -->
-    <section>
-      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
-        <div ref="image1" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Cleaning Service" src="/images/product4.png" loading="lazy"/>
-        </div>
-        <div ref="image_mobile1" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Helmet Cleaning Service" src="/images/mobileview/helmet.png" loading="lazy"/>
-        </div>
-        <div ref="paragraph1" class="px-4 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class="lg:text-5xl text-indigo-700 py-2">Deep-Clean Technology</h1>
-          <h2 class="text-gray-900  py-2">360 Degrees of Clean</h2>
-          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Experience 360 Degrees of Clean with Zero Dead Ends! Our innovative <strong>helmet washing vending machine</strong> guarantees a thorough dry clean that leaves no corner untouched. Say goodbye to dirt and odors while ensuring your helmet is sanitized and ready for your next adventure.
-          </p>
-            <NuxtLink 
-                href="/how-it-works" 
-                class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
-                How it Works
-                <svg 
-                    fill="none" 
-                    stroke="currentColor" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
-                    class="w-5 h-5 ml-2" 
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M7 17l10-10M17 17V7h-10" />
-                </svg>
-            </NuxtLink>
-        </div>
-      </div>
-
-      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
-        <div ref="image2" class="lg:flex hidden w-full justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Helmet Pro" src="/images/product2.png" loading="lazy"/>
-        </div>
-        <!-- Mobile view -->
-        <div ref="image_mobile2" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Turbo-Dry System" src="/images/mobileview/helmet2.png" loading="lazy"/>
-        </div>
-        <div ref="paragraph2" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class=" lg:text-5xl text-indigo-700 py-2">Turbo-Dry System</h1>
-          <h2 class="text-gray-900  py-2">High-temperature drying</h2>
-          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Our <strong>helmet cleaning</strong> machine utilizes cutting-edge technology to deliver high-temperature drying combined with powerful stereo airflow, ensuring your helmets dry rapidly and thoroughly after each cleaning cycle.
-          </p>
-          <NuxtLink 
-                href="/how-it-works" 
-                class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
-                How it Works
-                <svg 
-                  fill="none" 
-                  stroke="currentColor" 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  stroke-width="2" 
-                  class="w-5 h-5 ml-2" 
-                  viewBox="0 0 24 24"
-              >
-                  <path d="M7 17l10-10M17 17V7h-10" />
-                </svg>
-            </NuxtLink>
-        </div>
-      </div>
-
-      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
-        <div ref="image3" class="w-full lg:flex hidden justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-t-3xl shadow-lg " alt="Bacteria-Busting Power" src="/images/product3.png" loading="lazy"/>
-        </div>
-        <!-- Mobile view -->
-        <div ref="image_mobile3" class="lg:hidden w-full flex justify-center mb-6 md:mb-0">
-          <NuxtImg class="object-cover w-full h-auto rounded-3xl shadow-lg " alt="Bacteria-Busting Power" src="/images/mobileview/helmet3.png" loading="lazy"/>
-        </div>
-        <div ref="paragraph3" class="px-4 md:px-10 w-full  flex flex-col items-center md:items-start  md:text-left p-4 md:p-10 rounded-b-3xl shadow-2xl bg-slate-100">
-          <h1 class=" lg:text-5xl text-indigo-700 py-2">Bacteria-Busting Power</h1>
-          <h2 class="text-gray-900  py-2"> Eliminate 99.9% of germs</h2>
-          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-            Eliminate 99.9% of germs and bacteria with the <strong>helmet cleaning vendo machine</strong>. It’s designed to deliver unmatched cleanliness and long-lasting freshness, so your helmet stays safe and hygienic for every ride.
-          </p>
-          <NuxtLink 
-              href="/how-it-works" 
-              class="text-orange-600 hover:text-orange-800 text-lg font-medium flex items-center mt-2 lg:mt-0">
-              How it Works
-              <svg 
-                fill="none" 
-                stroke="currentColor" 
-                stroke-linecap="round" 
-                stroke-linejoin="round" 
-                stroke-width="2" 
-                class="w-5 h-5 ml-2" 
-                viewBox="0 0 24 24"
-            >
-                <path d="M7 17l10-10M17 17V7h-10" />
-              </svg>
-            </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <section > 
-      <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap ">
-      <!-- Glass card effect with vibrant gradient, enhanced blur and shadow -->
-      <div class="bg-gradient-to-r from-blue-500 to-teal-700 bg-opacity-70 rounded-xl shadow-2xl backdrop-blur-lg p-12 ">
-        <div class="relative z-10">
-          <!-- Headline with bold font and glowing text effect -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 animate__animated animate__fadeInUp 
-                    text-shadow-lg">
-            Rebrand Your Helmet Cleaning Vending Machine
-          </h1>
-          
-          <!-- Description with increased contrast for readability -->
-          <p class="text-lg sm:text-xl text-white opacity-90 mb-8 max-w-3xl ">
-            Make your helmet cleaning machine an unforgettable experience. With our rebranding service, we design a machine that reflects your brand’s identity and captivates your customers. Stand out, make an impact, and leave a lasting impression.
-          </p>
-          
-          <!-- Call-to-action button with vibrant, engaging hover effect -->
-          <NuxtLink 
-              href="/our-service" 
-              class="text-white hover:text-black text-lg font-medium flex items-center mt-2 lg:mt-0">
-              Learn More
-              <svg 
-                fill="none" 
-                stroke="currentColor" 
-                stroke-linecap="round" 
-                stroke-linejoin="round" 
-                stroke-width="2" 
-                class="w-5 h-5 ml-2" 
-                viewBox="0 0 24 24"
-            >
-                <path d="M7 17l10-10M17 17V7h-10" />
-              </svg>
-            </NuxtLink>
-        </div>
-      </div>
-    </div>
-  </section>
-
+      </section>
 
   </div>
 </template>
 
 <script setup>
+definePageMeta({
+  layout: 'custom-layout',
+  name: 'PRODUCT',
+  head: {
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.helmetprosolutions.com/product'
+      }
+    ],
+    meta: [
+      { hid: 'description', name: 'description', content: 'The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time.' },
+      { hid: 'keywords', name: 'keywords', content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' }
+    ],
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "HelmetPro Blog",
+          "url": "https://www.helmetprosolutions.com/blog",
+          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "description": "The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time."
+        }),
+      }
+    ]
+  }
+});
+
 import { ref } from 'vue';
 import { useAnimations } from '@/composables/useAnimations';
 
+// Revolutionizing
+const revolutionizing_title1 = ref(null);
+const revolutionizing_subtitle1 = ref(null);
+const revolutionizing_subtitle2 = ref(null);
+const revolutionizing_subtitle3 = ref(null);
+const revolutionizing_subtitle4 = ref(null);
+const revolutionizing_paragraph1 = ref(null);
+const revolutionizing_paragraph2 = ref(null);
+const revolutionizing_paragraph3 = ref(null);
+const revolutionizing_paragraph4 = ref(null);
 
+// Product_Features
 const product_feature_img = ref(null);
 const product_feature_svg1 = ref(null);
 const product_feature_svg2 = ref(null);
@@ -436,6 +383,7 @@ const product_specifications_paragraph7 = ref(null);
 const product_specifications_paragraph8 = ref(null);
 const product_specifications_paragraph9 = ref(null);
 
+// 
 
 const image1 = ref(null);
 const image2 = ref(null);
@@ -452,10 +400,59 @@ const { setupAnimations } = useAnimations();
 
 
 setupAnimations([
+ // Revolutionizing
+
+{
+    element: revolutionizing_title1,
+    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.5 },
+  },
+
+{
+    element: revolutionizing_subtitle1,
+    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.5 },
+  },
+  {
+    element: revolutionizing_subtitle2,
+    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.6 },
+  },
+  {
+    element: revolutionizing_subtitle3,
+    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.7 },
+  },
+  {
+    element: revolutionizing_subtitle4,
+    props: { x: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.8 },
+  },
+  {
+    element: revolutionizing_paragraph1,
+    props: { y: ['100%', '0%'], opacity: [0, 1] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.5 },
+  },
+  {
+    element: revolutionizing_paragraph2,
+    props: { y: ['100%', '0%'], opacity: [0, 5] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.6 },
+  },
+  {
+    element: revolutionizing_paragraph3,
+    props: { y: ['100%', '0%'], opacity: [0, 5] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.7 },
+  },
+  {
+    element: revolutionizing_paragraph4,
+    props: { y: ['100%', '0%'], opacity: [0, 5] },
+    options: { duration: 0.8, easing: 'ease-in-out', delay: 0.8 },
+  },
+
   // Product Features
   {
     element: product_feature_img,
-    props: { x: ['-100%', '0%'], opacity: [0, 1], scale: [0.95, 1] },
+    props: { x: ['-100%', '0%'], opacity: [0, 5], scale: [0.95, 1] },
     options: { duration: 0.6, easing: 'ease-in-out', delay: 0 },
   },
   {
@@ -679,7 +676,7 @@ setupAnimations([
   },
 
 
-
+// 
 
   
   {
@@ -731,23 +728,17 @@ setupAnimations([
 
 
 
+
 </script>
-
 <style scoped>
-
-.link {
-  color: #007bff; 
-  text-decoration: underline;
-  transition: color 0.3s; 
+.prose h2 {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  color: #1a202c;
 }
-
-.link:hover {
-  color: #0056b3; /* Darker color on hover */
+.prose p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #4a5568;
 }
-
-img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
 </style>

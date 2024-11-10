@@ -21,7 +21,7 @@ definePageMeta({
               "name": "Can the cleaning time be customized?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes! HelmetPro allows customizable settings—you can adjust the preferred cleaning time and process depending on the customer’s needs. Unlike other machines, you have control over the cleaning process for better results."
+                "text": "Yes! HelmetPro allows customizable  settings—you can adjust the preferred cleaning time and process depending on the customer’s needs. Unlike other machines, you have control over the cleaning process for better results."
               }
             },
             {

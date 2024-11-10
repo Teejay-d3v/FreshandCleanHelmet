@@ -47,27 +47,22 @@
               >Home</NuxtLink
             >
             <NuxtLink
+              to="/product"
+              class="text-white hover:text-gray-200 transition duration-300"
+              >Product</NuxtLink
+            >
+            <NuxtLink
               to="/about"
               class="text-white hover:text-gray-200 transition duration-300"
               >About Us</NuxtLink
             >
             <NuxtLink
-              to="/Computation"
+              to="/our-service"
               class="text-white hover:text-gray-200 transition duration-300"
-              >Computation</NuxtLink
+              >Our Service</NuxtLink
             >
             <NuxtLink
-              to="/faqs"
-              class="text-white hover:text-gray-200 transition duration-300"
-              >FAQ's</NuxtLink
-            >
-            <NuxtLink
-              to="/how-it-works"
-              class="text-white hover:text-gray-200 transition duration-300"
-              >How it Works</NuxtLink
-            >
-            <NuxtLink
-              to="/contactUs"
+              to="/contactus"
               class="text-white hover:text-gray-200 transition duration-300"
               >Contact Us</NuxtLink
             >
@@ -76,11 +71,48 @@
               class="text-white hover:text-gray-200 transition duration-300"
               >Join Us</NuxtLink
             >
-            <NuxtLink
-              to="/blog"
-              class="text-white hover:text-gray-200 transition duration-300"
-              >Blog</NuxtLink
-            >
+            
+            <div>
+              <!-- Blog Dropdown -->
+              <div class="relative group">
+                <!-- Button with Arrow -->
+                <button 
+                  @click="toggleBlogDropdown"
+                  class="text-white hover:text-gray-200  flex items-center"
+                  aria-expanded="isBlogDropdownOpen"
+                >
+                  Learn More
+                  <!-- Arrow icon -->
+                  <svg 
+                    :class="{'rotate-180': isBlogDropdownOpen}" 
+                    class="ml-2 transition-transform duration-200" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor" 
+                    width="16" 
+                    height="16"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <!-- Dropdown Menu (show on hover and click) -->
+                <div 
+                  v-show="isBlogDropdownOpen" 
+                  @mouseenter="isBlogDropdownOpen = true"
+                  @mouseleave="isBlogDropdownOpen = false"
+                  class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg z-10 transition-opacity duration-200 opacity-0 group-hover:opacity-100 group-hover:visible"
+                >
+                  <ul>
+                    <li><NuxtLink to="/computation" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Computation</NuxtLink></li>
+                    <li><NuxtLink to="/how-it-works" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">How it Works</NuxtLink></li>
+                    <li><NuxtLink to="/faqs" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQ's</NuxtLink></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -94,6 +126,12 @@
               @click="toggleMenu"
               class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
               >Home</NuxtLink
+            >
+            <NuxtLink
+              to="/product"
+              @click="toggleMenu"
+              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
+              >Product</NuxtLink
             >
             <NuxtLink
               to="/about"
@@ -131,12 +169,6 @@
               class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
               >Join Us</NuxtLink
             >
-            <NuxtLink
-              to="/blog"
-              @click="toggleMenu"
-              class="block text-white hover:bg-blue-700 py-2 rounded transition duration-300"
-              >Blog</NuxtLink
-            >
           </div>
       </nav>
     </section>
@@ -166,6 +198,11 @@
         <i class="fas fa-phone text-indigo-600 text-2xl mr-2"></i>
         <span class="font-medium text-indigo-600">+63-962-753-3915</span>
       </p>
+      <p class="flex items-center">
+        <i class="fas fa-map-marker-alt text-indigo-600 text-4xl mb-2"></i>
+        <span class="font-medium text-indigo-600">Location</span>
+      </p>
+       
     </div>
 
     <!-- Quick Links Section -->
@@ -174,30 +211,31 @@
       <div class="grid grid-cols-2 gap-4">
         <ul class="space-y-2">
           <li>
-            <NuxtLink to="/" @click="toggleMenu" class="link-item">Home</NuxtLink>
+            <NuxtLink to="/" @click="toggleMenu" class="link-item font-bold">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about" @click="toggleMenu" class="link-item">About</NuxtLink>
+            <NuxtLink to="/product" @click="toggleMenu" class="link-item font-bold">Product</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/Computation" @click="toggleMenu" class="link-item">Computation</NuxtLink>
+            <NuxtLink to="/about" @click="toggleMenu" class="link-item font-bold">About Us</NuxtLink>
           </li>
+          
           <li>
-            <NuxtLink to="/faqs" @click="toggleMenu" class="link-item">FAQ's</NuxtLink>
+            <NuxtLink to="/Computation" @click="toggleMenu" class="link-item font-bold">Computation</NuxtLink>
           </li>
         </ul>
         <ul class="space-y-2">
           <li>
-            <NuxtLink to="/how-it-works" @click="toggleMenu" class="link-item">How it works</NuxtLink>
+            <NuxtLink to="/how-it-works" @click="toggleMenu" class="link-item font-bold">How it works</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contactUs" @click="toggleMenu" class="link-item">Contact Us</NuxtLink>
+            <NuxtLink to="/contactUs" @click="toggleMenu" class="link-item font-bold">Contact Us</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/partnership" @click="toggleMenu" class="link-item">Join Us</NuxtLink>
+            <NuxtLink to="/partnership" @click="toggleMenu" class="link-item font-bold">Join Us</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/blog" @click="toggleMenu" class="link-item">Blog</NuxtLink>
+            <NuxtLink to="/faqs" @click="toggleMenu" class="link-item font-bold">FAQ's</NuxtLink>
           </li>
         </ul>
       </div>
@@ -241,7 +279,11 @@ const route = useRoute();
 const pageName = ref(route.meta.name || '');
 const isMenuOpen = ref(false);
 const isHidden = ref(false);
+const isBlogDropdownOpen = ref(false);
 
+const toggleBlogDropdown = () => {
+  isBlogDropdownOpen.value = !isBlogDropdownOpen.value;
+};
 watch(
   () => route.meta.name,
   (newName) => {

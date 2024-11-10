@@ -54,7 +54,7 @@
     </section>
 
     <section class="pb-16 bg-gradient-to-r from-blue-300 to-teal-100 text-center">
-      <h2 class="text-4xl font-bold mb-4 text-indigo-600">We're Here to Support You</h2>
+      <h2 class="text-4xl font-bold mb-4 text-indigo-600">We're Here to Support You.</h2>
       <p class="text-lg ">Our dedicated team will guide you every step of the way, ensuring your success as a distributor.</p>
       <p class="text-lg mb-6">Come and join to our Facebook Group Chat to discuss your needs and get support as a distributor in no time.</p>
       <a

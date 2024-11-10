@@ -26,7 +26,7 @@ definePageMeta({
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'HelmetPro, helmet cleaning, vending machines, hygiene, convenience, innovative solutions, rider safety'
+        content: 'HelmetPro, helmet cleaning, vending machines,hygiene, convenience, innovative solutions, rider safety'
       }
     ],
     script: [
