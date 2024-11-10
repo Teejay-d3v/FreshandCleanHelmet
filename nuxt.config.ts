@@ -53,6 +53,19 @@ export default defineNuxtConfig({
         ]
       },
       {
+        loc: '/product',
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: 0.7,
+        img: [
+          {
+            loc: 'https://www.helmetprosolutions.com/images/machine3.png',
+            title: 'Product Overview',
+            caption: 'Insights on helmet cleaning and maintenance'
+          }
+        ]
+      },
+      {
         loc: '/computation',
         lastmod: new Date().toISOString(),
         changefreq: 'monthly', 
@@ -103,20 +116,8 @@ export default defineNuxtConfig({
             caption: 'Join us for partnership opportunities'
           }
         ]
-      },
-      {
-        loc: '/blog',
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: 0.7,
-        img: [
-          {
-            loc: 'https://www.helmetprosolutions.com/images/machine3.png',
-            title: 'Blog Overview',
-            caption: 'Insights on helmet cleaning and maintenance'
-          }
-        ]
       }
+
     ]
   },
   
