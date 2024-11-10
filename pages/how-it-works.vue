@@ -74,6 +74,7 @@ definePageMeta({
       as: 'video'
     },
     {
+      hid: 'canonical',
       rel: 'canonical',
       href: 'https://www.helmetprosolutions.com/how-it-works'
     }

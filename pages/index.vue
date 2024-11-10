@@ -13,6 +13,7 @@ definePageMeta({
   head: {
     link: [
       {
+        hid: 'canonical',
         rel: 'canonical',
         href: 'https://www.helmetprosolutions.com/'
       }

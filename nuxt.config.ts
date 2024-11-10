@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss', 
     'nuxt-gtag', 
+    '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxtjs/sitemap', 
   ],
@@ -11,8 +12,13 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     '@splidejs/splide/dist/css/splide.min.css'
   ],
-
-
+  robots: [
+    {
+      UserAgent: '*',
+      Disallow: ['/admin', '/private'],
+      Allow: '/'
+    }
+  ],
   sitemap: {
     hostname: 'https://www.helmetprosolutions.com',
     gzip: true,
@@ -242,11 +248,11 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'HelmetPro - Helmet Cleaning Vending Machine Helmet Discover the Future of Helmet Cleaning and Drying Machine with Sterilizer',
+      title: 'HelmetPro - Helmet Cleaning Vending Machine Helmet',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }, // Responsive design
 
-        { hid: 'description', name: 'description', content: 'Helmet Pro is a leading provider of Helmet Cleaning Vending Machine. With HelmetProSolutions, you can experience the future of helmet hygiene and care.  you can enjoy a smooth and efficient helmet cleaning process. Discover HelmetPro’s innovative helmet vending machine, designed for helmet rental, automatic helmet dispenser services, and superior helmet cleaning. Prioritizing helmet hygiene, HelmetProSolutions offers a convenient solution for riders with advanced helmet cleaning capabilities and ease of use.' },// SEO description
+        { hid: 'description', name: 'description', content: 'Helmet Pro provides Helmet Cleaning Vending Machines for efficient helmet hygiene, offering rental, automatic dispenser, and superior cleaning solutions.' },// SEO description
         { hid: 'keywords', name: 'keywords', content: 'HelmetPro, Helmet Cleaning Vending Machine, Helmet Cleaning Vendo Machine, Helmet Cleaning Service, Helmet Pro, helmetpro, helmet pro, helmetprosolutions' }, // Keywords for SEO
         { hid: 'og:title', property: 'og:title', content: 'HelmetPro' }, // Open Graph title
         { hid: 'og:description', property: 'og:description', content: 'Discover the Future of Helmet Cleaning!' }, // Open Graph description
@@ -256,6 +262,11 @@ export default defineNuxtConfig({
         { hid: 'fb:app_id', property: 'fb:app_id', content: 'YOUR_FACEBOOK_APP_ID' } // Facebook App ID
       ],
       link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://www.helmetprosolutions.com' 
+        },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },

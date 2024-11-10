@@ -73,7 +73,11 @@ definePageMeta({
   title: 'We Customize Your Helmet Cleaning Machine',
   description: 'Explore customization options for Helmet Cleaning Machines with a personalized design style.',
   link: [
-    { rel: 'canonical', href: 'https://www.helmetprosolutions.com/our-service' }
+    { 
+      hid: 'canonical',
+      rel: 'canonical', 
+      href: 'https://www.helmetprosolutions.com/our-service'
+     }
   ]
 })
 </script>
