@@ -1,29 +1,38 @@
 <template>
   <div>
+
     <Computation />
+    <Calculator />
     <Facts />
 
   </div>
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
-
-const route = useRoute()
-const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
+useHead({
+  title: 'HelmetPro: Potential Income from Helmet Cleaning Vending Machines',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'computation'
+        ? 'Calculate the potential income you can earn from HelmetPro’s automated helmet cleaning vending machines, based on different usage rates (90-100%, 50%, 25%).'
+        : 'HelmetPro Calculate the potential income you can earn from automated helmet cleaning vending machines.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' 
+    }
+  ],
+})
 definePageMeta({
   layout: 'custom-layout',
   name: 'POTENTIAL INCOME',
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: canonicalUrl.value
-      }
-    ],
+    middleware: 'canonical',
     script: [
       {
         type: 'application/ld+json',

@@ -123,35 +123,54 @@
               HelmetPro is the ultimate solution for helmet hygiene and care. Keep your helmet fresh and sanitized with our Automatic Intelligent Helmet Cleaning Machine. It offers fast and efficient dry cleaning, thorough disinfection, and effective deodorization, all in one sleek, user-friendly machine. Designed for convenience, this is the ultimate solution for helmet hygiene and care.
             </p>
             <div>
-              <a
+              <!-- <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc_isim53g1u6-pYQRLzhk75UUQjFSYdkI9_wYUrgZCABmH8A/viewform?usp=send_form"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
               >
                 Inquire Now
-              </a>
+              </a> -->
+              <!-- <button
+                @click="isModalOpen = true"
+                class="px-6 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition duration-300"
+              >
+                Inquire Now
+              </button> -->
+              <NuxtLink 
+              to="/contactus" 
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            >
+              Get Started
+            </NuxtLink>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+          <InquiryModal
+      v-if="isModalOpen"
+      @close="isModalOpen = false"
+    />
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
+import InquiryModal from "../components/FormInquiry.vue";
 
+const isModalOpen = ref(false);
 // Array of media files with images and videos, with poster thumbnails for videos
 const mediaList = ref([
-  { src: '/images/machine1.png' },
-  { src: '/images/machine2.png' },
-  { src: '/images/machine3.png' },
-  { src: '/images/machine4.png' },
-  { src: '/images/machine5.png' },
-  { src: '/images/machine6.png' },
-  { src: '/images/machine7.png' },
-  { src: '/video.mp4', poster: '/images/thumbnailvideo2.png' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb87D39ogvNJZsh50YKV3ufoDizx26ROAtqEjcg' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8xddFqhmrlgFz0uoShVUIp6njet8vPdMTDywf' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8c52U2ZWlm0cp329CiRFfTQoe8Iwa7rMAE5Xx' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb8jkAnbDcQseLHMGdXzShEm9I4Ub51Rgqy687T' },
+  { src: 'https://utfs.io/f/txXKmXW6aEb80UE4hWGiJSnzPheAx3bCfl8HZUOtuIq0MwL2', poster: 'https://utfs.io/f/txXKmXW6aEb8BT5NYl3iE9cNeP12iT4K5g7HMkBLaZyQbJDt' },
 ]);
 
 const currentIndex = ref(0);

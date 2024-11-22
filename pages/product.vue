@@ -7,7 +7,7 @@
   <!-- Image Section -->
   <div class="md:col-span-1 shadow-2xl">
     <NuxtImg
-      src="/images/machine3.png"
+      src="https://utfs.io/f/txXKmXW6aEb85huVut1tfJ6kxXjH8hb2I7SpcqaDEZR3PzVF"
       alt="Revolutionizing Helmet Hygiene with the Helmet Cleaning Vending Machine - Helmet Pro Solutions"
       class="w-full h-full object-cover rounded-lg shadow-xl border-4 border-blue-200"
     />
@@ -44,6 +44,14 @@
       <p ref="revolutionizing_paragraph4">
         Our <strong>Helmet Cleaning Vending Machine</strong> is incredibly <strong>user-friendly</strong>, allowing anyone to clean their helmet in minutes. This standalone solution is perfect for riders who value cleanliness and convenience, making <strong>helmet hygiene</strong> as easy as inserting a coin or card.
       </p>
+      <div class="text-right mt-6">
+        <NuxtLink 
+          to="/contactus" 
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+        >
+          Inquire Now
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </div>
@@ -51,7 +59,7 @@
     <section class="text-gray-600 body-font">
         <div class="container lg:px-5 py-10 mx-auto flex flex-wrap">
           <div ref="product_feature_img" class="lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="/images/machine1.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Features" class="object-cover object-center lg:rounded-l-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8buTxLy7Or9xj5E7ZDSuNWKeaAFwzvVt2mhdR" loading="lazy" />
           </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 rounded-r-3xl lg:w-1/2 lg:pl-12 lg:text-left p-5 lg:p-0 bg-white">
@@ -121,7 +129,7 @@
         <div class="container lg:px-5 pb-10 mx-auto flex flex-wrap">
 
           <div  class="lg:hidden block w-full  lg:rounded-t-3xl overflow-hidden">
-            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg  alt="Helmet Cleaning Vending Machine Specifications" class="object-cover object-center h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 lg:rounded-l-3xl lg:w-1/2 lg:pl-12 text-left p-5 lg:p-0 bg-white">
             <div class="flex flex-col mb-5 items-start ">              
@@ -279,7 +287,7 @@
 
           </div>
           <div ref="product_specifications_img" class="hidden lg:block lg:w-1/2 w-full mb-5 lg:mb-0   ">
-            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="/images/machine4.png" loading="lazy" />
+            <NuxtImg alt="Helmet Cleaning Vendo Machine" class="object-cover object-center rounded-r-3xl h-full w-full" src="https://utfs.io/f/txXKmXW6aEb8QZ5Lw9yHAEPL7YgWqRZ6OxFBNo1eiXVjKJv8" loading="lazy" />
           </div>
         </div>
       </section>
@@ -288,26 +296,32 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
+import { useRoute } from 'vue-router';
+const route = useRoute();
+useHead({
+  title: 'HelmetPro Product: Our Helmet Cleaning Vending Machine',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'product'
+        ? 'The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time.'
+        : 'Discover the innovative helmet cleaning solution from HelmetPro, offering high-tech vending machines for effective helmet sanitation.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' 
+    }
+  ],
+})
 
-const route = useRoute()
-const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
 definePageMeta({
   layout: 'custom-layout',
   name: 'PRODUCT',
+  title: 'HelmetPro: Helmet Cleaning Vending Machine',
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: canonicalUrl.value
-      }
-    ],
-    meta: [
-      { hid: 'description', name: 'description', content: 'The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time.' },
-      { hid: 'keywords', name: 'keywords', content: 'Helmet Cleaning, Helmet Cleaning Vending Machine, helmet care, helmet hygiene, helmet disinfection, self-service helmet cleaner, helmet sanitization' }
-    ],
+    middleware: 'canonical',
     script: [
       {
         type: 'application/ld+json',
@@ -316,7 +330,7 @@ definePageMeta({
           "@type": "WebPage",
           "name": "HelmetPro Blog",
           "url": "https://www.helmetprosolutions.com/blog",
-          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
           "description": "The Helmet Cleaning Vending Machine from Helmet Pro Solutions transforms the way riders care for their helmets. This self-service solution combines advanced cleaning technology with eco-friendly products to provide a fast, effective, and sustainable method for helmet sanitation. Perfect for high-traffic locations, it offers a convenient and reliable way for motorcyclists to maintain helmet hygiene, ensuring a fresh and healthy ride every time."
         }),
       }

@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <ProductHero  />
     <ProductAbout />
@@ -9,21 +10,9 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
-
-const route = useRoute()
-const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
-
 definePageMeta({
   head: {
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: canonicalUrl.value
-      }
-    ],
+    middleware: 'canonical',
     meta: [
       {
         hid: 'description',

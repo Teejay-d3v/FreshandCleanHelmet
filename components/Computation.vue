@@ -1,5 +1,8 @@
 <template>
+  
   <div class="bg-gradient-to-r from-blue-300 to-teal-100">
+
+
     <!-- Section 1: Introduction -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 pt-20 mx-auto">
@@ -9,7 +12,7 @@
             <NuxtImg 
               alt="Helmet Cleaning Vending Machine" 
               class="h-auto w-auto object-cover rounded-lg shadow-lg m-2" 
-              src="/images/computation.jpg" 
+              src="https://utfs.io/f/txXKmXW6aEb8txXfl8W6aEb84pkeofOrBZgyztcT50XqICmH" 
               loading="lazy"
             />
             <p class="leading-relaxed text-base text-center ">
@@ -23,7 +26,7 @@
           <NuxtImg 
             alt="Helmet Cleaning Vending Machine" 
             class="h-96 w-auto object-contain rounded-lg  m-2 " 
-            src="/images/computation.jpg" 
+            src="https://utfs.io/f/txXKmXW6aEb8txXfl8W6aEb84pkeofOrBZgyztcT50XqICmH" 
             loading="lazy"
           />
           <div class="flex-1 p-5">

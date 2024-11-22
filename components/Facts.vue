@@ -1,5 +1,5 @@
 <template>
-  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 ">
+  <section ref="sectionRef" class="bg-gradient-to-r from-blue-300 to-teal-100 pt-20">
     <div class="container mx-auto flex flex-col items-center text-center sm:px-6">
       <div class="rounded-lg shadow-2xl text-center bg-white mb-10 p-5">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-indigo-600 mb-4 sm:mb-6">Motorcycle Usage in the Philippines</h1>
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="relative w-full mb-8">
-        <NuxtImg src="/images/motorcycle.jpg" alt="Motorcycles in the Philippines" class="w-full h-[500px] lg:h-auto  shadow-lg" loading="lazy"/>
+        <NuxtImg src="https://utfs.io/f/txXKmXW6aEb81Z49qb2tpNoBzsFYHn4jrO0gE6hbRq2wIcaT" alt="Motorcycles in the Philippines" class="w-full h-[500px] lg:h-auto  shadow-lg" loading="lazy"/>
         <div class="absolute inset-0 bg-black opacity-60 "></div>
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white p-4 sm:p-6">
           <h1 class="text-2xl sm:text-3xl lg:text-6xl font-extrabold mb-6 sm:mb-14">Your Business Opportunity</h1>

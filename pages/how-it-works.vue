@@ -11,7 +11,7 @@
       <div class="hidden lg:flex flex-col items-center justify-center py-2 lg:min-h-[80vh]">
         <div class="relative w-full max-w-xl md:max-w-3xl lg:max-w-7xl xl:max-w-8xl border-8 border-white rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             controls
             autoplay
             loop
@@ -40,7 +40,7 @@
       <div class="flex flex-col items-center justify-center">
         <div class="relative w-full h-[500px] border-2 rounded-lg shadow-lg overflow-hidden">
           <video
-            src="/hpro.mp4"
+            src="https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo"
             controls
             autoplay
             loop
@@ -61,27 +61,39 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, computed } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router'
-
 const route = useRoute()
-const canonicalUrl = computed(() => `https://www.helmetprosolutions.com${route.path}`)
+
+useHead({
+  title: 'How HelmetPro Helmet Cleaning Vending Machines Works',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: route.name === 'how-it-works'
+        ? 'Discover how HelmetPro’s automated helmet cleaning vending machines provide a convenient, hygienic solution for helmet maintenance.'
+        : 'Learn more about how our innovative helmet cleaning vending machines work and benefit your customers.',
+    },
+    { 
+      hid: 'keywords', 
+      name: 'keywords', 
+      content: 'HelmetPro, how HelmetPro works, How helmet cleaning works, How helmet vending machine works,How automated helmet cleaning works, helmet hygiene, maintenance solution, convenience' 
+    }
+  ],
+})
 // Define page metadata
 definePageMeta({
   layout: 'custom-layout',
   name: 'How it Works',
   head: {
+    middleware: 'canonical',
     link: [
     {
       rel: 'preload',
-      href: '/hpro.mp4',
+      href: 'https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo',
       as: 'video'
     },
-    {
-      hid: 'canonical',
-      rel: 'canonical',
-      href: canonicalUrl.value
-    }
   ],
     script: [
       {
@@ -97,8 +109,8 @@ definePageMeta({
             "name": "How to Use the HelmetPro Cleaning Vending Machine",
             "description": "A step-by-step guide on using the HelmetPro Cleaning Vending Machine, featuring efficient helmet sanitization.",
             "thumbnailUrl": "https://www.helmetprosolutions.com/thumbnailvideo.png", // Add your thumbnail URL here
-            "contentUrl": "https://www.helmetprosolutions.com/hpro.mp4",
-            "embedUrl": "https://www.helmetprosolutions.com/hpro.mp4", // Optional: point to a watch page
+            "contentUrl": "https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo",
+            "embedUrl": "https://utfs.io/f/txXKmXW6aEb8KQel80RXNn0EGXtSxRZ4WkULbiwYf3cVAOzo", // Optional: point to a watch page
             "duration": "PT2M33S", // Example duration; update accordingly
             "uploadDate": "2024-11-05", // Update with the actual upload date
             "publisher": {
@@ -106,7 +118,7 @@ definePageMeta({
               "name": "HelmetPro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png"
+                "url": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP"
               }
             }
           }
@@ -119,7 +131,7 @@ definePageMeta({
           "@type": "Organization",
           "name": "HelmetPro",
           "url": "https://www.helmetprosolutions.com",
-          "logo": "https://www.helmetprosolutions.com/favicon/android-chrome-512x512.png",
+          "logo": "https://utfs.io/f/txXKmXW6aEb8XoHIV4a9EQr5A7M6kZeuFyciCDqzg1nIBRaP",
           "description": "HelmetPro provides state-of-the-art helmet cleaning vending machines and dedicated support for business growth.",
           "sameAs": [
             "https://www.facebook.com/helmetprosolutions",
